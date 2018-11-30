@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/message/index",
+    "pages/me/index"
+  ],
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#298EF8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home2.png"
+      },
+
+      {
+        "pagePath": "pages/message/index",
+        "text": "消息",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechat2.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/my2.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2C99EE",
+    "navigationBarTitleText": "经纪人",
+    "navigationBarTextStyle": "white"
+  }
+}
