@@ -1,7 +1,7 @@
 @import '/static/styles/variable.wxss';
 
 page {
-  background-color: var(--color-background);
+  background-color: var(--color-white);
   width: 100%;
   font-size: 32rpx;
   font-family: PingFangSC;

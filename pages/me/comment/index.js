@@ -1,15 +1,13 @@
-// pages/me/index.js
+// pages/me/comment/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: null
+    list: [1,2]
   },
-  mycollect: function (e) {
-    var id = e.currentTarget.id;
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

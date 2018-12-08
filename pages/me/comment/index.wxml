@@ -1,0 +1,20 @@
+<!-- pages/me/comment/index.wxml -->
+<view class="container">
+    <block wx:for="{{list}}">
+        <view class="content">
+            <view class="head">
+                <view class="left">
+                    <image src="/image/house.png" class="logo" />
+                </view>
+                <view class="right">2018.06.25</view>
+            </view>
+            <view class="conment">房子户型不错，室内采光也很好，室外环境一般般，感觉
+不太干净。</view>
+            <!-- <view wx:if="{{false}}">
+                <block wx:for="{{item.imgs}}">
+                    <image />
+                </block>
+            </view> -->
+        </view>
+    </block>
+</view>

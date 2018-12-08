@@ -1,0 +1,34 @@
+/* pages/me/comment/index.wxss */
+.content {
+    padding: 20rpx;
+    margin-bottom: 20rpx;
+    background: var(--color-white);
+}
+
+.head {
+    border-bottom: 1rpx solid var(--color-sub-title);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 79rpx;
+    width: 79rpx;
+    border-radius: 50%;
+    margin-bottom: 20rpx;
+}
+
+.conment {
+    font-size: var(--font-size-medium-x);
+    color: var(--color-sub-title);
+    margin: 29rpx 0;
+}
+
+.left {
+    display: flex;
+}
+
+.right {
+    font-size: var(--font-size-small);
+    color: var(--color-certification-title);
+}

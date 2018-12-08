@@ -1,14 +1,19 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/message/index",
-    "pages/me/index"
+    "pages/me/index",
+    "pages/me/recoed/index",
+    "pages/me/coeeection/index",
+    "pages/me/manager/index",
+    "pages/me/fedback/index",
+    "pages/me/connect/index",
+    "pages/me/comment/index"
   ],
   "tabBar": {
     "color": "#666666",
     "selectedColor": "#298EF8",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "image/home.png",

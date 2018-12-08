@@ -1,14 +1,18 @@
-// pages/me/index.js
+// pages/me/fedback/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: null
+    list: [],
+    type: 0
   },
-  mycollect: function (e) {
+  changeType: function (e) {
     var id = e.currentTarget.id;
+    this.setData({
+      type: id
+    })
   },
   /**
    * 生命周期函数--监听页面加载

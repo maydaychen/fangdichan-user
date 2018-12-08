@@ -1,0 +1,11 @@
+<!-- pages/me/fedback/index.wxml -->
+<view class="container">
+    <view class="head">
+        <view class="{{type==0?'active':''}} head-item" bindtap="changeType" id="0">我的举报</view>
+        <view class="{{type==1?'active':''}} head-item" bindtap="changeType" id="1">使用问题</view>
+        <view class="{{type==2?'active':''}} head-item" bindtap="changeType" id="2">其他反馈</view>
+    </view>
+    <block wx:for="{{list}}">
+        <view class="list"></view>
+    </block>
+</view>

@@ -1,0 +1,28 @@
+/* pages/me/fedback/index.wxss */
+@import '/static/styles/base.wxss';
+
+.head {
+    height: 150rpx;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.head-item {
+    font-size: var(--font-size-large-y);
+    color: var(--color-unactive-color);
+    padding: 0 15rpx;
+    border-right: 1rpx solid var(--color-unactive-color);
+}
+
+.head-item:last-child {
+    font-size: var(--font-size-large-y);
+    color: var(--color-unactive-color);
+    padding: 0 15rpx;
+    border-right: 0rpx;
+}
+
+.active{
+    color: var(--color-sub-title);
+}
