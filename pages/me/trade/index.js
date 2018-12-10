@@ -1,12 +1,11 @@
-// pages/me/manager/index.js
+// pages/me/trade/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    type: 0,
-    list: [1, 2]
+    list: []
   },
 
   /**

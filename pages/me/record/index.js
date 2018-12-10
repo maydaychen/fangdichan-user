@@ -1,4 +1,4 @@
-// pages/me/recoed/index.js
+// pages/me/record/index.js
 Page({
 
   /**

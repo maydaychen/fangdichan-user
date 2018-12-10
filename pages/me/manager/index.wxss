@@ -1,1 +1,78 @@
 /* pages/me/manager/index.wxss */
+@import '/template/template.wxss';
+
+page {
+  background: var(--color-white);
+}
+
+.container {
+  padding: 0 15rpx;
+}
+
+.tab {
+  display: flex;
+  width: 424rpx;
+  margin: 24rpx auto 14rpx;
+}
+
+.active {
+  background: var(--color-sub-theme);
+  border: 1rpx solid var(--color-sub-theme) !important;
+  color: var(--color-white) !important;
+}
+
+.tab-item {
+  width: 210rpx;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: var(--font-size-large-y);
+  color: var(--color-sub-title);
+  border: 1rpx solid #dbdbdb;
+  border-radius: 10rpx 0 0 10rpx;
+}
+
+.tab-item:last-child {
+  font-size: var(--font-size-large-y);
+  color: var(--color-sub-title);
+  border: 1rpx solid #dbdbdb;
+  border-radius: 0 10rpx 10rpx 0;
+}
+
+.view_item {
+  width: 100%;
+  border-radius: 4rpx;
+  border: 1rpx solid #fefefe;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 7px 0px rgba(153, 152, 152, 0.2);
+  margin: 10rpx 0;
+}
+
+.head {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  background: rgba(228, 228, 228, 0.5);
+  color: var(--color-certification-title);
+}
+
+.head image {
+  margin-left: 64rpx;
+  margin-right: 27rpx;
+  height: 64rpx;
+  width: 64rpx;
+  border-radius: 50%;
+}
+
+.description {
+  margin: 0 42rpx;
+  padding: 55rpx 44rpx;
+  border-bottom: 1rpx solid var(--color-border-color);
+}
+
+.ask {
+  margin: 21rpx auto;
+  text-align: center;
+  color: var(--color-deep-blue);
+  font-size: var(--font-size-large);
+}

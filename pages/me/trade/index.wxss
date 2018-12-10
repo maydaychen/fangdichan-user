@@ -1,0 +1,53 @@
+/* pages/me/trade/index.wxss */
+@import '/static/iconfont/iconfont.wxss';
+
+.head{
+  
+}
+.abnor__image {
+  height: 230rpx;
+  width: 230rpx;
+  display: block;
+}
+
+.abnor__text {
+  color: #666;
+  font-size: 36rpx;
+  margin-top: 60rpx;
+}
+
+.abnor__sub_text {
+  color: var(--color-certification-title);
+  font-size: var(--font-size-large);
+  margin-top: 35rpx;
+  margin-bottom: 42rpx;
+}
+
+.choice {
+  height: 90rpx;
+  width: 250rpx;
+  color: var(--color-white);
+  background: var(--color-sub-theme);
+}
+
+.choice:first-child {
+  margin-left: 100rpx;
+  margin-right: 50rpx;
+}
+
+.choice:last-child {
+  margin: 0
+}
+
+.message {
+  color: #1296db;
+  width: 36rpx;
+  margin-right: 36rpx;
+  height: 36rpx;
+}
+
+.remind {
+  color: #f97409;
+  width: 36rpx;
+  height: 36rpx;
+}

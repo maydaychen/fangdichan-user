@@ -10,4 +10,17 @@ page {
 .container {
   font-size: var(--font-size-medium-x);
   line-height: 1.5;
+  
+}
+
+.horizon-center {
+  margin: 0 auto;
+}
+
+.vertical-center {
+  margin: auto 0;
+}
+
+.text-center {
+  text-align: center;
 }

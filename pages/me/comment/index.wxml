@@ -5,6 +5,10 @@
             <view class="head">
                 <view class="left">
                     <image src="/image/house.png" class="logo" />
+                    <view style="margin-left:20rpx">
+                        <view class="name">金溪苑</view>
+                        <view>五星</view>
+                    </view>
                 </view>
                 <view class="right">2018.06.25</view>
             </view>

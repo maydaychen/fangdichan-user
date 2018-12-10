@@ -1,0 +1,18 @@
+<!-- pages/me/trade/index.wxml -->
+<import src='/template/ws-template.wxml' />
+<view class="container">
+  <view class="head">
+    <view class="iconfont icon-mn_xiaoxi1 message"></view>
+    <view class="iconfont icon-xiaoxi1 remind"></view>
+  </view>
+  <view wx:if="{{list.length}}"></view>
+  <view wx:else style="width:100%;justify-content: center;">
+    <image class="abnor__image horizon-center" mode="widthFix" src="/image/no-trade.png"></image>
+    <view class="abnor__text text-center">暂无成交</view>
+    <view class="abnor__sub_text text-center">您还没有在房挑房成交房源哦！</view>
+    <view style="display:flex">
+      <button class="choice">去租赁</button>
+      <button class="choice">去买卖</button>
+    </view>
+  </view>
+</view>

@@ -1,2 +1,24 @@
-<!--pages/me/manager/index.wxml-->
-<text>pages/me/manager/index.wxml</text>
+<import src='/template/ws-template.wxml' />
+<!-- pages/me/manager/index.wxml -->
+<view class="container">
+  <view class="tab">
+    <view class="{{type==0?'active':''}} tab-item ">服务我的</view>
+    <view class="tab-item {{type==1?'active':''}}">我关注的</view>
+  </view>
+  <view wx:if="{{list.length}}">
+    <block wx:for="{{list}}">
+      <view class="view_item">
+        <view class="head">
+          <image src="/image/house.png" class="vertical-center" />
+          <view class="vertical-center">
+            <view style="font-size:24rpx">张三</view>
+            <view style="font-size:22rpx">高级经理</view>
+          </view>
+        </view>
+        <view class="description">善于沟通，做事积极认真</view>
+        <view class="ask">咨询</view>
+      </view>
+    </block>
+  </view>
+  <template is='abnor' data="{{imgSrc:'/image/no-manager.png',text: '还没有经纪人为您服务哦'}}" wx:else />
+</view>

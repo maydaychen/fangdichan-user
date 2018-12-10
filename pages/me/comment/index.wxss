@@ -32,3 +32,8 @@
     font-size: var(--font-size-small);
     color: var(--color-certification-title);
 }
+
+.name {
+    color: var(--color-certification-title);
+    font-size: var(--font-size-large);
+}

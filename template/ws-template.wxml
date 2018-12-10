@@ -1,0 +1,10 @@
+<!-- 类似404的异常展示 -->
+<template name="abnor">
+  <view class="abnor">
+    <view class="abnor__box">
+      <image class="abnor__image" mode="widthFix" src="{{imgSrc}}" style="height: 230rpx;"></image>
+      <view class="abnor__text" style="color:{{color}};font-size:{{size}}">{{text}}</view>
+    </view>
+  </view>
+</template>
+<wxs module="abnorTplModule"></wxs>

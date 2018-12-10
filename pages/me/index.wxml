@@ -6,22 +6,22 @@
             <view style="font-size:34rpx;">点此注册/登录</view>
         </view>
         <view class="head-bottom">
-            <view class="head-bottom-item">
+            <navigator class="head-bottom-item" url='record/index'>
                 <view class="head-item-num">0</view>
                 <view class="head-item-name">看房记录</view>
-            </view>
-            <view class="head-bottom-item">
+            </navigator>
+            <navigator class="head-bottom-item" url='entrust/index'>
                 <view class="head-item-num">0</view>
                 <view class="head-item-name">我的委托</view>
-            </view>
-            <view class="head-bottom-item">
+            </navigator>
+            <navigator class="head-bottom-item" url='trade/index'>
                 <view class="head-item-num">0</view>
                 <view class="head-item-name">我的交易</view>
-            </view>
-            <view class="head-bottom-item">
+            </navigator>
+            <navigator class="head-bottom-item" url='history/index'>
                 <view class="head-item-num">0</view>
                 <view class="head-item-name">我的浏览</view>
-            </view>
+            </navigator>
         </view>
     </view>
     <view class="tops last head" style="margin-top:10rpx;">

@@ -1,4 +1,4 @@
-// pages/me/coeeection/index.js
+// pages/me/entrust/index.js
 Page({
 
   /**

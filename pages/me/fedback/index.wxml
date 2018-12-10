@@ -1,11 +1,22 @@
 <!-- pages/me/fedback/index.wxml -->
+<import src='/template/ws-template.wxml' />
 <view class="container">
     <view class="head">
         <view class="{{type==0?'active':''}} head-item" bindtap="changeType" id="0">我的举报</view>
         <view class="{{type==1?'active':''}} head-item" bindtap="changeType" id="1">使用问题</view>
         <view class="{{type==2?'active':''}} head-item" bindtap="changeType" id="2">其他反馈</view>
     </view>
-    <block wx:for="{{list}}">
-        <view class="list"></view>
+    <block wx:if="{{type==0}}">
+        <block wx:if="{{list.length}}">
+            <block wx:for="{{list}}">
+                <view class="list"></view>
+            </block>
+        </block>
+        <template is='abnor' data="{{imgSrc:'/image/no-fedback.png',text: '您还未提供任何举报信息哦！',color:'#333',size:'30rpx'}}" wx:else />
+    </block>
+    <block wx:elif="{{type==1}}">
+        <textarea class="text" placeholder="您的宝贵意见是我们进步的源泉!" placeholder-class="textarea-placeholder"></textarea>
+        <view class="problem-hint">请详细描述您遇到的问题，有助于我们快速定位并解决问题,或留下您宝贵的建议或意见，我们会认真进行评估！</view>
+        <button class="problem-submie">提交</button>
     </block>
 </view>

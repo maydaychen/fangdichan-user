@@ -3,12 +3,14 @@
     "pages/index/index",
     "pages/message/index",
     "pages/me/index",
-    "pages/me/recoed/index",
-    "pages/me/coeeection/index",
+    "pages/me/record/index",
+    "pages/me/entrust/index",
+    "pages/me/trade/index",
+    "pages/me/history/index",
     "pages/me/manager/index",
     "pages/me/fedback/index",
-    "pages/me/connect/index",
-    "pages/me/comment/index"
+    "pages/me/comment/index",
+    "pages/me/connect/index"
   ],
   "tabBar": {
     "color": "#666666",
@@ -37,7 +39,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#2C99EE",
-    "navigationBarTitleText": "经纪人",
+    "navigationBarTitleText": "用户版",
     "navigationBarTextStyle": "white"
   }
 }
