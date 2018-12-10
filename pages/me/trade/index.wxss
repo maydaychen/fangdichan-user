@@ -1,13 +1,18 @@
 /* pages/me/trade/index.wxss */
 @import '/static/iconfont/iconfont.wxss';
 
-.head{
-  
+.head {
+  display: flex;
+  position: absolute;
+  right: 19rpx;
+  top: 0;
 }
+
 .abnor__image {
   height: 230rpx;
   width: 230rpx;
   display: block;
+  margin-top: 115rpx;
 }
 
 .abnor__text {
