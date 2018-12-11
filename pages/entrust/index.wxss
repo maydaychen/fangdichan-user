@@ -1,0 +1,109 @@
+/* pages/entrust/index.wxss */
+@import '/static/iconfont/iconfont.wxss';
+
+.head {
+  display: flex;
+  position: absolute;
+  right: 19rpx;
+  top: 34rpx;
+}
+
+.abnor__image {
+  height: 260rpx;
+  width: 260rpx;
+  display: block;
+  margin-top: 100rpx;
+}
+
+.abnor__text {
+  color: var(--color-sub-title);
+  font-size: var(--font-size-large-x);
+  margin-top: 44rpx;
+}
+
+.abnor__sub_text {
+  color: var(--color-certification-title);
+  font-size: var(--font-size-large);
+  margin-top: 35rpx;
+  margin-bottom: 42rpx;
+}
+
+.choice {
+  height: 90rpx;
+  width: 250rpx;
+  color: var(--color-white);
+  background: var(--color-sub-theme);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btn-group {
+  width: 100%;
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message {
+  color: #1296db;
+  width: 36rpx;
+  margin-right: 36rpx;
+  height: 36rpx;
+}
+
+.remind {
+  color: #f97409;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.title-group {
+  width: 100%;
+  padding-left: 96rpx;
+  padding-right: 96rpx;
+  box-sizing: border-box;
+  margin-top: 165rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-medium-x);
+  color: var(--color-unactive-color);
+}
+
+.title-group .line {
+  width: 150rpx;
+  height: 0;
+  border: 1rpx dashed var(--color-unactive-color);
+}
+
+.process {
+  width: 100%;
+  padding-left: 95rpx;
+  padding-right: 91rpx;
+  box-sizing: border-box;
+  margin-top: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-unactive-color);
+}
+
+.process .icon {
+  font-size: 45rpx;
+}
+
+.process .line {
+  width: 99rpx;
+  height: 0;
+  border: 1rpx dashed var(--color-unactive-color);
+}
+
+.text-group {
+  margin-top: 40rpx;
+  padding-left:68rpx;
+  padding-right:55rpx;
+  box-sizing: border-box;
+}

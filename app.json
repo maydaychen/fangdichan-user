@@ -6,7 +6,6 @@
     "pages/me/info/index",
     "pages/me/info/change/nickname",
     "pages/me/record/index",
-    "pages/me/entrust/index",
     "pages/me/trade/index",
     "pages/me/history/index",
     "pages/me/collection/index",
@@ -15,7 +14,8 @@
     "pages/me/comment/index",
     "pages/me/connect/index",
     "pages/login/welcome/index",
-    "pages/login/index"
+    "pages/login/index",
+    "pages/entrust/index"
   ],
   "tabBar": {
     "color": "#666666",
