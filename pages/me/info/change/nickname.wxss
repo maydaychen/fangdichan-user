@@ -1,0 +1,27 @@
+/* pages/me/info/change/nickname.wxss */
+.content {
+  height: 135rpx;
+  background: var(--color-white);
+  margin: 58rpx 13rpx 0 13rpx;
+  border-radius: 4rpx;
+}
+
+input {
+  margin: auto 0;
+  margin-left: 37rpx;
+  line-height: 135rpx;
+}
+
+.input-placeholder {
+  font-size: var(--font-size-large-y);
+  color: var(--color-sub-title);
+}
+
+button {
+  background: var(--color-sub-theme);
+  color: var(--color-white);
+  height: 99rpx;
+  width: 605rpx;
+  margin: 0 auto;
+  margin-top: 141rpx;
+}

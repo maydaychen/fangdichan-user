@@ -1,0 +1,35 @@
+/* pages/me/info/index.wxss */
+@import "/static/styles/base.wxss";
+@import '/static/iconfont/iconfont.wxss';
+
+.container {
+  padding: 20rpx;
+}
+
+.line {
+  background: var(--color-white);
+  height: 125rpx;
+  width: 100%;
+}
+
+.title {
+  margin-left: 27rpx;
+  font-size: var(--font-size-large-y);
+  color: var(--color-certification-title);
+}
+
+.logo {
+  border-radius: 50%;
+  height: 98rpx;
+  width: 98rpx;
+}
+
+.info {
+  color: var(--color-unactive-color);
+  font-size: var(--font-size-large-y);
+}
+
+.right {
+  margin-right: 20rpx;
+  margin-left: 10rpx;
+}

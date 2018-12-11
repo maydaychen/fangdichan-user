@@ -1,11 +1,5 @@
 @import '/static/styles/variable.wxss';
 
-page {
-  background-color: var(--color-white);
-  width: 100%;
-  font-size: 32rpx;
-  font-family: PingFangSC;
-}
 
 .wsui-input__right {
   text-align: right;

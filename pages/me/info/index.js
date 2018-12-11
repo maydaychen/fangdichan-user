@@ -1,11 +1,26 @@
-// pages/me/index.js
+// pages/me/info/index.js
+var app = getApp();
+let util = app.requirejs();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: null
+
+  },
+  add_pic: function (e) {
+    util.upload({
+      count: 1,
+      success: res => {
+        console.log(res);
+        var images = that.data.imgs;
+        images[Index] = app.globalData.baseUrl + res.url;
+        that.setData({
+          imgs: images
+        })
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面加载

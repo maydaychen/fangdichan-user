@@ -1,0 +1,7 @@
+<!-- pages/me/info/change/nickname.wxml -->
+<view class="container">
+  <view class="content">
+    <input placeholder="输入您的昵称" placeholder-class="input-placeholder" />
+  </view>
+  <button>保存</button>
+</view>

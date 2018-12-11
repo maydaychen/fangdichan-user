@@ -21,11 +21,20 @@ page {
     margin-right: 31rpx;
 }
 
+.telephone {
+    font-size: var(--font-size-large-x);
+    color: var(--color-certification-title);
+}
+
+.change {
+    padding-top: 10rpx;
+    font-size: var(--font-size-small);
+    color: var(--color-sub-text);
+}
+
 .head-top {
     width: 100%;
-    height: 110rpx;
     padding: 49rpx 0 0 43rpx;
-
     box-sizing: border-box;
     display: flex;
     align-items: center;

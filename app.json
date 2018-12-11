@@ -3,14 +3,19 @@
     "pages/index/index",
     "pages/message/index",
     "pages/me/index",
+    "pages/me/info/index",
+    "pages/me/info/change/nickname",
     "pages/me/record/index",
     "pages/me/entrust/index",
     "pages/me/trade/index",
     "pages/me/history/index",
+    "pages/me/collection/index",
     "pages/me/manager/index",
     "pages/me/fedback/index",
     "pages/me/comment/index",
-    "pages/me/connect/index"
+    "pages/me/connect/index",
+    "pages/login/welcome/index",
+    "pages/login/index"
   ],
   "tabBar": {
     "color": "#666666",

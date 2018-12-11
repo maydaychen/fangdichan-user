@@ -33,6 +33,9 @@ App({
       }
     })
   },
+  requirejs: function (e) {
+    return require("utils/util.js")
+  },
   globalData: {
     userInfo: null
   }

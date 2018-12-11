@@ -1,10 +1,17 @@
 <!-- pages/me/index.wxml -->
 <view class="container">
     <view class="tops last head">
-        <view class="head-top" wx:if="!{{userInfo}}">
+        <!-- <navigator class="head-top" wx:if="!{{userInfo}}" url="../login/index">
             <image src="/image/me-logo.png" class="logo" />
             <view style="font-size:34rpx;">点此注册/登录</view>
-        </view>
+        </navigator> -->
+        <navigator class="head-top" wx:if="!{{userInfo}}" url="info/index">
+            <image src="/image/me-logo.png" class="logo" />
+            <view style="margin:auto 0">
+                <view class="telephone">13665137658</view>
+                <view class="change">查看并编辑个人资料</view>
+            </view>
+        </navigator>
         <view class="head-bottom">
             <navigator class="head-bottom-item" url='record/index'>
                 <view class="head-item-num">0</view>
@@ -27,19 +34,19 @@
     <view class="tops last head" style="margin-top:10rpx;">
         <view class="title">我收藏的</view>
         <view class="head-bottom">
-            <view class="head-bottom-item" bindtap="mycollect" id="1">
+            <navigator class="head-bottom-item" url="collection/index?id=0">
                 <image src="/image/icon-ershoufang.png" class="icon"></image>
                 <view class="head-item-name">二手房</view>
-            </view>
-            <view class="head-bottom-item" bindtap="mycollect" id="2">
+            </navigator>
+            <view class="head-bottom-item" url="collection/index?id=1">
                 <image src="/image/icon-xinfang.png" class="icon"></image>
                 <view class="head-item-name">新房</view>
             </view>
-            <view class="head-bottom-item" bindtap="mycollect" id="3">
+            <view class="head-bottom-item" url="collection/index?id=2">
                 <image src="/image/icon-zufang.png" class="icon"></image>
                 <view class="head-item-name">租房</view>
             </view>
-            <view class="head-bottom-item" bindtap="mycollect" id="4">
+            <view class="head-bottom-item" url="collection/index?id=3">
                 <image src="/image/icon-xiaoqu.png" class="icon"></image>
                 <view class="head-item-name">小区</view>
             </view>

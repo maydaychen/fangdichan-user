@@ -1,0 +1,24 @@
+<!-- pages/me/info/index.wxml -->
+<view class="container">
+  <view class="tops view ui-input line" bindtap='add_pic'>
+    <view class="vertical-center title">头像</view>
+    <view class="vertical-center" style="display:flex">
+      <image class="logo" src="/image/house.png" />
+      <view class="iconfont icon-you right vertical-center"></view>
+    </view>
+  </view>
+  <navigator class="view ui-input line" url="change/nickname">
+    <view class="vertical-center title">昵称</view>
+    <view class="vertical-center" style="display:flex">
+      <view class="info">小夹子</view>
+      <view class="iconfont icon-you right"></view>
+    </view>
+  </navigator>
+  <navigator class="last ui-input line" url="change/nickname">
+    <view class="vertical-center title">手机号</view>
+    <view class="vertical-center" style="display:flex">
+      <view class="info">13665137658</view>
+      <view class="iconfont icon-you right"></view>
+    </view>
+  </navigator>
+</view>

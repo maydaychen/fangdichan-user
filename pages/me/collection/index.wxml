@@ -1,0 +1,13 @@
+<!-- pages/me/collection/index.wxml -->
+<view class="container">
+  <view class='top'>
+    <view class='search'>
+      <view style="display:flex">
+        <text class='iconfont icon-sousuo vertical-center'></text>
+        <input type='text' placeholder='请输入小区或商圈名称' class="vertical-center" placeholder-class="input-placeholder"></input>
+      </view>
+      <view class="iconfont icon-quxiao"></view>
+    </view>
+    <view class="edit vertical-center">编辑</view>
+  </view>
+</view>
