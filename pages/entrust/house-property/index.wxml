@@ -1,0 +1,121 @@
+<!--pages/entrust/house-property.wxml-->
+<view class="container house-property">
+  <view class="sale-group">
+    <text>想卖：</text>
+    <text>{{ selectedHouse }}</text>
+    <view class="icon-select iconfont"></view>
+  </view>
+  <swiper
+    class="swiper-group"
+    indicator-dots="true"
+    autoplay="true"
+    duration="{{duration}}"
+    circular="true"
+  >
+    <block wx:for="{{bannerUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image image-item" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="menu">
+    <view class="item">
+      <image class="icon" src="/image/newer-guide-icon.png" />
+      <text>新手上路</text>
+    </view>
+    <view class="item">
+      <image class="icon" src="/image/price-icon.png" />
+      <text>房屋估值</text>
+    </view>
+    <view class="item">
+      <image class="icon" src="/image/newer-guide-icon.png" />
+      <text>卖房百科</text>
+    </view>
+    <view class="item">
+      <image class="icon" src="/image/newer-guide-icon.png" />
+      <text>换房百科</text>
+    </view>
+  </view>
+  <view class="recommend-broker">
+    <text class="title">推荐经纪人</text>
+    <text class="subtitle"> —— 政策置换售价问题解答</text>
+    <scroll-view  class="list" scroll-x="{{true}}">
+      <view class="item">
+        <view class="top">
+          <view class="left">
+            <image class="broker-avatar" src="/image/me-logo.png" />
+          </view>
+          <view class="right">
+            <text class="name">张三</text>
+            <text>高级经理|康馨家园店</text>
+          </view>
+        </view>
+        <text class="middle">为人和善房东信赖，善于维护
+业主关系</text>
+        <view class="line"></view>
+        <text class="consult-btn">咨询</text>
+      </view>
+      <view class="item">
+        <view class="top">
+          <view class="left">
+            <image class="broker-avatar" src="/image/me-logo.png" />
+          </view>
+          <view class="right">
+            <text class="name">张三</text>
+            <text>高级经理|康馨家园店</text>
+          </view>
+        </view>
+        <text class="middle">为人和善房东信赖，善于维护
+业主关系</text>
+        <view class="line"></view>
+        <text class="consult-btn">咨询</text>
+      </view>
+      <view class="item">
+        <view class="top">
+          <view class="left">
+            <image class="broker-avatar" src="/image/me-logo.png" />
+          </view>
+          <view class="right">
+            <text class="name">张三</text>
+            <text>高级经理|康馨家园店</text>
+          </view>
+        </view>
+        <text class="middle">为人和善房东信赖，善于维护
+业主关系</text>
+        <view class="line"></view>
+        <text class="consult-btn">咨询</text>
+      </view>
+      <view class="item">
+        <view class="top">
+          <view class="left">
+            <image class="broker-avatar" src="/image/me-logo.png" />
+          </view>
+          <view class="right">
+            <text class="name">张三</text>
+            <text>高级经理|康馨家园店</text>
+          </view>
+        </view>
+        <text class="middle">为人和善房东信赖，善于维护
+业主关系</text>
+        <view class="line"></view>
+        <text class="consult-btn">咨询</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="price-reference">
+    <view class="title">
+      <text>定价参考</text>
+      <view class="right">
+        <text class="deal">成交</text>
+        <text class="on-sale">在售</text>
+      </view>
+    </view>
+    <view class="type-menu">
+      <text bindtap="changeType('all')" :class="{{ currentType === 'all' ? 'active' : 'unactive'}}">全部</text>
+      <text bindtap="changeType('oneRoom')" :class="{{ currentType === 'oneRoom' ? 'active' : 'unactive'}}">一居室</text>
+      <text bindtap="changeType('twoRooms')" :class="{{ currentType === 'twoRooms' ? 'active' : 'unactive'}}">两居室</text>
+      <text bindtap="changeType('threeRooms')" :class="{{ currentType === 'threeRooms' ? 'active' : 'unactive'}}">三居室</text>
+      <text bindtap="changeType('other')" :class="{{ currentType === 'other' ? 'active' : 'unactive'}}">其他</text>
+    </view>
+  </view>
+</view>

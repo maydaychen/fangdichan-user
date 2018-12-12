@@ -33,6 +33,12 @@ page {
   --color-sure-btn: #1A84D5;
   --color-date-bolor: #818181;
   --color-placeholder-color: #7D8794;
+  --color-border: #f2f2f2;
+  --color-broker-bg: #707070;
+  --color-split-line: #eaeaea;
+  --color-border-blue: #2b99ee;
+  --color-text-blue: #1b71cc;
+  --color-border-red: #e60012;
   /* 字体定义规范 */
   --font-size-large-h: 48rpx;
   --font-size-large-z: 40rpx; /* 适用于按钮字体 */
