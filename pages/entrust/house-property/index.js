@@ -14,11 +14,10 @@ Page({
     currentType: ''
   },
 
-  changeType (type) {
-    console.log('type')
-    console.log(type)
+  changeType (e) {
+  
     this.setData({
-      currentType: type
+      currentType: e.target.dataset.type,
     })
   },
 

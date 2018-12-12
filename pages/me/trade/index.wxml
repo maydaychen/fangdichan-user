@@ -1,5 +1,4 @@
 <!-- pages/me/trade/index.wxml -->
-<import src='/template/ws-template.wxml' />
 <view class="container">
   <view class="head">
     <image src="/image/message.png" class="message" />

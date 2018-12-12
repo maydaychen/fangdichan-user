@@ -17,7 +17,7 @@
                 <view class="head-item-num">0</view>
                 <view class="head-item-name">看房记录</view>
             </navigator>
-            <navigator class="head-bottom-item" url='entrust/index'>
+            <navigator class="head-bottom-item" url='../entrust/index'>
                 <view class="head-item-num">0</view>
                 <view class="head-item-name">我的委托</view>
             </navigator>
@@ -38,18 +38,18 @@
                 <image src="/image/icon-ershoufang.png" class="icon"></image>
                 <view class="head-item-name">二手房</view>
             </navigator>
-            <view class="head-bottom-item" url="collection/index?id=1">
+            <navigator class="head-bottom-item" url="collection/index?id=1">
                 <image src="/image/icon-xinfang.png" class="icon"></image>
                 <view class="head-item-name">新房</view>
-            </view>
-            <view class="head-bottom-item" url="collection/index?id=2">
+            </navigator>
+            <navigator class="head-bottom-item" url="collection/index?id=2">
                 <image src="/image/icon-zufang.png" class="icon"></image>
                 <view class="head-item-name">租房</view>
-            </view>
-            <view class="head-bottom-item" url="collection/index?id=3">
+            </navigator>
+            <navigator class="head-bottom-item" url="collection/index?id=3">
                 <image src="/image/icon-xiaoqu.png" class="icon"></image>
                 <view class="head-item-name">小区</view>
-            </view>
+            </navigator>
         </view>
     </view>
     <navigator class="tops view ui-input me-choice" url='manager/index'>

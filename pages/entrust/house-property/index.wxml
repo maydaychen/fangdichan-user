@@ -111,11 +111,11 @@
       </view>
     </view>
     <view class="type-menu">
-      <text bindtap="changeType('all')" :class="{{ currentType === 'all' ? 'active' : 'unactive'}}">全部</text>
-      <text bindtap="changeType('oneRoom')" :class="{{ currentType === 'oneRoom' ? 'active' : 'unactive'}}">一居室</text>
-      <text bindtap="changeType('twoRooms')" :class="{{ currentType === 'twoRooms' ? 'active' : 'unactive'}}">两居室</text>
-      <text bindtap="changeType('threeRooms')" :class="{{ currentType === 'threeRooms' ? 'active' : 'unactive'}}">三居室</text>
-      <text bindtap="changeType('other')" :class="{{ currentType === 'other' ? 'active' : 'unactive'}}">其他</text>
+      <text bindtap="changeType" data-type="all" class="{{ currentType === 'all' ? 'active' : 'unactive'}}">全部</text>
+      <text bindtap="changeType" data-type="oneRoom" class="{{ currentType === 'oneRoom' ? 'active' : 'unactive'}}">一居室</text>
+      <text bindtap="changeType" data-type="twoRooms"class="{{ currentType === 'twoRooms' ? 'active' : 'unactive'}}">两居室</text>
+      <text bindtap="changeType" data-type="threeRooms" class="{{ currentType === 'threeRooms' ? 'active' : 'unactive'}}">三居室</text>
+      <text bindtap="changeType" data-type="other" class="{{ currentType === 'other' ? 'active' : 'unactive'}}">其他</text>
     </view>
   </view>
 </view>

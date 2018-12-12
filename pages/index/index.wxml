@@ -1,13 +1,47 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <swiper indicator-dots="true" indicator-color='#1B82D1' indicator-active-color='#f00' autoplay='true' circular='true' interval='3000' duration='500' class="haibao">
+    <block wx:for="{{banner}}">
+      <swiper-item>
+        <image class='imageBener' src="{{item.image}}" id='{{item.id}}' bindtap='detail'></image>
+        <view class='banner_title'>{{item.title}}</view>
+      </swiper-item>
     </block>
+  </swiper>
+  <view style="display:flex;height:245rpx;background:white">
+    <view class="choice-item vertical-center">
+      <image src="/image/main-ershou.png" class="choice-image" />
+      <view>二手房</view>
+    </view>
+    <view class="choice-item vertical-center">
+      <image src="/image/main-new.png" class="choice-image" />
+      <view>新房</view>
+    </view>
+    <view class="choice-item vertical-center">
+      <image src="/image/main-rent.png" class="choice-image" />
+      <view>租房</view>
+    </view>
+    <view class="choice-item vertical-center">
+      <image src="/image/main-manager.png" class="choice-image" />
+      <view>找经纪人</view>
+    </view>
+    <view class="choice-item vertical-center">
+      <image src="/image/main-longterm.png" class="choice-image" />
+      <view>长期托管</view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="pic">
+    <image src="/image/delete1.png" class="delete-pic" />
+    <image src="/image/delete2.png" class="delete-pic" />
   </view>
+  <view class="title activity-title">热门活动</view>
+  <!-- 横向滚动 -->
+  <view class="menu">
+    <scroll-view scroll-x="true" class="top-nav">
+      <block wx:for="{{typelist}}" wx:for-index="x">
+        <view bindtap='changeType'>{{item.name}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="title event-title">无锡市场行情</view>
 </view>
