@@ -1,0 +1,113 @@
+/* pages/index/manager/index.wxss */
+
+@import '/static/iconfont/iconfont.wxss';
+
+page {
+  background: var(--color-white);
+}
+
+.top {
+  padding: 20rpx;
+  display: flex;
+}
+
+.top>text {
+  font-size: 60rpx;
+  color: #999;
+  vertical-align: middle;
+  margin-left: 5%;
+}
+
+input {
+  display: inline-block;
+  width: 500rpx;
+  vertical-align: middle;
+  margin: auto 0;
+  margin-left: 10rpx;
+}
+
+.search {
+  width: 620rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(245, 245, 245, 1);
+  border: 1px solid rgba(116, 114, 114, 0.15);
+}
+
+.search text {
+  font-size: 35rpx;
+  vertical-align: middle;
+  color: #777;
+  margin-left: 22rpx;
+  font-weight: bold;
+}
+
+.input-placeholder {
+  color: var(--color-login-notice);
+  font-size: var(--font-size-medium-x);
+}
+
+.edit {
+  font-size: var(--font-size-large);
+  color: var(--color-sub-title);
+  margin-left: 22rpx;
+}
+
+.choice {
+  display: flex;
+  width: 100%;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid var(--color-border);
+}
+
+.choice text {
+  width: 33.33%;
+  text-align: center;
+  color: var(--color-sub-title);
+  font-size: var(--font-size-large);
+}
+
+.content {
+  display: flex;
+  border-bottom: 1rpx solid var(--color-border);
+  padding: 20rpx 20rpx;
+}
+
+.content>view {
+  width: 100%;
+  margin-left: 29rpx
+}
+
+.content-logo {
+  border-radius: 50%;
+  height: 88rpx;
+  width: 88rpx;
+}
+
+.top-name {
+  font-size: var(--font-size-large-y);
+  color: var(--color-certification-title);
+}
+
+.top-job {
+  color: var(--color-certification-title);
+  font-size: var(--font-size-small-a);
+  padding: 4rpx 11rpx;
+  border: 1rpx solid var(--color-border-dark-grey);
+  border-radius: 8rpx;
+  margin-left: 30rpx;
+}
+
+.content-middle {
+  font-size: var(--font-size-small);
+  margin-top: 10rpx;
+  color: var(--color-sub-title);
+}
+
+.content-bottom {
+  font-size: var(--font-size-medium);
+  margin-top: 10rpx;
+  color: var(--color-certification-title);
+}

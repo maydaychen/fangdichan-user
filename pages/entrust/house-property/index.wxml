@@ -117,5 +117,52 @@
       <text bindtap="changeType" data-type="threeRooms" class="{{ currentType === 'threeRooms' ? 'active' : 'unactive'}}">三居室</text>
       <text bindtap="changeType" data-type="other" class="{{ currentType === 'other' ? 'active' : 'unactive'}}">其他</text>
     </view>
+    <view class="price-group">
+      <view class="item">
+        <text>9月参考均价（元/平）</text>
+        <text class="data">42000</text>
+      </view>
+      <view class="item">
+        <text>成交周期（天）</text>
+        <text class="data">35</text>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="latest-deal-group">
+      <view class="top">
+        <text>【最新成交】2018-05-25</text>
+        <text class="total-price">450万</text>
+      </view>
+      <view class="house-detail">
+        <view class="tags">
+          <text>120㎡</text>
+          <text>3室2厅</text>
+          <text>南北</text>
+          <text>不满二</text>
+        </view>
+        <view class="average-price">37500元/平</view>
+      </view>
+      <view class="deal-message">49天前成交，累计带看10次，挂牌价469万，比成交价低19万</view>
+      <view class="more-deal-btn">更多成交</view>
+    </view>
+  </view>
+
+  <view class="sale-house-notice">
+    <text class="title">提升卖房技能</text>
+    <text class="subtitle"> —— 政策置换售价问题解答</text>
+    <view class="list">
+      <view class="item">
+        <image src="/image/hand-out-bg.png" />
+      </view>
+      <view class="item">
+        <image src="/image/connect-link-bg.png" />
+      </view>
+      <view class="item">
+        <image src="/image/vertification-property-bg.png" />
+      </view>
+      <view class="item">
+        <image src="/image/transfer-bg.png" />
+      </view>
+    </view>
   </view>
 </view>

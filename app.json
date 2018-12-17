@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/entrust/house-property/index",
-    "pages/entrust/index",
     "pages/index/index",
+    "pages/index/manager/index",
+    "pages/index/manager/detail",
     "pages/message/index",
     "pages/me/index",
     "pages/me/info/index",
@@ -16,7 +16,9 @@
     "pages/me/comment/index",
     "pages/me/connect/index",
     "pages/login/welcome/index",
-    "pages/login/index"
+    "pages/login/index",
+    "pages/entrust/house-property/index",
+    "pages/entrust/index"
   ],
   "tabBar": {
     "color": "#666666",

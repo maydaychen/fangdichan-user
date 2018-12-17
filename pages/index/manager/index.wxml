@@ -1,0 +1,34 @@
+<!-- pages/index/manager/index.wxml -->
+<view class="container">
+  <view class='top'>
+    <view class='search'>
+      <view style="display:flex">
+        <text class='iconfont icon-sousuo vertical-center'></text>
+        <input type='text' placeholder='请输入有关经纪人信息' placeholder-class="input-placeholder" bindinput="change"></input>
+      </view>
+      <view class="iconfont icon-quxiao vertical-center" hidden="{{hide}}" bind:tap="cancel" style="margin-right:20rpx;color:#A8A8A8"></view>
+    </view>
+    <view class="edit vertical-center">编辑</view>
+  </view>
+  <view class="choice">
+    <text bindtap='show' id="0">区域 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text bindtap='show' id="1">经纪人 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text bindtap='show' id="2">排序 <text class='iconfont icon-xiasanjiao'></text> </text>
+  </view>
+  <block wx:for="{{list}}">
+    <navigator class="content" url="detail">
+      <image src="/image/house.png" class="content-logo vertical-center" />
+      <view>
+        <view class="flex-between">
+          <view>
+            <text class="top-name">测试</text>
+            <text class="top-job">红叶店 高级经理</text>
+          </view>
+          <view>test</view>
+        </view>
+        <view class="content-middle">用户评分：7.5|75人评价</view>
+        <view class="content-bottom">我负责本小区的维护，最了解小区的房屋价格情况</view>
+      </view>
+    </navigator>
+  </block>
+</view>

@@ -23,3 +23,20 @@ page {
 .text-center {
   text-align: center;
 }
+
+.flex-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.just-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.font-3232 {
+  color: var(--color-certification-title);
+}

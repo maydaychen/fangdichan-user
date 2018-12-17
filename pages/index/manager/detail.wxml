@@ -1,0 +1,89 @@
+<!-- pages/index/manager/detail.wxml -->
+<view class="container">
+  <view class="info">
+    <view class="info-top">
+      <view class="top-left">
+        <view>
+          <view class="name">张三</view>
+          <view class="level">高级经纪人</view>
+        </view>
+        <view class="years">入职年限：1-2年</view>
+        <view class="years">所属门店：房挑房锡山店</view>
+      </view>
+    </view>
+    <view class="info-middle">
+      <view class="middle-item">
+        <view>6</view>
+        <text>
+          历史成交
+          <text>套</text>
+        </text>
+      </view>
+      <view class="middle-item">
+        <view>6</view>
+        <text>
+          历史成交
+          <text>套</text>
+        </text>
+      </view>
+      <view class="middle-item">
+        <view>6</view>
+        <text>
+          历史成交
+          <text>套</text>
+        </text>
+      </view>
+    </view>
+    <view style="padding-top:30rpx;display:flex">
+      <block wx:for="{{comment}}">
+        <view class="comment">{{item}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="info-no-padding" style="margin-top:20rpx;">
+    <view class="title">用户评价</view>
+    <block wx:for="{{commentlist}}">
+      <view style="padding-top:30rpx;display:flex">
+        <image src="/image/house.png" class="comment-logo" />
+        <view class="comment-right">
+          <view class="flex-between">
+            <view class="font-3232 comment-name">
+              13665137658
+              <text class="comment font-3232">买房人</text>
+            </view>
+            <view class="font-3232 comment-date">2018.06.25</view>
+          </view>
+          <view class="font-3232">2018.1.1在锡山看房</view>
+          <view class="font-3232">非常推荐</view>
+          <view class="comment-detail">
+            <view>非常耐心细心</view>
+            <view class="just-flex">
+              <block wx:for="{{list}}">
+                <view class="comment items">了解我的买房需求</view>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <button class="button horizon-center">查看全部评价</button>
+  </view>
+  <view class="info-no-padding" style="margin-top:20rpx;">
+    <view class="title">TA的成交房源</view>
+    <block wx:for="{{commentlist}}">
+      <view>
+        <image src="/image/house.png" class="comment-logo" />
+      </view>
+    </block>
+    <button class="button horizon-center">查看全部成交</button>
+  </view>
+  <view class="info-no-padding" style="margin-top:20rpx;">
+    <view class="title">TA的在售房源</view>
+    <block wx:for="{{commentlist}}">
+      <view>
+        <image src="/image/house.png" class="comment-logo" />
+      </view>
+    </block>
+    <button class="button horizon-center">查看全部在售房源</button>
+  </view>
+</view>

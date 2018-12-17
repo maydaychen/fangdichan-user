@@ -2,18 +2,30 @@
 
 page {
   /* 颜色定义规范 */
-  --color-theme: #3c7bfe; /* 品牌色、主题色 */
-  --color-sub-theme: #298ef8; /* 控件色 */
-  --color-background: #f5f5f5; /* 背景色 */
-  --color-gold: #f4b906; /* 金色示例色值 */
-  --color-title: #333; /* 用于重要及文字信息、内容标题信息 */
-  --color-sub-title: #666; /* 用于普通级段落、用户名、icon */
-  --color-text: #888; /* 用于辅助、次要的文字信息、icon */
-  --color-sub-text: #8a8a8a; /* 用于辅助、次要的文字信息、icon */
-  --color-prompt: #ccc; /* 用于刷新失败内容文字提醒 */
-  --color-split-line: #ddd; /* 分割线色 */
-  --color-split-line-sub: #d2d2d2; /* 浅色分割线色 */
-  --color-notification-background: #f2f8fd; /* 通知背景色 */
+  --color-theme: #3c7bfe;
+  /* 品牌色、主题色 */
+  --color-sub-theme: #298ef8;
+  /* 控件色 */
+  --color-background: #f5f5f5;
+  /* 背景色 */
+  --color-gold: #f4b906;
+  /* 金色示例色值 */
+  --color-title: #333;
+  /* 用于重要及文字信息、内容标题信息 */
+  --color-sub-title: #666;
+  /* 用于普通级段落、用户名、icon */
+  --color-text: #888;
+  /* 用于辅助、次要的文字信息、icon */
+  --color-sub-text: #8a8a8a;
+  /* 用于辅助、次要的文字信息、icon */
+  --color-prompt: #ccc;
+  /* 用于刷新失败内容文字提醒 */
+  --color-split-line: #ddd;
+  /* 分割线色 */
+  --color-split-line-sub: #d2d2d2;
+  /* 浅色分割线色 */
+  --color-notification-background: #f2f8fd;
+  /* 通知背景色 */
   --color-white: #fff;
   --color-light-green: #e6f2e6;
   --color-deep-green: #5cb66a;
@@ -33,22 +45,30 @@ page {
   --color-sure-btn: #1A84D5;
   --color-date-bolor: #818181;
   --color-placeholder-color: #7D8794;
-  --color-border: #f2f2f2;
+  --color-border: #EAEAEA;
   --color-broker-bg: #707070;
   --color-split-line: #eaeaea;
   --color-border-blue: #2b99ee;
   --color-text-blue: #1b71cc;
   --color-border-red: #e60012;
+  --color-border-dark-grey: #959595;
+  --color-tag-yellow: #fee483;
   /* 字体定义规范 */
   --font-size-large-h: 48rpx;
+  --font-size-large-b: 46rpx;
   --font-size-large-z: 40rpx; /* 适用于按钮字体 */
   --font-size-large-x: 36rpx; /* 适用于重要标题 */
   --font-size-large-a: 34rpx;
   --font-size-large-y: 32rpx;
-  --font-size-large: 30rpx; /* 适用于正文标题、内容、按钮 */
-  --font-size-medium-x: 28rpx; /* 适用于列表名称、正文 */
-  --font-size-medium: 26rpx; /* 适用于列表名称、正文 */
-  --font-size-small: 24rpx; /* 适用于提示文字、次要描述文字 */
+  --font-size-large: 30rpx;
+  /* 适用于正文标题、内容、按钮 */
+  --font-size-medium-x: 28rpx;
+  /* 适用于列表名称、正文 */
+  --font-size-medium: 26rpx;
+  /* 适用于列表名称、正文 */
+  --font-size-small: 24rpx;
+  /* 适用于提示文字、次要描述文字 */
   --font-size-small-a: 22rpx;
-  --font-size-small-s: 20rpx; /* 适用于提示文字、次要描述文字 */
+  --font-size-small-s: 20rpx;
+  /* 适用于提示文字、次要描述文字 */
 }

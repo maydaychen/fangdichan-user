@@ -4,10 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+   banner:["/image/banner.png","/image/banner.png","/image/banner.png"],
+   list: [1, 2]
   },
   //事件处理函数
   bindViewTap: function() {
