@@ -153,16 +153,108 @@
     <view class="list">
       <view class="item">
         <image src="/image/hand-out-bg.png" />
+        <view class="content">
+          <text class="title">挂牌须知</text>
+          <text class="sub-title">挂牌前注意事项</text>
+        </view>
       </view>
       <view class="item">
         <image src="/image/connect-link-bg.png" />
+        <view class="content">
+          <text class="title">连环单必看</text>
+          <text class="sub-title">换房潜在风险</text>
+        </view>
       </view>
       <view class="item">
         <image src="/image/vertification-property-bg.png" />
+        <view class="content">
+          <text class="title">产权核验</text>
+          <text class="sub-title">交易重要环节</text>
+        </view>
       </view>
       <view class="item">
         <image src="/image/transfer-bg.png" />
+        <view class="content">
+          <text class="title">交税过户</text>
+          <text class="sub-title">签约后流程介绍</text>
+        </view>
       </view>
+    </view>
+    <view>
+      <view class="article-item">
+        <view class="title-group">
+          <text class="title">房子能卖多少钱，究竟什么说了算？</text>
+          <text>2017-08-16</text>
+        </view>
+        <view class="view-group">
+          <view class="iconfont icon-eye"></view>
+          <text class="view-count">23500</text>
+          <text class="tag">北京房价</text>
+        </view>
+      </view>
+      <view class="article-item">
+        <view class="title-group">
+          <text class="title">房子能卖多少钱，究竟什么说了算？</text>
+          <text>2017-08-16</text>
+        </view>
+        <view class="view-group">
+          <view class="iconfont icon-eye"></view>
+          <text class="view-count">23500</text>
+          <text class="tag">北京房价</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="sale-house-notice-1">
+    <text class="title">提升卖房技能</text>
+    <text class="subtitle"> —— 明明白白卖房</text>
+    <view class="banner">
+      <image mode="aspectFill" class="banner-img" src="/image/banner.png" />
+      <view class="mask">
+        <text class="title">钥匙托管</text>
+        <text class="sub-title">将钥匙交付给房挑房门店，方便买家看房</text>
+      </view>
+    </view>
+    <view>
+      <view class="item">
+        <view class="left">
+          <image src="/image/offline-icon.png" />
+        </view>
+        <view class="right">
+          <text class="title">强大线下，保证买房效率</text>
+          <text>全国门店8000+超过10万+专业经纪人</text>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image src="/image/online-icon.png" />
+        </view>
+        <view class="right">
+          <text class="title">强大线下，保证买房效率</text>
+          <text>全国门店8000+超过10万+专业经纪人</text>
+        </view>
+      </view>
+      <view class="item">
+        <view class="left">
+          <image src="/image/profession-icon.png" />
+        </view>
+        <view class="right">
+          <text class="title">强大线下，保证买房效率</text>
+          <text>全国门店8000+超过10万+专业经纪人</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="button-bottom">
+    <view class="left">
+      <view class="iconfont icon-pen btn-icon"></view>
+      <text>自主卖房</text>
+    </view>
+    <view class="right">
+      <view class="iconfont icon-bag btn-icon"></view>
+      <text>找经纪人卖房</text>
     </view>
   </view>
 </view>
