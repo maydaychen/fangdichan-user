@@ -1,6 +1,6 @@
 <!--pages/entrust/house-property.wxml-->
 <view class="container house-property">
-  <view class="sale-group">
+  <view class="sale-group" bindtap="selectHouse">
     <text>想卖：</text>
     <text>{{ selectedHouse }}</text>
     <view class="icon-select iconfont"></view>

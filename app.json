@@ -18,6 +18,7 @@
     "pages/login/welcome/index",
     "pages/login/index",
     "pages/entrust/house-property/index",
+    "pages/entrust/select-house/index",
     "pages/entrust/index"
   ],
   "tabBar": {

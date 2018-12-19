@@ -1,29 +1,11 @@
-// pages/entrust/house-property.js
+// pages/entrust/select-house/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    selectedHouse: '广安 康馨家园',
-    bannerUrls: [
-      '/image/banner.png', 
-      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545145425&di=8eb6f68925e1d89fef8fc3da756d0115&imgtype=jpg&er=1&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2%2F587987cd448b4.jpg',
-      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545145567&di=31527d58174552cea27beed01afd3178&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zx123.cn%2FResources%2Fzx123cn%2Fuploadfile%2F2017%2F0309%2F5b8e146c875fda206e36762dca137874.jpg'
-    ],
-    currentType: ''
-  },
 
-  changeType (e) {
-    this.setData({
-      currentType: e.target.dataset.type,
-    })
-  },
-
-  selectHouse () {
-    wx.navigateTo({
-      url: '/pages/entrust/select-house/index'
-    })
   },
 
   /**

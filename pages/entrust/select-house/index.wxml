@@ -1,0 +1,25 @@
+<!--pages/entrust/select-house/index.wxml-->
+<view class="select-sales-houses">
+  <view class="search-group">
+    <view class="left">
+      <text class="iconfont icon-sousuo icon"></text>
+      <input class="search-input" type="text" placeholder="广益佳苑" />
+    </view>
+    <view class="iconfont icon-quxiao icon"></view>
+  </view>
+  <text class="near-title">附近小区</text>
+  <view class="list">
+    <view class="item">
+      <text class="name">中大诺卡</text>
+      <text class="number">11套</text>
+    </view>
+    <view class="item">
+      <text class="name">中大诺卡</text>
+      <text class="number">11套</text>
+    </view>
+    <view class="item">
+      <text class="name">中大诺卡</text>
+      <text class="number">11套</text>
+    </view>
+  </view>
+</view>
