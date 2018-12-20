@@ -1,0 +1,28 @@
+<!--pages/twohand/index.wxml-->
+<view>
+  <view class='top'>
+    <view class='search'><text class='iconfont icon-cx'></text><input type='text' placeholder='搜索'></input></view>
+    <text class='iconfont icon-add' bindtap='goto'></text>  
+  </view>
+  <block wx:for="{{list}}" wx:key="*this">
+    <view class='list' id="{{item.id}}" bindtap='detail'>
+      <view>
+        <image src='{{item.logo}}' class='left'></image>
+        <view class='left'>
+          <view class="title">{{item.name}}</view>
+          <view class='sale'>
+            <text>{{item.acreage}}㎡</text>
+            <text>南北通透</text>
+            <text>低楼层</text>
+            <text>临地铁</text>
+          </view>
+          <text style="margin-right:30rpx;font-size:26rpx;"> <text class='iconfont icon-time'></text>{{item.createtime}}</text> 
+          <text class='bians bian' catchtap='bian' wx:if="{{!item.bian}}" id="{{index}}">编辑</text>
+          <text class='bian down' catchtap='close' wx:if="{{item.bian}}" id="{{index}}">下架</text>
+          <text class='bian' catchtap='close' wx:if="{{item.bian}}" id="{{index}}">删除</text>
+        </view>
+      </view>
+      <image src='../../../image/xian.png'></image>
+    </view>
+  </block>
+</view>

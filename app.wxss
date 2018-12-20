@@ -40,3 +40,8 @@ page {
 .font-3232 {
   color: var(--color-certification-title);
 }
+
+.line {
+  height: 1rpx;
+  width: 100%;
+}

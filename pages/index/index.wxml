@@ -8,18 +8,18 @@
     </block>
   </swiper>
   <view style="display:flex;height:245rpx;background:white">
-    <view class="choice-item vertical-center">
+    <navigator class="choice-item vertical-center" url='/pages/twohand/index?id=2'>
       <image src="/image/main-ershou.png" class="choice-image" />
       <view>二手房</view>
-    </view>
-    <view class="choice-item vertical-center">
+    </navigator>
+    <navigator class="choice-item vertical-center" url='/pages/twohand/index?id=1'>
       <image src="/image/main-new.png" class="choice-image" />
       <view>新房</view>
-    </view>
-    <view class="choice-item vertical-center">
+    </navigator>
+    <navigator class="choice-item vertical-center" url='/pages/twohand/index?id=3'>
       <image src="/image/main-rent.png" class="choice-image" />
       <view>租房</view>
-    </view>
+    </navigator>
     <navigator class="choice-item vertical-center" url="manager/index">
       <image src="/image/main-manager.png" class="choice-image" />
       <view>找经纪人</view>

@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
@@ -49,6 +49,11 @@
 					"name": "经纪人",
 					"pathName": "pages/index/manager/detail",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "xiangqing",
+					"pathName": "pages/entrust/house-property/index"
 				}
 			]
 		}
