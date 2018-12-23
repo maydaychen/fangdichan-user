@@ -1,2 +1,181 @@
 <!--pages/twohand/detail/index.wxml-->
-<text>pages/twohand/detail/index.wxml</text>
+<swiper>
+  <swiper-item wx:for="{{banner}}" wx:key="*this">
+    <image src='{{item}}'></image>
+  </swiper-item>
+</swiper>
+<view class='container'>
+  <view class="title">新龙城带电梯正规两居室落地窗，随时签约</view>
+  <view class="title-info just-flex">
+    <view class="title-info-item first">
+      <view class="iconfont .icon-qiandai"></view>
+      <view class="subtitle">132万</view>
+    </view>
+    <view class="title-info-item second">
+      <view class="iconfont .icon-mianji"></view>
+      <view class="subtitle">128㎡</view>
+    </view>
+    <view class="title-info-item third">
+      <view class="iconfont .icon-fl-huxing"></view>
+      <view class="subtitle">3室2厅</view>
+    </view>
+  </view>
+  <image src="/image/xian.png" class="line" />
+  <view class='sale'>
+    <text>宁海里</text>
+    <text>128㎡</text>
+    <text>3室2厅</text>
+  </view>
+  <view class='message'>
+    <text class='iconfont icon-jibenxinxi'></text>
+    房源信息
+  </view>
+  <view class="just-flex">
+    <view class="just-flex half">
+      <view class="info-title">单价:</view>
+      <view class="info-detail">16500/平米</view>
+    </view>
+    <view class="just-flex half">
+      <view class="info-title">挂牌:</view>
+      <view class="info-detail">2018.01.01</view>
+    </view>
+  </view>
+  <view class="just-flex">
+    <view class="just-flex half">
+      <view class="info-title">朝向:</view>
+      <view class="info-detail">南</view>
+    </view>
+    <view class="just-flex half">
+      <view class="info-title">楼层:</view>
+      <view class="info-detail">中楼层/20层</view>
+    </view>
+  </view>
+  <view class="just-flex">
+    <view class="just-flex half">
+      <view class="info-title">楼型:</view>
+      <view class="info-detail">板楼</view>
+    </view>
+    <view class="just-flex half">
+      <view class="info-title">电梯:</view>
+      <view class="info-detail">有</view>
+    </view>
+  </view>
+  <view class="just-flex">
+    <view class="just-flex half">
+      <view class="info-title">装修:</view>
+      <view class="info-detail">简装</view>
+    </view>
+    <view class="just-flex half">
+      <view class="info-title">年代:</view>
+      <view class="info-detail">2017年</view>
+    </view>
+  </view>
+  <view class="just-flex">
+    <view class="just-flex half">
+      <view class="info-title">用途:</view>
+      <view class="info-detail">普通住宅</view>
+    </view>
+    <view class="just-flex half">
+      <view class="info-title">权属:</view>
+      <view class="info-detail">商品房</view>
+    </view>
+  </view>
+  <view class='message a'>
+    <text class='iconfont icon-sheshi'></text>
+    房屋设施
+  </view>
+  <view class="just-flex">
+    <view class="sheshi-item just-flex">
+      <view class="iconfont .icon-mianji"></view>
+      <view class="sheshi_text">洗衣机</view>
+    </view>
+    <view class="sheshi-item just-flex">
+      <view class="iconfont .icon-mianji"></view>
+      <view class="sheshi_text">洗衣机</view>
+    </view>
+    <view class="sheshi-item just-flex">
+      <view class="iconfont .icon-mianji"></view>
+      <view class="sheshi_text">洗衣机</view>
+    </view>
+    <view class="sheshi-item just-flex">
+      <view class="iconfont .icon-mianji"></view>
+      <view class="sheshi_text">洗衣机</view>
+    </view>
+    <view class="sheshi-item just-flex">
+      <view class="iconfont .icon-mianji"></view>
+      <view class="sheshi_text">洗衣机</view>
+    </view>
+  </view>
+  <view class="flex-between promise">
+    <view class="just-flex promise-left">
+      <view class="iconfont .icon-womenchengnuo"></view>
+      <view style="margin-left:20rpx">我们承诺真实房源假一赔百元！</view>
+    </view>
+    <view class="just-flex promise-right">
+      <view class="iconfont .icon-jubao" style="margin-right:20rpx"></view>
+      <view style="margin-right:20rpx">举报</view>
+    </view>
+  </view>
+  <view class='message b'>
+    <text class='iconfont icon-zuixinfangyuan'></text>
+    房源介绍
+  </view>
+  <view class="description">房屋情况:两室两厅户型方正，采光好南北通透。周边菜场超市商场医院等设施齐全，公交地铁也都齐全，出现特别方便。</view>
+  <image src="/image/xian.png" class="line" />
+  <view class="flex-between">
+    <view class="manager-item">
+      <view>经纪人带看反馈（20）</view>
+      <view>更新时间 2018.1.1</view>
+    </view>
+    <image src="/image/head.jpg" class="manager-logo" />
+  </view>
+  <view class="description">此房环境好中间楼层视野好,设施齐全精装两室，拎包出行入住，周边出行也很方便。</view>
+  <view class='message c'>
+    <text class='iconfont icon-user-group'></text>
+    房源动态
+  </view>
+  <view class="news-tytle just-flex">
+    <view>近7日带看（次）</view>
+    <view>累计带看（次）</view>
+    <view>关注房源（人）</view>
+  </view>
+  <view class="news-item just-flex">
+    <view>6</view>
+    <view>6</view>
+    <view>6</view>
+  </view>
+  <view class="flex-between">
+    <view class="record-title">全部带看记录</view>
+    <view class="record">最近带看<text class="iconfont icon-you"></text></view>
+  </view>
+</view>
+<view  class="container">
+  <view class="flex-between" style="margin-top:20rpx;">
+    <view class="detail_title">新龙城</view>
+    <view class="detail_hint">小区详情<text class="iconfont icon-you"></text></view>
+  </view>
+  <view class="flex-between viliage-content">
+    <view class="villiage_detail">
+      <view class="viliage_price">参考均价：<text >18000元/平</text></view>
+      <view class="viliage_info">建筑年代：2006年</view>
+      <view class="viliage_info">楼栋总数：41栋</view>
+      <view class="viliage_info">房屋总数：6000户</view>
+    </view>
+    <image src="/image/house.png" style="height:168rpx;width:228rpx"/>
+  </view>
+   <view class="flex-between" style="margin-top:20rpx;">
+    <view class="viliage_price">同小区成交</view>
+    <text class="iconfont icon-you"></text>
+  </view>
+  <view class="flex-between">
+    <view class="just-flex">
+      <view class="iconfont icon-Icon"></view>
+      <view style="margin-left:20rpx;">
+        <view>1室0厅 / 36.8m / 合租</view>
+        <view>2015-06-18签约</view>
+      </view>
+    </view>
+    <view>1000元/月</view>
+  </view>
+</view>
+

@@ -32,7 +32,6 @@ page {
   --color-light-blue: #e3edfb;
   --color-deep-blue: #1c87d8;
   --color-certification-title: #323232;
-  --color-border-color: #dcdcdc;
   --color-light-yellow: #f4b906;
   --color-button-background: #298ef8;
   --color-login-notice: #8a8a8a;

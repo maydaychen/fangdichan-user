@@ -71,19 +71,48 @@
   <view class="info-no-padding" style="margin-top:20rpx;">
     <view class="title">TA的成交房源</view>
     <block wx:for="{{commentlist}}">
-      <view>
-        <image src="/image/house.png" class="comment-logo" />
+      <view class="content">
+        <image src='/image/house.png' class='left'></image>
+        <view>
+          <view class='content_title'>宁海里一区</view>
+          <view class='subTitle'>3室2厅</view>
+          <view class='subTitle'>签约日期：2018.09.30</view>
+          <view class='bottom flex-between'>
+            <text>153万</text>
+            <text>15000/㎡</text>
+          </view>
+        </view>
       </view>
+      <image class="border" src='/image/xian.png' style="padding-top:20rpx;"></image>
     </block>
     <button class="button horizon-center">查看全部成交</button>
   </view>
   <view class="info-no-padding" style="margin-top:20rpx;">
     <view class="title">TA的在售房源</view>
     <block wx:for="{{commentlist}}">
-      <view>
-        <image src="/image/house.png" class="comment-logo" />
+      <view class="content">
+        <image src='/image/house.png' class='left'></image>
+        <view>
+          <view class='content_title'>宁海里一区</view>
+          <view class='subTitle'>3室2厅</view>
+          <view class='subTitle'>签约日期：2018.09.30</view>
+          <view class='bottom flex-between'>
+            <text>153万</text>
+            <text>15000/㎡</text>
+          </view>
+        </view>
       </view>
+      <image class="border" src='/image/xian.png' style="padding-top:20rpx;"></image>
     </block>
     <button class="button horizon-center">查看全部在售房源</button>
+  </view>
+  <view class="info-no-padding" style="margin-top:20rpx;">
+    <view class="title">服务动态</view>
+    <block wx:for="{{commentlist}}">
+      <view class="content">
+        <view class="service_item">测试</view>
+      </view>
+      <image class="border" src='/image/xian.png' style="padding-top:20rpx;"></image>
+    </block>
   </view>
 </view>

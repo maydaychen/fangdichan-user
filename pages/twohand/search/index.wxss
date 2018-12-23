@@ -1,0 +1,43 @@
+/* pages/twohand/search/index.wxss */
+input {
+  display: inline-block;
+  width: 500rpx;
+  vertical-align: middle;
+  margin: auto 0;
+  margin-left: 20rpx;
+}
+
+.search {
+  width: 620rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  margin: 20rpx auto;
+  background: var(--color-white);
+}
+
+.search text {
+  font-size: 35rpx;
+  vertical-align: middle;
+  color: #777;
+  font-weight: bold;
+}
+
+.input-placeholder {
+  color: var(--color-login-notice);
+  font-size: var(--font-size-medium-x);
+}
+
+.title {
+  margin: 20rpx 40rpx;
+  color: var(--color-sub-title);
+  font-size: var(--font-size-medium-x);
+}
+
+.list-item {
+  margin: 0 20rpx;
+  height: 80rpx;
+  background: var(--color-white);
+  border: 1px solid rgba(168, 168, 168, 0.15);
+  line-height: 80rpx;
+  padding-left: 20rpx;
+}

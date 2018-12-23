@@ -1,4 +1,4 @@
-// pages/me/collection/index.js
+// pages/twohand/search/index.js
 Page({
 
   /**
@@ -6,14 +6,8 @@ Page({
    */
   data: {
     type: 0,
-    list: [1],
     hide: true,
-  },
-  show: function (e) {
-    var id = e.currentTarget.id;
-    this.setData({
-      type: id
-    })
+    search_list:[1]
   },
   change: function (e) {
     if (e.detail.value) {
@@ -42,6 +36,22 @@ Page({
     this.setData({
       type: options.id
     })
+    var title = "";
+    switch (options.id) {
+      case "1":
+        title = "二手房搜索"
+        break;
+      case "2":
+        title = "新房搜索"
+        break;
+      case "3":
+        title = "租房搜索"
+        break;
+    }
+    wx.setNavigationBarTitle({
+      title: title,
+    })
+
   },
 
   /**

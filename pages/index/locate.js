@@ -1,46 +1,28 @@
-// pages/me/collection/index.js
+// pages/index/locate.js
+let City = require('../../utils/allcity.js');
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    type: 0,
-    list: [1],
-    hide: true,
-  },
-  show: function (e) {
-    var id = e.currentTarget.id;
-    this.setData({
-      type: id
-    })
-  },
-  change: function (e) {
-    if (e.detail.value) {
-      this.setData({
-        hide: false
-      })
-    } else {
-      this.setData({
-        hide: true
-      })
+    city: [],
+    config: {
+      horizontal: true, // 第一个选项是否横排显示（一般第一个数据选项为 热门城市，常用城市之类 ，开启看需求）
+      animation: false, // 过渡动画是否开启
+      search: false, // 是否开启搜索
+      searchHeight: 45, // 搜索条高度
+      suctionTop: true // 是否开启标题吸顶
     }
-    this.setData({
-      key: e.detail.value
-    })
   },
-  cancel: function () {
-    this.setData({
-      key: "",
-      hide: true
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.setData({
-      type: options.id
+      city: City
     })
   },
 
@@ -91,5 +73,8 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  bindtap(e) {
+    console.log(e.detail)
+  },
 })

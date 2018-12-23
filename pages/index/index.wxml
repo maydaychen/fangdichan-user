@@ -8,11 +8,12 @@
     </block>
   </swiper>
   <view style="display:flex;height:245rpx;background:white">
-    <navigator class="choice-item vertical-center" url='/pages/twohand/index?id=2'>
+    <navigator class="choice-item vertical-center" url='/pages/twohand/index?id=1'>
+      <!-- <navigator class="choice-item vertical-center" url='locate'> -->
       <image src="/image/main-ershou.png" class="choice-image" />
       <view>二手房</view>
     </navigator>
-    <navigator class="choice-item vertical-center" url='/pages/twohand/index?id=1'>
+    <navigator class="choice-item vertical-center" url='/pages/twohand/index?id=2'>
       <image src="/image/main-new.png" class="choice-image" />
       <view>新房</view>
     </navigator>
@@ -24,10 +25,10 @@
       <image src="/image/main-manager.png" class="choice-image" />
       <view>找经纪人</view>
     </navigator>
-    <view class="choice-item vertical-center">
+    <navigator class="choice-item vertical-center" url="/pages/entrust/index">
       <image src="/image/main-longterm.png" class="choice-image" />
       <view>长期托管</view>
-    </view>
+    </navigator>
   </view>
   <view class="down-content">
     <view class="pic">

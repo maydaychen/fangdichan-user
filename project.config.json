@@ -51,9 +51,10 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "xiangqing",
-					"pathName": "pages/entrust/house-property/index"
+					"id": 2,
+					"name": "搜索",
+					"pathName": "pages/twohand/search/index",
+					"query": ""
 				}
 			]
 		}

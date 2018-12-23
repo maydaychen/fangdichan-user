@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    viliage_deal: [1, 2]
   },
 
   /**

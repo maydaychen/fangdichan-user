@@ -1,4 +1,4 @@
-<!--pages/rentHouse/detail/index.wxml-->
+<!-- pages/rentHouse/detail/index.wxml -->
 <swiper>
   <swiper-item wx:for="{{banner}}" wx:key="*this">
     <image src='{{item}}'></image>
@@ -32,12 +32,12 @@
   </view>
   <view class="just-flex">
     <view class="just-flex half">
-      <view class="info-title">单价:</view>
-      <view class="info-detail">16500/平米</view>
+      <view class="info-title">方式:</view>
+      <view class="info-detail">整租</view>
     </view>
     <view class="just-flex half">
-      <view class="info-title">挂牌:</view>
-      <view class="info-detail">2018.01.01</view>
+      <view class="info-title">装修:</view>
+      <view class="info-detail">精装</view>
     </view>
   </view>
   <view class="just-flex">
@@ -62,18 +62,18 @@
   </view>
   <view class="just-flex">
     <view class="just-flex half">
-      <view class="info-title">装修:</view>
-      <view class="info-detail">简装</view>
+      <view class="info-title">支付:</view>
+      <view class="info-detail">押一付三</view>
     </view>
     <view class="just-flex half">
-      <view class="info-title">年代:</view>
-      <view class="info-detail">2017年</view>
+      <view class="info-title">地铁:</view>
+      <view class="info-detail">有</view>
     </view>
   </view>
   <view class="just-flex">
     <view class="just-flex half">
-      <view class="info-title">用途:</view>
-      <view class="info-detail">普通住宅</view>
+      <view class="info-title">小区:</view>
+      <view class="info-detail">新龙城</view>
     </view>
     <view class="just-flex half">
       <view class="info-title">权属:</view>
@@ -130,4 +130,40 @@
     <image src="/image/head.jpg" class="manager-logo" />
   </view>
   <view class="description">此房环境好中间楼层视野好,设施齐全精装两室，拎包出行入住，周边出行也很方便。</view>
+  <view class='message c'>
+    <text class='iconfont icon-user-group'></text>
+    房源动态
+  </view>
+  <view class="news-tytle just-flex">
+    <view>近7日带看（次）</view>
+    <view>累计带看（次）</view>
+    <view>关注房源（人）</view>
+  </view>
+  <view class="news-item just-flex">
+    <view>6</view>
+    <view>6</view>
+    <view>6</view>
+  </view>
+  <view class="flex-between">
+    <view class="record-title">全部带看记录</view>
+    <view class="record">最近带看<text class="iconfont icon-you"></text></view>
+  </view>
+</view>
+<view  class="container" style="margin-top:20rpx;">
+   <view class="flex-between">
+    <view class="viliage_price" style="margin-top:30rpx;">同小区成交</view>
+    <text class="iconfont icon-you" style="margin-top:30rpx;"></text>
+  </view>
+  <block wx:for="{{viliage_deal}}">
+    <view class="flex-between" style="margin-bottom:20rpx">
+      <view class="just-flex">
+        <view class="iconfont icon-Icon"></view>
+        <view style="margin-left:20rpx;">
+          <view class="viliage-agree-title">1室0厅 / 36.8m / 合租</view>
+          <view class="viliage-agree-content">2015-06-18签约</view>
+        </view>
+      </view>
+      <view class="price">1000元/月</view>
+    </view>
+  </block>
 </view>

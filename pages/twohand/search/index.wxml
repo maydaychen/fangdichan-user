@@ -1,0 +1,11 @@
+<!-- pages/twohand/search/index.wxml -->
+<view class="container">
+  <view class='search flex-between'>
+    <input placeholder-class="input-placeholder " bindinput="change" type="text" value="{{key}}" placeholder="请输入小区或商圈名称"></input>
+    <view class="iconfont icon-quxiao vertical-center" hidden="{{hide}}" bind:tap="cancel" style="margin-right:20rpx;color:#A8A8A8"></view>
+  </view>
+  <view class="title">历史搜索</view>
+  <block wx:for="{{search_list}}">
+    <view class="list-item">万达广场</view>
+  </block>
+</view>

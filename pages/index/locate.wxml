@@ -1,0 +1,4 @@
+<!--pages/index/locate.wxml-->
+<view class='wrapper'>
+    <list-html data="{{city}}" binddetail="bindtap" my-city config="{{config}}"></list-html>
+</view>

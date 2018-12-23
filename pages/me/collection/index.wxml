@@ -18,7 +18,7 @@
     <text class="{{type==3?'active':''}}" bindtap='show' id="3">小区 <text class='iconfont icon-xiasanjiao'></text> </text>
   </view>
   <block wx:if="{{list.length}}">
-    <house-list list="{{list}}" type="0" bind:detail="show"></house-list>
+    <house-list list="{{list}}" type="1" bind:detail="show"></house-list>
   </block>
   <block wx:elif="{{type==0}}">
     <template is='abnor' data="{{imgSrc:'/image/no-ershou.png',text: '您还没有收藏二手房哦！'}}" />

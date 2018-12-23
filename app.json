@@ -1,11 +1,13 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/index/locate",
     "pages/index/manager/index",
     "pages/index/manager/detail",
     "pages/newHouse/detail/index",
     "pages/twohand/index",
     "pages/twohand/detail/index",
+    "pages/twohand/search/index",
     "pages/rentHouse/detail/index",
     "pages/message/index",
     "pages/me/index",

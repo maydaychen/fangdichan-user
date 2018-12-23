@@ -55,6 +55,11 @@
   margin-top: 40rpx;
 }
 
+.c {
+  margin-top: 40rpx;
+}
+
+
 .message>text {
   width: 45rpx;
   height: 45rpx;
@@ -73,6 +78,12 @@
 
 .b>text {
   background: #F9C97A;
+  font-size: 39rpx;
+  padding: 7rpx;
+}
+
+.c>text {
+  background: #a6d690;
   font-size: 39rpx;
   padding: 7rpx;
 }
@@ -203,4 +214,65 @@
   height: 80rpx;
   width: 80rpx;
   border-radius: 50%;
+}
+
+.news-tytle view {
+  width: 33.33%;
+  text-align: center;
+  color: var(--color-sub-title);
+  font-size: var(--font-size-medium-x);
+}
+
+.news-item view {
+  width: 33.33%;
+  padding: 30rpx 0;
+  text-align: center;
+  color: var(--color-certification-title);
+  font-size: var(--font-size-large-x);
+  border-bottom: 1rpx solid var(--color-border-color);
+}
+
+.record-title {
+  margin: 40rpx;
+  color: var(--color-certification-title);
+  font-size: var(--font-size-large);
+}
+
+.record {
+  margin: 40rpx;
+  margin-right: 0;
+  color: var(--color-sub-title);
+  font-size: var(--font-size-small);
+}
+
+.detail_title {
+  font-size: var(--font-size-large-a);
+  color: var(--color-certification-title);
+  font-weight: 500;
+  margin: 25rpx;
+  margin-left: 0;
+}
+
+.detail_hint {
+  color: var(--color-sub-title);
+  font-size: var(--font-size-medium-x);
+}
+
+.viliage_price {
+  font-size: var(--font-size-large-y);
+  color: var(--color-certification-title);
+}
+
+.viliage-agree-title {
+  font-size: var(--font-size-large);
+  color: var(--color-certification-title);
+}
+.viliage-agree-content{
+  font-size: var(--font-size-medium-x);
+  color: var(--color-sub-title);
+  margin-bottom: 10rpx;
+}
+.price{
+  font-size: var(--font-size-large);
+  color: #EF0808;
 }
