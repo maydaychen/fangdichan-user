@@ -1,0 +1,59 @@
+<!--pages/entrust/release-house/index.wxml-->
+<view class="release-house" hidden="{{showNameInput}}">
+  <view class="first-area">
+    <view class="select-group">
+      <text class="left">小区名称</text>
+      <view class="right" bindtap="selectHouseEstate">
+        <text>康馨家园</text>
+        <text class="iconfont .icon-you select-icon"></text>
+      </view>
+    </view>
+    <view class="select-group">
+      <text class="left">房屋地址</text>
+      <view class="right">
+        <text></text>
+        <text class="iconfont .icon-you select-icon"></text>
+      </view>
+    </view>
+    <view class="select-group">
+      <text class="left">期望售价</text>
+      <input class="right" placeholder="您期望的房屋售价"/>
+    </view>
+  </view>
+
+  <view class="second-area">
+    <view class="select-group">
+      <text class="left">称呼</text>
+      <view class="right" bindtap="showNameInput">
+        <text>如何称呼</text>
+        <text class="iconfont .icon-you select-icon"></text>
+      </view>
+    </view>
+    <view class="select-group">
+      <text class="left">联系方式</text>
+      <input class="right" placeholder="130***2013"/>
+    </view>
+  </view>
+
+  <button class="sure-btn">确定发布</button>
+
+  <view class="mask">
+    <view class="pop">
+      <view>住宅</view>
+      <view>公寓</view>
+      <view>别墅</view>
+      <view>联排</view>
+      <view>商铺</view>
+      <view>住宅</view>
+      <view>公寓</view>
+      <view>别墅</view>
+      <view>联排</view>
+      <view>商铺</view>
+    </view>
+  </view>
+</view>
+
+<view hidden="{{!showNameInput}}">
+  <input class="name-input" placeholder="输入您的姓名" />
+  <button class="save-btn" bindtap="hideNameInput">保存</button>
+</view>

@@ -248,7 +248,7 @@
   </view>
 
   <view class="button-bottom">
-    <view class="left">
+    <view class="left" bindtap="saleHouse">
       <view class="iconfont icon-pen btn-icon"></view>
       <text>自主卖房</text>
     </view>
