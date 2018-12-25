@@ -52,8 +52,8 @@
 				},
 				{
 					"id": 2,
-					"name": "搜索",
-					"pathName": "pages/twohand/search/index",
+					"name": "详情",
+					"pathName": "pages/rentHouse/detail/index",
 					"query": ""
 				}
 			]

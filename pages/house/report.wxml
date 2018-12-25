@@ -1,0 +1,12 @@
+<!-- pages/house/report.wxml -->
+<view class="container">
+  <view class="title">请告诉我们你想举报该用户的理由</view>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio flex-between" wx:for="{{items}}">
+      <view class="radio-item">{{item.value}}</view>
+      <radio value="{{item.name}}" checked="{{item.checked}}" />
+    </label>
+  </radio-group>
+  <upload-img bind:imgs='imgsOnChange' maxCount='2' cover-class='imgs__item--cover'></upload-img>
+  <button bindtap="submit">提交</button>
+</view>

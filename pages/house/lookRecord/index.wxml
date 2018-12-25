@@ -1,0 +1,11 @@
+<!--pages/house/lookRecord/index.wxml-->
+    <view class="news-tytle just-flex">
+      <view>近7日带看（次）</view>
+      <view>累计带看（次）</view>
+      <view>关注房源（人）</view>
+    </view>
+    <view class="news-item just-flex">
+      <view>6</view>
+      <view>6</view>
+      <view>6</view>
+    </view>

@@ -1,0 +1,16 @@
+/* pages/house/lookRecord/index.wxss */
+.news-tytle view {
+  width: 33.33%;
+  text-align: center;
+  color: var(--color-sub-title);
+  font-size: var(--font-size-medium-x);
+}
+
+.news-item view {
+  width: 33.33%;
+  padding: 30rpx 0;
+  text-align: center;
+  color: var(--color-certification-title);
+  font-size: var(--font-size-large-x);
+  border-bottom: 1rpx solid var(--color-border-color);
+}

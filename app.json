@@ -8,6 +8,8 @@
     "pages/twohand/index",
     "pages/twohand/detail/index",
     "pages/twohand/search/index",
+    "pages/house/report",
+    "pages/house/lookRecord/index",
     "pages/rentHouse/detail/index",
     "pages/message/index",
     "pages/me/index",

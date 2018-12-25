@@ -1,12 +1,11 @@
-// pages/rentHouse/detail/index.js
+// pages/house/lookRecord/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    viliage_deal: [1, 2],
-    banner: ["/image/banner.png", "/image/banner.png", "/image/banner.png"],
+
   },
 
   /**
