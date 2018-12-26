@@ -1,13 +1,26 @@
-// pages/house/lookRecord/index.js
+// pages/house/dealRecord/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    record: [1, 2]
+    list: [{
+      "show": false,
+      "": ""
+    }, {
+      "show": false,
+      "": ""
+    }]
   },
-
+  show: function (e) {
+    var id = e.currentTarget.id;
+    var list = this.data.list;
+    list[id].show = !list[id].show;
+    this.setData({
+      list: list
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

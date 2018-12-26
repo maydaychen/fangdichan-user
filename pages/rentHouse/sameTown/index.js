@@ -1,11 +1,11 @@
-// pages/house/lookRecord/index.js
+// pages/rentHouse/sameTown/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    record: [1, 2]
+    list: [1],
   },
 
   /**

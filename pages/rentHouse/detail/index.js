@@ -8,7 +8,11 @@ Page({
     viliage_deal: [1, 2],
     banner: ["/image/banner.png", "/image/banner.png", "/image/banner.png"],
   },
-
+  sameTown: function () {
+     wx.navigateTo({
+       url: '../sameTown/index'
+     })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

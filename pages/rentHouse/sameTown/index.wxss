@@ -1,0 +1,26 @@
+/* pages/rentHouse/sameTown/index.wxss */
+/* pages/me/collection/index.wxss */
+@import '/static/iconfont/iconfont.wxss';
+@import '/template/template.wxss';
+
+page {
+  background: var(--color-white);
+}
+
+.choice {
+  display: flex;
+  width: 100%;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #EAEAEA;
+}
+
+.choice text {
+  width: 25%;
+  text-align: center;
+  color: var(--color-sub-title);
+  font-size: var(--font-size-large);
+}
+
+.active {
+  color: var(--color-deep-blue) !important;
+}

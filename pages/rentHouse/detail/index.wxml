@@ -136,9 +136,9 @@
       房源动态
     </view>
     <view class="news-tytle just-flex">
-      <view>近7日带看（次）</view>
-      <view>累计带看（次）</view>
-      <view>关注房源（人）</view>
+      <view>近7日带看(次)</view>
+      <view>累计带看(次)</view>
+      <view>关注房源(人)</view>
     </view>
     <view class="news-item just-flex">
       <view>6</view>
@@ -154,10 +154,10 @@
     </view>
   </view>
   <view class="container" style="margin-top:20rpx">
-    <view class="flex-between">
+    <navigator class="flex-between" url="/pages/house/dealRecord/index">
       <view class="viliage_price" style="margin:20rpx 0;color:#323232;font-size:34rpx">同小区成交</view>
       <text class="iconfont icon-you" style="margin-top:30rpx;"></text>
-    </view>
+    </navigator>
     <block wx:for="{{viliage_deal}}">
       <view class="flex-between" style="margin-bottom:20rpx">
         <view class="just-flex">
@@ -189,16 +189,16 @@
         </block>
       </scroll-view>
     </view>
-    <button class="button horizon-center">同小区在租房源28套</button>
+    <button class="button horizon-center" bindtap="sameTown">同小区在租房源28套</button>
   </view>
   <view class="container" style="margin-top:20rpx;padding-top:30rpx">
     <view class="viliage_price" style="color:#323232;font-size:34rpx">周边推荐</view>
     <view class="flex-between">
       <view class="record-title" style="margin:20rpx 0 20rpx">推荐房源</view>
-      <view class="more">
+      <navigator class="more" url="../moreHouse/index">
         更多房源
         <text class="iconfont icon-you"></text>
-      </view>
+      </navigator>
     </view>
     <view class="menu">
       <scroll-view scroll-x="true" class="top-nav">

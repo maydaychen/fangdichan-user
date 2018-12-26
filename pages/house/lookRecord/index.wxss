@@ -1,16 +1,43 @@
 /* pages/house/lookRecord/index.wxss */
+.background-white {
+  background: var(--color-white);
+}
+
 .news-tytle view {
   width: 33.33%;
   text-align: center;
   color: var(--color-sub-title);
   font-size: var(--font-size-medium-x);
+  margin-top: 30rpx;
 }
 
 .news-item view {
   width: 33.33%;
   padding: 30rpx 0;
   text-align: center;
+  color: var(--color-sub-theme);
+  font-size: var(--font-size-large-b);
+  border-bottom: 1rpx solid var(--color-border-color);
+}
+
+.title {
+  margin-top: 20rpx;
+}
+
+.title view {
+  width: 33.33%;
+  text-align: center;
+  color: var(--color-sub-title);
+  font-size: var(--font-size-medium-x);
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid var(--color-border-color);
+}
+
+.list-item view {
+  width: 33.33%;
+  text-align: center;
   color: var(--color-certification-title);
-  font-size: var(--font-size-large-x);
+  font-size: var(--font-size-large);
+  padding: 30rpx 0;
   border-bottom: 1rpx solid var(--color-border-color);
 }

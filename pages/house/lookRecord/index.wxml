@@ -1,11 +1,25 @@
-<!--pages/house/lookRecord/index.wxml-->
-    <view class="news-tytle just-flex">
-      <view>近7日带看（次）</view>
-      <view>累计带看（次）</view>
-      <view>关注房源（人）</view>
+<!-- pages/house/lookRecord/index.wxml -->
+<view class="container">
+  <view class="news-tytle just-flex background-white">
+    <view>近7日带看(次)</view>
+    <view>累计带看(次)</view>
+    <view>关注房源(人)</view>
+  </view>
+  <view class="news-item just-flex background-white">
+    <view>6</view>
+    <view>6</view>
+    <view>6</view>
+  </view>
+  <view class="just-flex title background-white">
+    <view>最近带看</view>
+    <view>带看经济人</view>
+    <view>联系经纪人</view>
+  </view>
+  <block wx:for="{{record}}">
+    <view class="list-item just-flex background-white">
+      <view>2018.12.25</view>
+      <view>张三</view>
+      <view>联系经纪人</view>
     </view>
-    <view class="news-item just-flex">
-      <view>6</view>
-      <view>6</view>
-      <view>6</view>
-    </view>
+  </block>
+</view>

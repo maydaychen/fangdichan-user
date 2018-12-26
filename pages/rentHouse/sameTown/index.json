@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "同小区出租房源",
+  "usingComponents": {
+    "house-list": "/components/house-list/house-list"
+  }
+}

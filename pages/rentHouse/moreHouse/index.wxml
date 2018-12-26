@@ -1,0 +1,27 @@
+<!--pages/rentHouse/moreHouse/index.wxml-->
+<!--pages/twohand/index.wxml-->
+<import src='/template/ws-template.wxml' />
+<view class="container">
+  <view class='top'>
+    <view class='search'>
+      <view style="display:flex">
+        <text class='iconfont icon-sousuo vertical-center'></text>
+        <navigator class="input-placeholder" bindinput="change" url="search/index?id={{type}}">请输入小区或商圈名称</navigator>
+      </view>
+      <view class="iconfont icon-quxiao vertical-center" hidden="{{hide}}" bind:tap="cancel" style="margin-right:20rpx;color:#A8A8A8"></view>
+    </view>
+    <view class="edit vertical-center iconfont icon-dingwei1"></view>
+  </view>
+  <view class="choice">
+    <text class="{{type==0?'active':''}}" bindtap='show' id="0">区域 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{type==1?'active':''}}" bindtap='show' id="1">整租 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{type==2?'active':''}}" bindtap='show' id="2">租金 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{type==3?'active':''}}" bindtap='show' id="3">更多 <text class='iconfont icon-xiasanjiao'></text> </text>
+  </view>
+  <block wx:if="{{list.length}}">
+    <house-list list="{{list}}" type="1" bind:detail="detail"></house-list>
+  </block>
+  <block wx:elif="{{type==1}}">
+    <template is='abnor' data="{{imgSrc:'/image/no-ershou.png',text: '您还没有收藏二手房哦！'}}" />
+  </block>
+ </view>

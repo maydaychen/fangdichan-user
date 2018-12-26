@@ -1,0 +1,42 @@
+<!-- pages/house/dealRecord/index.wxml -->
+<view class="container">
+  <block wx:for="{{list}}">
+    <view class="content">
+      <view class="flex-between" bindtap="show" id="{{index}}">
+        <view>
+          <view class="item-area">128m</view>
+          <view class="subtitle item-time">签约时间：2018-10-10</view>
+        </view>
+        <view style="height:100%;">
+          <view class="item-price">2200元/月</view>
+          <view class="subtitle item-type">整租</view>
+        </view>
+      </view>
+      <view wx:if="{{item.show}}">
+        <image class="border" src='/image/xian.png'></image>
+        <view class="just-flex">
+          <view class="half">
+            <view>
+              户型：
+              <text>28m</text>
+            </view>
+            <view>
+              楼层：
+              <text>18层</text>
+            </view>
+          </view>
+          <view class="half">
+            <view>
+              朝向：
+              <text>南北</text>
+            </view>
+            <view>
+              装修：
+              <text>精装</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

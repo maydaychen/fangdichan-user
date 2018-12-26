@@ -1,0 +1,17 @@
+<!--pages/rentHouse/sameTown/index.wxml-->
+<import src='/template/ws-template.wxml' />
+<view class="container">
+<view class="choice">
+    <text class="{{type==0?'active':''}}" bindtap='show' id="0">区域 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{type==1?'active':''}}" bindtap='show' id="1">售价 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{type==2?'active':''}}" bindtap='show' id="2">房型 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{type==3?'active':''}}" bindtap='show' id="3">更多 <text class='iconfont icon-xiasanjiao'></text> </text>
+  </view>
+  <block wx:if="{{list.length}}">
+    <house-list list="{{list}}" type="1" bind:detail="detail"></house-list>
+  </block>
+  <block wx:elif="{{type==1}}">
+    <template is='abnor' data="{{imgSrc:'/image/no-ershou.png',text: '您还没有收藏二手房哦！'}}" />
+  </block>
+
+  </view>
