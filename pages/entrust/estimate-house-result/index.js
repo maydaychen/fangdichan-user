@@ -1,4 +1,4 @@
-// pages/me/entrust/index.js
+// pages/entrust/estimate-house-result/index.js
 Page({
 
   /**
@@ -6,18 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  toRent () {
-    wx.navigateTo({
-      url: '/pages/entrust/house-property/index'
-    })
-  },
-
-  toDeal () {
-    wx.navigateTo({
-      url: '/pages/entrust/house-property/index'
-    })
   },
 
   /**

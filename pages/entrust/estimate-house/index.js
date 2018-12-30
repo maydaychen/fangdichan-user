@@ -8,6 +8,18 @@ Page({
 
   },
 
+  fillInformation () {
+    wx.navigateTo({
+      url: '/pages/entrust/estimate-info-form/index'
+    })
+  },
+
+  submit () {
+    wx.navigateTo({
+      url: '/pages/entrust/estimate-house-result/index'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

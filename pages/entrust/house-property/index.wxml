@@ -23,7 +23,7 @@
       <image class="icon" src="/image/newer-guide-icon.png" />
       <text>新手上路</text>
     </view>
-    <view class="item">
+    <view class="item" bindtap="toEstimate">
       <image class="icon" src="/image/price-icon.png" />
       <text>房屋估值</text>
     </view>

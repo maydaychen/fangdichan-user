@@ -30,9 +30,11 @@
     "pages/login/index",
     "pages/entrust/house-property/index",
     "pages/entrust/select-house/index",
-    "pages/entrust/estimate-house/index",
     "pages/entrust/release-house/index",
-    "pages/entrust/index"
+    "pages/entrust/index",
+    "pages/entrust/estimate-house/index",
+    "pages/entrust/estimate-info-form/index",
+    "pages/entrust/estimate-house-result/index"
   ],
   "tabBar": {
     "color": "#666666",

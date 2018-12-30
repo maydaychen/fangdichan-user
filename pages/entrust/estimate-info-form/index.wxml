@@ -1,0 +1,61 @@
+<!--pages/entrust/estimate-info-form/index.wxml-->
+<view class="input-info">
+  <view class="part">
+    <view class="select-group">
+      <text class="left">小区名称</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+    <view class="select-group">
+      <text class="left">房屋户型</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+  </view>
+  <view class="part">
+    <view class="select-group">
+      <text class="left">单元</text>
+      <text>真实价格 万元</text>
+    </view>
+    <view class="select-group">
+      <text class="left">产权面积</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+    <view class="select-group">
+      <text class="left">房屋类型</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+    <view class="select-group">
+      <text class="left">唯一住房</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+  </view>
+  <view class="part">
+    <view class="select-group">
+      <text class="left">朝向</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+    <view class="select-group">
+      <text class="left">装修</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+    <view class="select-group">
+      <text class="left">电梯</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+    <view class="select-group">
+      <text class="left">楼层</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+  </view>
+  <view class="part">
+    <view class="select-group">
+      <text class="left">产权类型</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+    <view class="select-group">
+      <text class="left">房屋年限</text>
+      <text class="iconfont icon-you select-icon"></text>
+    </view>
+  </view>
+
+  <button class="estimate-btn" bindtap="submit">开始估价</button>
+</view>

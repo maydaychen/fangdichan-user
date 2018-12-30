@@ -97,24 +97,3 @@
   text-align: center;
   margin-top: 41rpx;
 }
-
-.input-info {
-  padding-left: 13rpx;
-  padding-right: 13rpx;
-  box-sizing: border-box;
-}
-
-.part {
-  background-color: var(--color-white);
-  margin-bottom: 10rpx;
-}
-
-.part .select-group .left {
-  font-size: var(--font-size-medium-x);
-  color: var(--color-certification-title);
-}
-
-.input-info .estimate-btn {
-  width: 100%;
-  margin-top: 50rpx;
-}

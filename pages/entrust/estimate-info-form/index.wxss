@@ -1,0 +1,66 @@
+/* pages/entrust/estimate-info-form/index.wxss */
+.select-group {
+  width: 100%;
+  padding: 33rpx 30rpx 33rpx 22rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid var(--color-border-color);
+  font-size: var(--font-size-large);
+}
+
+.select-group .select-icon {
+  margin-left: 20rpx;
+}
+
+.select-group .left {
+  color: var(--color-sub-title);
+  font-size: var(--font-size-large);
+  display: flex;
+  align-items: center;
+}
+
+.select-group .right {
+  color: var(--color-sub-title);
+}
+
+.select-group:last-child {
+  border-bottom: none;
+}
+
+.select-group .icon {
+  color: var(--color-unactive-color);
+  font-size: 44rpx;
+  margin-right: 24rpx;
+}
+
+.input-info {
+  padding-left: 13rpx;
+  padding-right: 13rpx;
+  box-sizing: border-box;
+}
+
+.part {
+  background-color: var(--color-white);
+  margin-bottom: 10rpx;
+}
+
+.part .select-group .left {
+  font-size: var(--font-size-medium-x);
+  color: var(--color-certification-title);
+}
+
+.input-info .estimate-btn {
+  width: 100%;
+  margin-top: 50rpx;
+}
+
+.estimate-btn {
+  width: 600rpx;
+  height: 94rpx;
+  margin: 28rpx auto;
+  background-color: var(--color-button-background);
+  font-size: var(--font-size-large-x);
+  color: var(--color-background);
+}

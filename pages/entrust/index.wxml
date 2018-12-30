@@ -10,8 +10,8 @@
   <view class="abnor__text text-center">暂无房源</view>
   <view class="abnor__sub_text text-center">您还没有在房挑房委托房源哦！</view>
   <view class="btn-group">
-    <button class="choice">去租赁</button>
-    <button class="choice">去买卖</button>
+    <button class="choice" bindtap="toRent">去租赁</button>
+    <button class="choice" bindtap="toDeal">去买卖</button>
   </view>
   <view class="title-group">
     <view class="line"></view>
