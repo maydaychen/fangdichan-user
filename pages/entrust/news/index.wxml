@@ -1,0 +1,48 @@
+<!--pages/entrust/news/index.wxml-->
+<view class="advertisement" style="background-image: url('/image/banner.png')">
+  <view class="mask">
+    <view class="bottom">
+      <text>2017-11-25</text>
+      <text class="question">买毛坯划不划算,毛坯房适合什么样人群？</text>
+    </view>
+  </view>
+</view>
+
+<view class="content">
+  毛坯房适合人群广泛，一是经济能力有限、工作不太繁忙、
+  请假方便的工薪阶层；二是经济实力雄厚，但追求奢华及
+  时尚、个性装修的精英们。
+</view>
+
+<view class="item">
+  <image class="left" src="/image/banner.png"/>
+  <view class="right">
+    <text class="title">宁海里两居室精装拎包入住...宁海里两居室精装拎包入住...</text>
+    <text class="address">3室2厅 • 102m • 南北 • 宁海里二期</text>
+    <view class="tags">
+      <text>住宅</text>
+      <text>随时看房</text>
+      <text>车位充足</text>
+    </view>
+    <view class="price">
+      <text class="total">28000元/平</text>
+      <text class="average">建面70～150m</text>  
+    </view>
+  </view>
+</view>
+<view class="item">
+  <image class="left" src="/image/banner.png"/>
+  <view class="right">
+    <text class="title">宁海里两居室精装拎包入住...宁海里两居室精装拎包入住...</text>
+    <text class="address">3室2厅 • 102m • 南北 • 宁海里二期</text>
+    <view class="tags">
+      <text>住宅</text>
+      <text>随时看房</text>
+      <text>车位充足</text>
+    </view>
+    <view class="price">
+      <text class="total">28000元/平</text>
+      <text class="average">建面70～150m</text>  
+    </view>
+  </view>
+</view>

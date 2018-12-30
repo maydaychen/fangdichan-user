@@ -1,0 +1,127 @@
+<!--pages/entrust/qa-channel/index.wxml-->
+<view class="search-group">
+  <text class="iconfont icon-sousuo icon"></text>
+  <input class="search-input" type="text" placeholder="房产知识有疑问？来搜搜看吧！" />
+</view>
+
+<view class="daily-report" style="background-image: url('/image/banner.png')">
+  <view class="mask">
+    <view class="top">
+      <view class="label">问答日报</view>
+      <view class="view-past">查看往期 ></view>
+    </view>
+    <view class="bottom">
+      <text>2017-11-25</text>
+      <text class="question">首付100万，南边或东边房子买哪好？</text>
+    </view>
+  </view>
+</view>
+
+<view class="adviser-group">
+  <view class="title-group">
+    <text class="title">房挑房好顾问</text>
+    <view class="more-group">
+      <text>查看更多</text>
+      <text class="iconfont icon-you more-icon"></text>
+    </view>
+  </view>
+  <view class="advisers">
+    <view class="item">
+      <image src="/image/me-logo.png" />
+      <text>高春雨</text>
+      <view class="tag">擅长交易</view>
+    </view>
+    <view class="item">
+      <image src="/image/me-logo.png" />
+      <text>高春雨</text>
+      <view class="tag">擅长交易</view>
+    </view>
+    <view class="item">
+      <image src="/image/me-logo.png" />
+      <text>高春雨</text>
+      <view class="tag">擅长交易</view>
+    </view>
+    <view class="item">
+      <image src="/image/me-logo.png" />
+      <text>高春雨</text>
+      <view class="tag">擅长交易</view>
+    </view>
+  </view>
+</view>
+
+<view class="faq-group">
+  <view class="title-group">常见问题</view>
+  <view class="questions">
+    <view class="item">
+      <image src="/image/banner.png" />
+      <view class="mask">
+        <text>问答直播 | 置业顾问团手把手教你选房！</text>
+      </view>
+    </view>
+    <view class="item">
+      <image src="/image/banner.png" />
+      <view class="mask">
+        <text>问答直播 | 置业顾问团手把手教你选房！</text>
+      </view>
+    </view>
+    <view class="item">
+      <image src="/image/banner.png" />
+      <view class="mask">
+        <text>问答直播 | 置业顾问团手把手教你选房！</text>
+      </view>
+    </view>
+    <view class="item">
+      <image src="/image/banner.png" />
+      <view class="mask">
+        <text>问答直播 | 置业顾问团手把手教你选房！</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="hot-question-group">
+  <view class="title-group">热门提问</view>
+  <view class="hot-questions-item">
+    <text class="title">东四环朝阳公园附近，首付280万-300万左右，买两居室
+户型方正，南北通透...</text>
+    <text class="description">您好：根据您的要求，我给您找了几套房子，都是离朝阳公园比较
+近的，去公园步行即可...</text>
+    <view class="bottom">
+      <view class="tags">
+        <view class="buy-house">买房</view>
+        <view class="buy-house-advertise">购房建议</view>
+      </view>
+      <view>
+        <text class="iconfont icon-message-copy message-icon"></text>
+        <text class="comment-number">1</text>
+      </view>
+    </view>
+  </view>
+  <view class="hot-questions-item">
+    <text class="title">东四环朝阳公园附近，首付280万-300万左右，买两居室
+户型方正，南北通透...</text>
+    <text class="description">您好：根据您的要求，我给您找了几套房子，都是离朝阳公园比较
+近的，去公园步行即可...</text>
+    <view class="bottom">
+      <view class="tags">
+        <view class="buy-house">买房</view>
+        <view class="buy-house-advertise">购房建议</view>
+      </view>
+      <view>
+        <text class="iconfont icon-message-copy message-icon"></text>
+        <text class="comment-number">1</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="btn-group">
+  <view class="left btn-item">
+    <image src="/image/faq-icon.png" />
+    <text>问答</text>
+  </view>
+  <view class="right btn-item">
+    <image src="/image/encyclopedias-icon.png" />
+    <text>百科</text>
+  </view>
+</view>

@@ -34,7 +34,9 @@
     "pages/entrust/index",
     "pages/entrust/estimate-house/index",
     "pages/entrust/estimate-info-form/index",
-    "pages/entrust/estimate-house-result/index"
+    "pages/entrust/estimate-house-result/index",
+    "pages/entrust/news/index",
+    "pages/entrust/qa-channel/index"
   ],
   "tabBar": {
     "color": "#666666",
