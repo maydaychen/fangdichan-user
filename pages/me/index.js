@@ -49,8 +49,8 @@ Page({
 
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
+  /*6666667
+ +  * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
 
@@ -60,6 +60,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: '这是我的名片，敬请惠存',
+      path: '/pages / me / index', // 确保带上openid，做好了一半，第三个参数通用名片里不能指定添加，存在逻辑漏洞
+    };
   }
 })

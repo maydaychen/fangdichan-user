@@ -53,7 +53,13 @@
 				{
 					"id": 2,
 					"name": "详情",
-					"pathName": "pages/rentHouse/detail/index",
+					"pathName": "pages/twohand/detail/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布",
+					"pathName": "pages/entrust/release-house/index",
 					"query": ""
 				}
 			]

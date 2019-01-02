@@ -8,6 +8,7 @@
     "pages/twohand/index",
     "pages/twohand/detail/index",
     "pages/twohand/search/index",
+    "pages/twohand/compare/index",
     "pages/house/report",
     "pages/house/lookRecord/index",
     "pages/house/dealRecord/index",

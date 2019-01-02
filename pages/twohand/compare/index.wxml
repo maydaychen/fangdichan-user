@@ -1,0 +1,6 @@
+<!-- pages/twohand/compare/index.wxml -->
+<view class="container">
+  <block wx:if="{{list.length}}">
+    <house-list list="{{list}}" type="1" bind:detail="detail"></house-list>
+  </block>
+</view>

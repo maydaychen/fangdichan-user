@@ -9,9 +9,15 @@ Page({
     banner: ["/image/banner.png", "/image/banner.png", "/image/banner.png"],
   },
   sameTown: function () {
-     wx.navigateTo({
-       url: '../sameTown/index'
-     })
+    wx.navigateTo({
+      url: '../sameTown/index'
+    })
+  },
+  share: function () {
+    wx.showToast({
+      title: 'test',
+      icon: ''
+    })
   },
   /**
    * 生命周期函数--监听页面加载

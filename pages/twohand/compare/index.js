@@ -1,18 +1,13 @@
-// pages/twohand/detail/index.js
+// pages/twohand/compare/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    viliage_deal: [1, 2],
-    banner: ["/image/banner.png", "/image/banner.png", "/image/banner.png"],
+    list: [1],
   },
-  sameTown: function () {
-    wx.navigateTo({
-      url: '/pages/rentHouse/sameTown/index'
-    })
- },
+
   /**
    * 生命周期函数--监听页面加载
    */

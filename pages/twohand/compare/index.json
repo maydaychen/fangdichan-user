@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "对比清单",
+  "usingComponents": {
+    "house-list": "/components/house-list/house-list"
+  }
+}

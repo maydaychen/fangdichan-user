@@ -1,9 +1,11 @@
 <!-- pages/rentHouse/detail/index.wxml -->
 <view class="all">
-  <swiper>
-    <swiper-item wx:for="{{banner}}" wx:key="*this">
-      <image src='{{item}}'></image>
-    </swiper-item>
+  <swiper indicator-dots="true" indicator-color='#1B82D1' indicator-active-color='#f00' autoplay='true' circular='true' interval='3000' duration='500' class="haibao">
+    <block wx:for="{{banner}}">
+      <swiper-item>
+        <image class='imageBener' src="{{item}}" bindtap='detail'></image>
+      </swiper-item>
+    </block>
   </swiper>
   <view class='container'>
     <view class="title">新龙城带电梯正规两居室落地窗，随时签约</view>
@@ -112,7 +114,7 @@
         <view class="iconfont .icon-womenchengnuo"></view>
         <view style="margin-left:20rpx">我们承诺真实房源假一赔百元！</view>
       </view>
-      <navigator class="just-flex promise-right" url="/pages/house/report">
+      <navigator class="just-flex promise-right" url="/pages/house/report?id=3">
         <view class="iconfont .icon-jubao" style="margin-right:20rpx"></view>
         <view style="margin-right:20rpx">举报</view>
       </navigator>
@@ -156,7 +158,7 @@
   <view class="container" style="margin-top:20rpx">
     <navigator class="flex-between" url="/pages/house/dealRecord/index">
       <view class="viliage_price" style="margin:20rpx 0;color:#323232;font-size:34rpx">同小区成交</view>
-      <text class="iconfont icon-you" style="margin-top:30rpx;"></text>
+      <text class="iconfont icon-you" style="margin-top:20rpx;"></text>
     </navigator>
     <block wx:for="{{viliage_deal}}">
       <view class="flex-between" style="margin-bottom:20rpx">
@@ -207,7 +209,7 @@
             <image bindtap='changeType' src="{{item}}" class="activity-img"></image>
             <view class="viliage-agree-title" style=" width: 378rpx;">2室2厅 / 92.8m / 东 西</view>
             <view class="price" style="">1000元/月</view>
-            <view class="viliage-locate">梁溪区   海岸城</view>
+            <view class="viliage-locate content-bottom">梁溪区   海岸城</view>
           </view>
         </block>
       </scroll-view>
@@ -215,11 +217,11 @@
   </view>
 </view>
 <view class="bottom just-flex">
-  <view style="width:105rpx">
+  <view style="width:105rpx" bindtap="share">
     <view class="iconfont icon-fenxiang text_center"></view>
     <view class="text_center bottom-subtitle">分享</view>
   </view>
-  <view style="width:105rpx">
+  <view style="width:105rpx" bindtap="collect">
     <view class="iconfont icon-shoucang text_center"></view>
     <view class="text_center bottom-subtitle">收藏</view>
   </view>
