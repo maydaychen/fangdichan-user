@@ -1,0 +1,26 @@
+<!-- pages/newHouse/comment/index.wxml -->
+<view class="container">
+  <view class="just-flex">
+    <block wx:for="{{type_list}}">
+      <view class="choice">{{item}}</view>
+    </block>
+  </view>
+  <block wx:for="{{comment_list}}">
+    <view class="flex-between" style="margin-top:20rpx">
+      <view class="just-flex">
+        <image src="/image/me-logo.png" class="logo" />
+        <view>
+          <view class="just-flex">
+            <view class="name">张三</view>
+            <view class="label">实看用户</view>
+          </view>
+          <view>五星</view>
+        </view>
+      </view>
+      <view class="date">2019年1月5日</view>
+    </view>
+    <view class="content">小区环境非常好，地理位置也不错周边都很方便，但是
+感觉楼间距很小啊。</view>
+  </block>
+  <navigator class="button" url="newComment">写评论，分享心得</navigator>
+</view>

@@ -1,6 +1,11 @@
 <!-- pages/twohand/compare/index.wxml -->
 <view class="container">
-  <block wx:if="{{list.length}}">
+  <view class="just-flex right">
+    <view class="iconfont icon-plus "></view>
+    <view class="iconfont icon-bi"></view>
+  </view>
+  <block wx:if="{{list.length}}" style="float:clear">
     <house-list list="{{list}}" type="1" bind:detail="detail"></house-list>
   </block>
+  <button style="margin-bottom:100rpx;">开始对比</button>
 </view>

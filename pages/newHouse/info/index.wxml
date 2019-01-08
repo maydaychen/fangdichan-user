@@ -1,0 +1,98 @@
+<!-- pages/newHouse/info/index.wxml -->
+<view class="container">
+  <view class="title">绿地波士顿</view>
+  <view class="content view flex-between">
+    <view>楼盘状态</view>
+    <view class="right">在售</view>
+  </view>
+  <view class="content view flex-between">
+    <view>参考均价</view>
+    <view class="right">22000元/平</view>
+  </view>
+  <view class="content view flex-between">
+    <view>最新开盘</view>
+    <view class="right">2017-09-25</view>
+  </view>
+  <view class="content flex-between">
+    <view>交房时间</view>
+    <view class="right">2020-06-25</view>
+  </view>
+</view>
+<view class="container" style="margin-top:20rpx">
+  <view class="content view flex-between">
+    <view>位置区域</view>
+    <view class="right">滨湖</view>
+  </view>
+  <view class="content view flex-between">
+    <view>楼盘地址</view>
+    <view class="right">蠡湖大道与具区路交汇处</view>
+  </view>
+  <view class="content flex-between">
+    <view>售楼地址</view>
+    <view class="right">无锡滨湖区太湖新城平安财务中心</view>
+  </view>
+</view>
+<view class="container" style="margin-top:20rpx">
+  <view class="content view flex-between">
+    <view>建筑类型</view>
+    <view class="right">别墅</view>
+  </view>
+  <view class="content view flex-between">
+    <view>产权年限</view>
+    <view class="right">70年</view>
+  </view>
+  <view class="content view flex-between">
+    <view>占地面积</view>
+    <view class="right">1平</view>
+  </view>
+  <view class="content view flex-between">
+    <view>建筑类型</view>
+    <view class="right">别墅</view>
+  </view>
+  <view class="content view flex-between">
+    <view>容积率</view>
+    <view class="right">2.05</view>
+  </view>
+  <view class="content view flex-between">
+    <view>绿化率</view>
+    <view class="right">36%</view>
+  </view>
+  <view class="content view flex-between">
+    <view>规划户数</view>
+    <view class="right">3000户</view>
+  </view>
+  <view class="content flex-between">
+    <view>规划车位</view>
+    <view class="right">3000户</view>
+  </view>
+</view>
+<view class="container" style="margin-top:20rpx">
+  <view class="content view flex-between">
+    <view>物业类型</view>
+    <view class="right">住宅</view>
+  </view>
+  <view class="content view flex-between">
+    <view>物业公司</view>
+    <view class="right">无锡城铁物业管理发展有限公司</view>
+  </view>
+  <view class="content view flex-between">
+    <view>物业费</view>
+    <view class="right">3.4平/月</view>
+  </view>
+  <view class="content view flex-between">
+    <view>供暖方式</view>
+    <view class="right">自采暖</view>
+  </view>
+  <view class="content view flex-between">
+    <view>供水方式</view>
+    <view class="right">民水</view>
+  </view>
+  <view class="content flex-between">
+    <view>供电方式</view>
+    <view class="right">民电</view>
+  </view>
+</view>
+<view class="container" style="margin-top:20rpx"></view>
+<view class="bottom">免责申明：楼盘信息由开发商提供，最终以政府部门登记
+备案为准，请谨慎核查。如楼盘信息有误，可拨打电话投
+诉：10109666</view>

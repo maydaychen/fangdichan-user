@@ -1,0 +1,22 @@
+/* pages/newHouse/openTime/index.wxss */
+.content {
+  margin: 130rpx 60rpx;
+  background: #eaeaea;
+  padding: 60rpx 20rpx;
+}
+
+.content view {
+  margin: 60rpx auto;
+  text-align: center
+}
+
+.title {
+  font-size: 36rpx;
+  color: #666666;
+}
+
+.subtitle,
+.subtitle text {
+  font-size: 36rpx;
+  color: #323232;
+}

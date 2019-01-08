@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"点评页面",
+  "usingComponents": {
+    "upload-img": "/components/upload-img/upload-img"
+  }
+}

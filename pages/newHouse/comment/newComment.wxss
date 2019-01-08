@@ -1,0 +1,41 @@
+/* pages/newHouse/comment/newComment.wxss */
+.container {
+  padding: 20rpx;
+}
+
+.content {
+  background: white;
+  padding: 20rpx;
+}
+
+textarea {
+  height: 200rpx;
+  width: 100%;
+}
+
+.rating {
+  border-bottom: 1rpx solid #d2d2d2;
+}
+
+.niming-title {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #323232;
+}
+
+.niming {
+  margin-left: 20rpx;
+}
+
+.active {
+  color: #f4b906;
+}
+
+
+.problem-submie {
+  color: var(--color-white);
+  height: 100rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  background: #298ef8;
+}

@@ -36,12 +36,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
 					"id": 0,
-					"name": "个人信息",
-					"pathName": "pages/me/index",
+					"name": "新楼盘",
+					"pathName": "pages/newHouse/detail/index",
 					"query": ""
 				},
 				{
@@ -60,6 +60,12 @@
 					"id": -1,
 					"name": "发布",
 					"pathName": "pages/entrust/release-house/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "评价",
+					"pathName": "pages/newHouse/comment/newComment",
 					"query": ""
 				}
 			]

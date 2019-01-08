@@ -1,1 +1,255 @@
 /* pages/newHouse/detail/index.wxss */
+
+.haibao {
+  width: 100%;
+  height: 250rpx;
+}
+
+.imageBener {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background: white;
+  padding: 20rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #323232;
+  margin-right: 50rpx;
+}
+
+.title-mark {
+  font-size: 26rpx;
+  padding: 0 10rpx;
+  margin-right: 20rpx;
+  border-radius: 4rpx;
+  font-weight: 500;
+}
+
+.title-mark:first {
+  color: #1B71CC;
+  border: 2rpx solid #1B71CC;
+}
+
+.title-mark:last-child {
+  color: #E60012;
+  border: 2rpx solid #E60012;
+}
+
+.subtitle {
+  color: #323232;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+.label {
+  color: #323232;
+  margin-top: 15rpx;
+  margin-right: 20rpx;
+  font-size: 20rpx;
+  padding: 0 10rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #c9c9c9;
+}
+
+.left-title {
+  font-size: 28rpx;
+  color: #323232;
+  margin-right: 50rpx;
+}
+
+.left-title-blue {
+  color: #1D87D8;
+  font-size: 28rpx;
+}
+
+.price {
+  color: #E60012;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+
+.update-date {
+  color: #323232;
+  font-size: 20rpx;
+  padding: 0 10rpx;
+  background: #ebf6ff;
+  border: 1rpx solid #d7e9f9;
+}
+
+.button {
+  height: 80rpx;
+  border-radius: 4rpx;
+  font-size: var(--font-size-large);
+  color: var(--color-certification-title);
+  background: var(--color-border-color);
+  margin: 30rpx;
+}
+
+.info-title {
+  font-size: 34rpx;
+  color: #323232;
+}
+
+.more {
+  font-size: 28rpx;
+  color: #666666;
+}
+
+.info-content {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  color: #323232;
+}
+
+.huxing-choice {
+  font-size: 32rpx;
+  color: #323232;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+}
+
+.huxing-choice-active {
+  font-size: 36rpx !important;
+  color: #1D87D8 !important;
+}
+
+.house-image {
+  padding: 10rpx 0;
+  width: 250rpx;
+  height: 190rpx;
+  margin-right: 30rpx;
+}
+
+.house-title {
+  font-size: 32rpx;
+  color: #323232;
+  margin-right: 50rpx;
+}
+
+.house-title-label {
+  background: #BFDCF2;
+  padding: 0 10rpx;
+  color: #2E5A7C;
+  font-size: 24rpx;
+}
+
+.house-second {
+  font-size: 26rpx;
+  color: #666666;
+  margin: 30rpx 0;
+}
+
+.house-bottom {
+  font-size: 30rpx;
+  color: #666666;
+}
+
+.recommend-broker .list {
+  margin-top: 23rpx;
+  display: flex;
+  white-space: nowrap;
+}
+
+.recommend-broker .list .item {
+  display: inline-block;
+  width: 313rpx;
+  height: 293rpx;
+  font-size: var(--font-size-small-a);
+  border: 1rpx solid var(--color-border);
+  margin-right: 10rpx;
+}
+
+.recommend-broker .list .item .top {
+  width: 100%;
+  height: 115rpx;
+  background-color: var(--color-broker-bg);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 6rpx;
+  box-sizing: border-box;
+}
+
+.top .left {
+  border-radius: 50%;
+}
+
+.top .left .broker-avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  display: block;
+}
+
+.top .right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top .right .name {
+  font-size: var(--font-size-small);
+}
+
+.recommend-broker .item .middle {
+  width: 286rpx;
+  color: var(--color-sub-title);
+  margin: 0 auto;
+  margin-top: 17rpx;
+  display: block;
+}
+
+.recommend-broker .item .line {
+  width: 280rpx;
+  height: 0rpx;
+  margin: 0 auto;
+  margin-top: 17rpx;
+  border-top: 1rpx solid var(--color-split-line);
+}
+
+.recommend-broker .item .consult-btn {
+  font-size: var(--font-size-large);
+  color: var(--color-sub-theme);
+  display: block;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.bottom_right {
+  background: #298ef8;
+  width: 500rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: auto 0;
+  color: var(--color-white);
+  font-size: var(--font-size-large-y);
+}
+
+.bottom-subtitle {
+  color: var(--color-sub-title);
+  font-size: var(--font-size-small-a);
+}
+
+.text_center {
+  text-align: center;
+}
+
+.content-bottom {
+  margin-bottom: 100rpx;
+}
+
+.bottom {
+  height: 90rpx;
+  background: var(--color-white);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}

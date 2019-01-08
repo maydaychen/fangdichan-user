@@ -1,21 +1,11 @@
-// pages/newHouse/detail/index.js
+// pages/newHouse/info/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    banner: ["/image/banner.png", "/image/banner.png", "/image/banner.png"],
-    manager_list: [1, 2, 3, 4],
-    house_list: [1, 2],
-    latitude: 31.5285,
-    longitude: 120.28429,
-    markers: [{
-      id: 1,
-      latitude: 31.5285,
-      longitude: 120.28429,
-      name: '测试地点',
-    }],
+
   },
 
   /**

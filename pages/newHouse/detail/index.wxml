@@ -1,2 +1,139 @@
-<!--pages/newHouse/detail/index.wxml-->
-<text>pages/newHouse/detail/index.wxml</text>
+<!-- pages/newHouse/detail/index.wxml -->
+<swiper indicator-dots="true" indicator-color='#1B82D1' indicator-active-color='#f00' autoplay='true' circular='true' interval='3000' duration='500' class="haibao">
+  <block wx:for="{{banner}}">
+    <swiper-item>
+      <image class='imageBener' src="{{item}}" bindtap='detail'></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="container">
+  <view class="flex-between">
+    <view class="just-flex">
+      <view class="title">领秀翡翠山</view>
+      <view class="title-mark">住宅</view>
+      <view class="title-mark">在售</view>
+    </view>
+    <view class="iconfont icon-jubao"></view>
+  </view>
+  <view class="subtitle">别名：领袖翠俪家园</view>
+  <view class="just-flex">
+    <view class="label">五证齐全</view>
+    <view class="label">五证齐全</view>
+    <view class="label">五证齐全</view>
+    <view class="label">五证齐全</view>
+  </view>
+  <view class="just-flex" style="margin-top:30rpx">
+    <view class="left-title">均价</view>
+    <view class="price">15000/平</view>
+    <view class="update-date">四天前更新</view>
+  </view>
+  <view class="flex-between" style="margin-top:30rpx">
+    <view class="just-flex">
+      <view class="left-title">地址</view>
+      <view class="left-title-blue">滨湖区长青路南侧</view>
+    </view>
+    <view class="iconfont icon-you"></view>
+  </view>
+  <view class="flex-between" style="margin-top:30rpx">
+    <view class="just-flex">
+      <view class="left-title">开盘</view>
+      <navigator class="left-title-blue" url="../openTime/index">2019年1月5日</navigator>
+    </view>
+    <view class="iconfont icon-you"></view>
+  </view>
+  <button class="button horizon-center" bindtap="sameTown">（2017）预售准字第0412号</button>
+  <view class="flex-between">
+    <view class="info-title" style="margin:20rpx 0 20rpx">楼盘信息</view>
+    <navigator class="more" url="../info/index">
+      查看全部
+      <text class="iconfont icon-you"></text>
+    </navigator>
+  </view>
+  <view class="info-content">开 发 商：   北京科技置地有限公司</view>
+  <view class="info-content">最新开盘：   2019年1月5日</view>
+  <view class="info-content">交房时间：   2019年1月5日</view>
+  <view class="info-content">产权年限：   70年</view>
+  <view class="info-content">许 可 证：   xxx</view>
+</view>
+<view class="container" style="margin-top:20rpx;">
+  <view class="info-title">户型结构图</view>
+  <view class="just-flex">
+    <view class="huxing-choice huxing-choice-active">4室</view>
+    <view class="huxing-choice">3室</view>
+  </view>
+  <block wx:for="{{house_list}}">
+    <view class="just-flex">
+      <image src="/image/house.png" class="house-image" />
+      <view>
+        <view class="just-flex">
+          <view class="house-title">3室2厅1卫1厨</view>
+          <view class="house-title-label">在售</view>
+        </view>
+        <view class="house-second">102m    南北通透  户型方正</view>
+        <view class="house-bottom">约1000万元/套</view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="container" style="margin-top:20rpx;">
+  <view class="flex-between">
+    <view class="info-title">位置及周边</view>
+    <navigator class="more">
+      查看全部
+      <text class="iconfont icon-you"></text>
+    </navigator>
+  </view>
+  <map id="myMap" style="width: 100%; height: 350rpx;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-location></map>
+</view>
+<view class="container" style="margin-top:20rpx;">
+  <view class="flex-between">
+    <view class="info-title">推荐经纪人</view>
+    <navigator class="more">
+      查看全部
+      <text class="iconfont icon-you"></text>
+    </navigator>
+  </view>
+  <view class="recommend-broker">
+    <scroll-view class="list" scroll-x="{{true}}">
+      <block wx:for="{{manager_list}}">
+        <view class="item">
+          <view class="top">
+            <view class="left">
+              <image class="broker-avatar" src="/image/me-logo.png" />
+            </view>
+            <view class="right">
+              <text class="name">张三</text>
+              <text>高级经理|康馨家园店</text>
+            </view>
+          </view>
+          <text class="middle">为人和善房东信赖，善于维护
+业主关系</text>
+          <view class="line"></view>
+          <text class="consult-btn">咨询</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
+<view class="container" style="margin-top:20rpx;margin-bottom:100rpx">
+  <view class="flex-between">
+    <view class="info-title">用户点评</view>
+    <navigator class="more" url="../comment/index">
+      更多点评
+      <text class="iconfont icon-you"></text>
+    </navigator>
+  </view>
+</view>
+<view class="bottom flex-between">
+  <view class="just-flex">
+    <view style="width:105rpx" bindtap="share">
+      <view class="iconfont icon-fenxiang text_center"></view>
+      <view class="text_center bottom-subtitle">分享</view>
+    </view>
+    <view style="width:105rpx" bindtap="collect">
+      <view class="iconfont icon-shoucang text_center"></view>
+      <view class="text_center bottom-subtitle">收藏</view>
+    </view>
+  </view>
+  <view class="bottom_right text_center">咨询经纪人</view>
+</view>

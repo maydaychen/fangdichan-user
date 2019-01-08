@@ -1,23 +1,34 @@
-// pages/newHouse/detail/index.js
+// pages/newHouse/comment/newComment.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    banner: ["/image/banner.png", "/image/banner.png", "/image/banner.png"],
-    manager_list: [1, 2, 3, 4],
-    house_list: [1, 2],
-    latitude: 31.5285,
-    longitude: 120.28429,
-    markers: [{
-      id: 1,
-      latitude: 31.5285,
-      longitude: 120.28429,
-      name: '测试地点',
-    }],
+    is_niming: false,
+    value: 0,
+    count: 5,
+    color: '#c0c0c0',
+    activeColor: '#ff5733'
   },
-
+  niming: function () {
+    this.setData({
+      is_niming: !this.data.is_niming
+    })
+  },
+  handlerRate(e) {
+    const {
+      readonly = false, score = 0
+    } = e.target.dataset;
+    if (readonly) {
+      return;
+    }
+    if (score) {
+      this.setData({
+        value: score
+      });
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

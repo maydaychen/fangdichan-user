@@ -1,1 +1,22 @@
 /* pages/twohand/compare/index.wxss */
+page {
+  background: white;
+}
+
+.right {
+  text-align: right;
+}
+
+.right view {
+  color: #979797;
+  margin-left: 20rpx;
+}
+
+button {
+  background: #1d87d9;
+  width: 95%;
+  color: #fff;
+  box-shadow: 0px 1px 1px 0px #1d87d9;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,34 @@
+<!--pages/me/entrust/index.wxml-->
+<import src='/template/ws-template.wxml' />
+<view class="container">
+  <view class="head">
+    <image src="/image/message.png" class="message" />
+    <image src="/image/remind.png" class="remind" />
+  </view>
+  <view wx:if="{{list.length}}"></view>
+  <image class="abnor__image horizon-center" mode="widthFix" src="/image/no-house.png"></image>
+  <view class="abnor__text text-center">暂无房源</view>
+  <view class="abnor__sub_text text-center">您还没有在房挑房委托房源哦！</view>
+  <view class="btn-group">
+    <button class="choice" bindtap="toRent">去租赁</button>
+    <button class="choice" bindtap="toDeal">去买卖</button>
+  </view>
+  <view class="title-group">
+    <view class="line"></view>
+    <text>房源发布流程</text>
+    <view class="line"></view>
+  </view>
+  <view class="process">
+    <view class="icon-computer iconfont icon"></view>
+    <view class="line"></view>
+    <view class="icon-telephone iconfont icon"></view>
+    <view class="line"></view>
+    <view class="icon-house iconfont icon"></view>
+  </view>
+  <view class="process text-group">
+    <text>线上发布</text>
+    <text>电话核实</text>
+    <text>房源上架</text>
+  </view>
+</view>
+

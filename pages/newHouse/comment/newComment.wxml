@@ -1,0 +1,19 @@
+<!-- pages/newHouse/comment/newComment.wxml -->
+<view class="container">
+  <view class="content">
+    <textarea placeholder="请输入评价内容"></textarea>
+    <view class="rating">
+      <view class="rate just-flex" bindtap="handlerRate">
+        <block wx:for="{{5}}" wx:key="index">
+          <view class="iconfont icon-{{(value-1) >=index ? 'star' : 'star1'}}" style="margin-right:20rpx;font-size:44rpx;color:{{(value-1) >=index ? activeColor : color}}" data-score="{{index+1}}"></view>
+        </block>
+      </view>
+    </view>
+    <upload-img bind:imgs='imgsOnChange' maxCount='6' cover-class='imgs__item--cover'></upload-img>
+  </view>
+  <view class="niming-title {{is_niming?'active':''}}" bindtap="niming">
+    <text class="iconfont icon-queding1"></text>
+    <text class="niming">匿名</text>
+  </view>
+  <button class="problem-submie">确定</button>
+</view>
