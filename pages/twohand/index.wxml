@@ -5,7 +5,12 @@
     <view class='search'>
       <view style="display:flex">
         <text class='iconfont icon-sousuo vertical-center'></text>
-        <navigator class="input-placeholder" bindinput="change" url="search/index?id={{type}}">请输入小区或商圈名称</navigator>
+        <navigator
+          class="input-placeholder"
+          bindinput="change"
+          url="search/index?id={{type}}">
+          请输入小区或商圈名称
+        </navigator>
       </view>
       <view class="iconfont icon-quxiao vertical-center" hidden="{{hide}}" bind:tap="cancel" style="margin-right:20rpx;color:#A8A8A8"></view>
     </view>
@@ -30,5 +35,23 @@
     <template is='abnor' data="{{imgSrc:'/image/no-rent.png',text: '您还没有收藏租房哦！'}}" />
   </block>
 
+  <view class="mask">
+    <view class="list">
+      <text class="item">不限</text>
+      <text class="item">50万以下</text>
+      <text class="item">50-80万</text>
+      <text class="item">80-100万</text>
+      <text class="item">100-120万</text>
+      <text class="item">120-150万</text>
+    </view>
+    <view class="input-group">
+      <text>价格</text>
+      <input class="price-input min-price" />
+      <text class="line"></text>
+      <input class="price-input" />
+      <text class="unit">万</text>
+      <button class="submit-btn">确定</button>
+    </view>
+  </view>
 
 </view>

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/twohand/index",
     "pages/index/index",
     "pages/index/locate",
     "pages/index/manager/index",
@@ -9,7 +10,6 @@
     "pages/newHouse/comment/index",
     "pages/newHouse/comment/newComment",
     "pages/newHouse/openTime/index",
-    "pages/twohand/index",
     "pages/twohand/detail/index",
     "pages/twohand/search/index",
     "pages/twohand/compare/index",
