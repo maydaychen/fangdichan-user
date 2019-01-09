@@ -17,10 +17,10 @@
     <view class="edit vertical-center iconfont icon-dingwei1"></view>
   </view>
   <view class="choice">
-    <text class="{{type==0?'active':''}}" bindtap='show' id="0">区域 <text class='iconfont icon-xiasanjiao'></text> </text>
-    <text class="{{type==1?'active':''}}" bindtap='show' id="1">售价 <text class='iconfont icon-xiasanjiao'></text> </text>
-    <text class="{{type==2?'active':''}}" bindtap='show' id="2">房型 <text class='iconfont icon-xiasanjiao'></text> </text>
-    <text class="{{type==3?'active':''}}" bindtap='show' id="3">更多 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{navigation=='areaFilter'?'active':''}}" bindtap='show' data-pagename="areaFilter">区域 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{navigation=='priceFilter'?'active':''}}" bindtap='show' data-pagename="priceFilter">售价 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{navigation=='houseTypeFilter'?'active':''}}" bindtap='show' data-pagename="houseTypeFilter">房型 <text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{navigation=='moreFilter'?'active':''}}" bindtap='show' data-pagename="moreFilter">更多 <text class='iconfont icon-xiasanjiao'></text> </text>
   </view>
   <block wx:if="{{list.length}}">
     <house-list list="{{list}}" type="1" bind:detail="detail"></house-list>
@@ -35,7 +35,7 @@
     <template is='abnor' data="{{imgSrc:'/image/no-rent.png',text: '您还没有收藏租房哦！'}}" />
   </block>
 
-  <view class="mask">
+  <view class="mask" wx:if="{{pageName == 'priceFilter'}}">
     <view class="list">
       <text class="item">不限</text>
       <text class="item">50万以下</text>
@@ -52,6 +52,70 @@
       <text class="unit">万</text>
       <button class="submit-btn">确定</button>
     </view>
+  </view>
+
+  <view class="mask" wx:if="{{pageName == 'moreFilter'}}">
+    <view class="label-group">
+      <label>特征</label>
+      <view class="label-list">
+        <text class="label-item">满两年</text>
+        <text class="label-item">近地铁</text>
+        <text class="label-item">新上</text>
+        <text class="label-item">有车位</text>
+        <text class="label-item">满五年</text>
+        <text class="label-item">随时看</text>
+        <text class="label-item">近公园</text>
+        <text class="label-item">环境好</text>
+      </view>
+    </view>
+    <view class="label-group">
+      <label>面积（平米）</label>
+      <view class="label-list">
+        <text class="label-item">50以下</text>
+        <text class="label-item">50-70</text>
+        <text class="label-item">70-90</text>
+        <text class="label-item">90-120</text>
+        <text class="label-item">120-150</text>
+        <text class="label-item">150-200</text>
+        <text class="label-item">210-300</text>
+        <text class="label-item">300以上</text>
+      </view>
+    </view>
+    <view class="label-group">
+      <label>楼层</label>
+      <view class="label-list">
+        <text class="label-item">6层以下</text>
+        <text class="label-item">6-12层</text>
+        <text class="label-item">12-20层</text>
+        <text class="label-item">20层以上</text>
+      </view>
+    </view>
+    <view class="label-group">
+      <label>朝向</label>
+      <view class="label-list">
+        <text class="label-item">东</text>
+        <text class="label-item">西</text>
+        <text class="label-item">南</text>
+        <text class="label-item">北</text>
+      </view>
+    </view>
+    <view class="label-group">
+      <label>电梯</label>
+      <view class="label-list levator">
+        <text class="label-item">有电梯</text>
+        <text class="label-item">无电梯</text>
+      </view>
+    </view>
+    <view class="label-group">
+      <label>类型</label>
+      <view class="label-list">
+        <text class="label-item">公寓</text>
+        <text class="label-item">住宅</text>
+        <text class="label-item">别墅</text>
+        <text class="label-item">其他</text>
+      </view>
+    </view>
+    <button class="more-submit">更多</button>
   </view>
 
 </view>

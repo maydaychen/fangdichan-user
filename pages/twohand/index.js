@@ -10,12 +10,16 @@ Page({
   // 1二手房 2新房 3租房
   data: {
     type: 0,
+    navigation: '',
     list: [1],
     hide: true,
+    pageName: '',
   },
   show: function (e) {
-    var id = e.currentTarget.id;
-
+    this.setData({
+      navigation: e.currentTarget.dataset.pagename,
+      pageName: e.currentTarget.dataset.pagename
+    })
   },
   change: function (e) {
     if (e.detail.value) {

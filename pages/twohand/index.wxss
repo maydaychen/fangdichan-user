@@ -140,3 +140,49 @@ page {
   font-size: 36rpx;
   color: #fff;
 }
+
+.label-group {
+  background-color: #fff;
+  padding: 18rpx 43rpx 25rpx 62rpx;
+  box-sizing: border-box;
+}
+
+.label-group .label-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.label-group .levator {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.label-group .label-list .label-item {
+  width: 146rpx;
+  height: 59rpx;
+  background-color: #f5f5f5;
+  border-radius: 6rpx;
+  text-align: center;
+  line-height: 59rpx;
+  margin-bottom: 20rpx;
+}
+
+.label-group .levator .label-item {
+  margin-right: 20rpx;
+}
+
+.mask .more-submit {
+  width: 705rpx;
+  height: 99rpx;
+  line-height: 99rpx;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background-color: #298ef8;
+  font-size: 36rpx;
+  margin-bottom: 37rpx;
+}
