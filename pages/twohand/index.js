@@ -14,11 +14,22 @@ Page({
     list: [1],
     hide: true,
     pageName: '',
+    areaMenu: 'area'
   },
   show: function (e) {
     this.setData({
       navigation: e.currentTarget.dataset.pagename,
       pageName: e.currentTarget.dataset.pagename
+    })
+  },
+  selectArea: function (e) {
+    this.setData({
+      areaMenu: e.currentTarget.dataset.areamenu
+    })
+  },
+  sure: function (e) {
+    this.setData({
+      pageName: ''
     })
   },
   change: function (e) {

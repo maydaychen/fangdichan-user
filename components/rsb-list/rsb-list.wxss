@@ -1,0 +1,72 @@
+/* components/house-list.wxss */
+@import '/static/iconfont/iconfont.wxss';
+
+.info {
+  display: flex;
+  margin-bottom: 5rpx;
+  background-color: #fff;
+  padding: 34rpx 20rpx;
+  box-sizing: border-box;
+  color: #323232;
+}
+
+.info .left {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.info .right {
+  height: 100%;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info .right .introduction {
+  display: flex;
+  width: 590rpx;
+  justify-content: space-between;
+}
+
+.info .name {
+  font-size: 30rpx;
+  margin-right: 58rpx;
+}
+
+.info .job {
+  font-size: 22rpx;
+}
+
+.info .icon-group {
+  display: flex;
+}
+
+.info .phone-icon {
+  width: 60rpx;
+  height: 35rpx;
+  background-color: #eaf3fa;
+  border-radius: 5rpx;
+  color: #1296d8;
+  text-align: center;
+  line-height: 36rpx;
+}
+
+.info .message-icon {
+  width: 60rpx;
+  height: 35rpx;
+  background-color: #e7fbe7;
+  color: #13db1c;
+  margin-left: 40rpx;
+  text-align: center;
+  line-height: 36rpx;
+}
+
+.info .score {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.info .description {
+  font-size: 26rpx;
+}

@@ -200,9 +200,8 @@ page {
 .mask .area-group .column-list {
   width: 250rpx;
   height: 480rpx;
-  display: flex;
-  flex-direction: column;
-  border: 1rpx solid #dcdcdc;
+  border-top: 1rpx solid #dcdcdc;
+  overflow-y: scroll;
 }
 
 .mask .area-group .first-area {
@@ -211,29 +210,38 @@ page {
 }
 
 .mask .area-group .second-area {
-  background-color: #dcdcdc;
+  background-color: #f7f7f7;
 }
 
 .mask .area-group .third-area {
   padding-right: 20rpx;
   box-sizing: border-box;
-  background-color: #dcdcdc;
+  background-color: #f1f1f1;
 }
 
-.mask .area-group .column-list .area-item {
+.mask .area-group .area-item {
   width: 100%;
   height: 79rpx;
   border-bottom: 1rpx solid #dcdcdc;
   text-align: center;
   line-height: 79rpx;
+  display: block;
 }
 
 .mask .area-group .second-area .area-item {
-  border-bottom: 1rpx solid #ddccdd;
+  border-bottom: 1rpx solid #dcdcdc;
 }
 
 .mask .area-group .third-area .area-item {
-  border-bottom: 1rpx solid #ddccdd;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.mask .area-group .subway-column-list {
+  width: 500rpx;
+  height: 480rpx;
+  border-top: 1rpx solid #dcdcdc;
+  background-color: #f7f7f7;
+  overflow-y: scroll;
 }
 
 .mask .area-group .area-sure-btn {

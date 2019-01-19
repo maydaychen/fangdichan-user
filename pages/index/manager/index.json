@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "经纪人"
+  "navigationBarTitleText": "经纪人",
+  "usingComponents": {
+    "rsb-list": "/components/rsb-list/rsb-list"
+  }
 }

@@ -3,12 +3,13 @@
 @import '/static/iconfont/iconfont.wxss';
 
 page {
-  background: var(--color-white);
+  background: #f8f8f8;
 }
 
 .top {
   padding: 20rpx;
   display: flex;
+  background-color: #fff;
 }
 
 .top>text {
@@ -60,6 +61,7 @@ input {
   width: 100%;
   padding-bottom: 30rpx;
   border-bottom: 1rpx solid var(--color-border);
+  background-color: #fff;
 }
 
 .choice text {
@@ -67,47 +69,4 @@ input {
   text-align: center;
   color: var(--color-sub-title);
   font-size: var(--font-size-large);
-}
-
-.content {
-  display: flex;
-  border-bottom: 1rpx solid var(--color-border);
-  padding: 20rpx 20rpx;
-}
-
-.content>view {
-  width: 100%;
-  margin-left: 29rpx
-}
-
-.content-logo {
-  border-radius: 50%;
-  height: 88rpx;
-  width: 88rpx;
-}
-
-.top-name {
-  font-size: var(--font-size-large-y);
-  color: var(--color-certification-title);
-}
-
-.top-job {
-  color: var(--color-certification-title);
-  font-size: var(--font-size-small-a);
-  padding: 4rpx 11rpx;
-  border: 1rpx solid var(--color-border-dark-grey);
-  border-radius: 8rpx;
-  margin-left: 30rpx;
-}
-
-.content-middle {
-  font-size: var(--font-size-small);
-  margin-top: 10rpx;
-  color: var(--color-sub-title);
-}
-
-.content-bottom {
-  font-size: var(--font-size-medium);
-  margin-top: 10rpx;
-  color: var(--color-certification-title);
 }
