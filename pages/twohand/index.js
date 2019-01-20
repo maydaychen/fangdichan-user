@@ -13,7 +13,41 @@ Page({
     navigation: '',
     list: [1],
     hide: true,
-    pageName: ''
+    pageName: '',
+    priceFilterList: [
+      '不限',
+      '50万以下',
+      '50-80万',
+      '80-100万',
+      '100-120万',
+      '120-150万'
+    ],
+    featureList: [
+      '满两年',
+      '近地铁',
+      '新上',
+      '有车位',
+      '满五年',
+      '随时看',
+      '近公园',
+      '环境好'
+    ],
+    areaSize: [
+      '50以下',
+      '50-70',
+      '70-90',
+      '90-120',
+      '120-150',
+      '150-200',
+      '200-300',
+      '300以上'
+    ],
+    floorType: [
+      '6层以下',
+      '6-12层',
+      '12-20层',
+      '20层以上'
+    ],
   },
   show: function (e) {
     this.setData({
@@ -23,6 +57,20 @@ Page({
   },
 
   selectedArea (e){
+    this.setData({
+      pageName: '',
+      navigation: ''
+    })
+  },
+
+  selectedPrice (e){
+    this.setData({
+      pageName: '',
+      navigation: ''
+    })
+  },
+
+  moreConditionSelected (e){
     this.setData({
       pageName: '',
       navigation: ''

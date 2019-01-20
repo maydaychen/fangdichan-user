@@ -1,0 +1,73 @@
+/* components/house-list.wxss */
+@import '/static/iconfont/iconfont.wxss';
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  top: 15%;
+  background-color: rgba(0, 0, 0, .8);
+  font-size: 32rpx;
+  color: #323232;
+}
+
+.mask .list {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-top: 1rpx solid #dcdcdc;
+}
+
+.mask .list .item {
+  padding: 22rpx 36rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+
+.mask .list .item:last-child {
+  border-bottom: none;
+}
+
+.mask .input-group {
+  width: 100%;
+  padding: 10rpx 16rpx 10rpx 58rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-top: 1rpx solid #dcdcdc;
+}
+
+.mask .input-group .price-input {
+  width: 100rpx;
+  height: 50rpx;
+  background-color: #eee;
+}
+
+.mask .input-group .min-price {
+  margin-left: 30rpx;
+}
+
+.mask .input-group .line {
+  width: 25rpx;
+  height: 0rpx;
+  border-top: 2rpx solid #b5b5b5;
+  margin-left: 2rpx;
+  margin-right: 2rpx;
+}
+
+.mask .input-group .unit {
+  margin-left: 18rpx;
+  color: #666;
+}
+
+.mask .input-group .submit-btn {
+  width: 215rpx;
+  height: 99rpx;
+  background-color: var(--color-button-background);
+  font-size: 36rpx;
+  color: #fff;
+}

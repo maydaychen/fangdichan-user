@@ -1,0 +1,53 @@
+<!-- components/more-pop.wxml -->
+  <view class="mask">
+    <view class="label-group">
+      <label>特征</label>
+      <view class="label-list">
+        <text wx:for="{{featureList}}" class="label-item">{{item}}</text>
+      </view>
+    </view>
+    <view class="label-group">
+      <label>面积（平米）</label>
+      <view class="label-list">
+        <text wx:for="{{areaSize}}" class="label-item">{{item}}</text>
+      </view>
+    </view>
+    <view class="label-group">
+      <label>楼层</label>
+      <view class="label-list">
+        <text wx:for="{{floorType}}" class="label-item">{{item}}</text>
+      </view>
+    </view>
+    <view class="label-group">
+      <label>朝向</label>
+      <view class="label-list">
+        <text class="label-item">东</text>
+        <text class="label-item">西</text>
+        <text class="label-item">南</text>
+        <text class="label-item">北</text>
+      </view>
+    </view>
+    <view class="label-group">
+      <label>电梯</label>
+      <view class="label-list levator">
+        <text class="label-item">有电梯</text>
+        <text class="label-item">无电梯</text>
+      </view>
+    </view>
+    <view wx:if="{{isRent}}" class="label-group">
+      <label>租期</label>
+      <view class="label-list">
+        <text wx:for="{{rentTimeType}}" class="label-item">{{item}}</text>
+      </view>
+    </view>
+    <view wx:else class="label-group">
+      <label>类型</label>
+      <view class="label-list">
+        <text class="label-item">公寓</text>
+        <text class="label-item">住宅</text>
+        <text class="label-item">别墅</text>
+        <text class="label-item">其他</text>
+      </view>
+    </view>
+    <button class="more-submit" bindtap='sure'>确定</button>
+  </view>

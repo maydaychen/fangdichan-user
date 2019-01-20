@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/twohand/index",
     "pages/index/index",
+    "pages/twohand/index",
+    "pages/rentHouse/index",
     "pages/index/locate",
     "pages/index/manager/index",
     "pages/index/manager/detail",

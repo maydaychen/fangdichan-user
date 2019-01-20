@@ -3,6 +3,7 @@
   "usingComponents": {
     "house-list": "/components/house-list/house-list",
     "area-pop": "/components/area-pop/area-pop",
+    "one-column-pop": "/components/one-column-pop/one-column-pop",
     "price-pop": "/components/price-pop/price-pop",
     "more-pop": "/components/more-pop/more-pop"
   }
