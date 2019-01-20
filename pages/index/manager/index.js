@@ -6,8 +6,37 @@ Page({
    */
   data: {
     hide: true,
-    list:[1,2]
+    list:[1,2],
+    navigation: '',
+    rsbFilterList: [
+      '买卖经纪人',
+      '租赁经纪人'
+    ],
+    sortFilterList: [
+      '不限',
+      '租赁成交量从高到低',
+      '买卖成交量从高到低'
+    ]
   },
+
+  show (e) {
+    this.setData({
+      navigation: e.currentTarget.dataset.pagename
+    })
+  },
+
+  selectedArea (e) {
+    this.setData({
+      navigation: ''
+    })
+  },
+
+  selected (e) {
+    this.setData({
+      navigation: ''
+    })
+  },
+
   change: function (e) {
     if (e.detail.value) {
       this.setData({

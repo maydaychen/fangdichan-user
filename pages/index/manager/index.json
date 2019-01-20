@@ -1,6 +1,8 @@
 {
   "navigationBarTitleText": "经纪人",
   "usingComponents": {
-    "rsb-list": "/components/rsb-list/rsb-list"
+    "rsb-list": "/components/rsb-list/rsb-list",
+    "area-pop": "/components/area-pop/area-pop",
+    "one-column-pop": "/components/one-column-pop/one-column-pop"
   }
 }

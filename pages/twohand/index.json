@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "全部房源",
   "usingComponents": {
-    "house-list": "/components/house-list/house-list"
+    "house-list": "/components/house-list/house-list",
+    "area-pop": "/components/area-pop/area-pop"
   }
 }

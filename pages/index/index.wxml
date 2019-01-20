@@ -1,8 +1,16 @@
 <!-- index.wxml -->
 <view class="container">
-  <swiper indicator-dots="true" indicator-color='#1B82D1' indicator-active-color='#f00' autoplay='true' circular='true' interval='3000' duration='500' class="haibao">
+  <swiper indicator-dots="true" indicator-color='#1B82D1' indicator-active-color='#f00' circular='true' duration='500' class="haibao">
     <block wx:for="{{banner}}">
       <swiper-item>
+        <view class="search-group">
+          <text>{{city}}</text>
+          <view class="search-input-group">
+            <text class="iconfont icon-sousuo search-icon"></text>
+            <input class="search-input" placeholder="本月你想住哪儿" />
+          </view>
+          <text class="iconfont icon-dingwei1 location-icon" bindtap="location"></text>
+        </view>
         <image class='imageBener' src="{{item}}" bindtap='detail'></image>
       </swiper-item>
     </block>

@@ -1,0 +1,36 @@
+<!-- components/rsb-list.wxml -->
+<view class="mask">
+  <view class="area-group">
+    <view class="column-list first-area">
+      <text class="{{areaMenu=='area'?'active area-item':'area-item'}}" bindtap='selectArea' data-areamenu="area">区域</text>
+      <text class="{{areaMenu=='subway'?'active area-item':'area-item'}}" bindtap='selectArea' data-areamenu="subway">地铁</text>
+      <text class="{{areaMenu=='near'?'active area-item':'area-item'}}" bindtap='selectArea' data-areamenu="near">附近</text>
+    </view>
+    <view class="column-list second-area" wx:if="{{areaMenu == 'area'}}">
+      <text class="area-item">不限</text>
+      <text class="area-item">新吴</text>
+      <text class="area-item">梁溪</text>
+      <text class="area-item">惠山</text>
+      <text class="area-item">崇安</text>
+      <text class="area-item">银山</text>
+    </view>
+    <view class="column-list third-area" wx:if="{{areaMenu == 'area'}}">
+      <text class="area-item">不限</text>
+      <text class="area-item">北大街</text>
+      <text class="area-item">广益</text>
+      <text class="area-item">黄巷</text>
+      <text class="area-item">三阳广场</text>
+    </view>
+    <view class="subway-column-list" wx:if="{{areaMenu == 'subway'}}">
+      <text class="area-item">1号线</text>
+      <text class="area-item">2号线</text>
+      <text class="area-item">3号线</text>
+    </view>
+    <view class="subway-column-list" wx:if="{{areaMenu == 'near'}}">
+      <text class="area-item">500米</text>
+      <text class="area-item">1000米</text>
+      <text class="area-item">1500米</text>
+    </view>
+  <button class="area-sure-btn" bindtap='sure'>确定</button>
+  </view>
+</view>

@@ -74,7 +74,15 @@ Page({
   onShareAppMessage: function () {
 
   },
+
   bindtap(e) {
-    console.log(e.detail)
+    let pages = getCurrentPages();
+    if(pages.length > 1){
+      let prePage = pages[pages.length - 2];
+      prePage.changeCity(e.detail)
+    }
+    wx.navigateBack({
+      delta: 1
+    })
   },
 })

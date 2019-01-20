@@ -1,0 +1,53 @@
+/* components/one-column-list.wxss */
+@import '/static/iconfont/iconfont.wxss';
+
+.active {
+  color: var(--color-deep-blue) !important;
+}
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  top: 15%;
+  background-color: rgba(0, 0, 0, .8);
+  font-size: 32rpx;
+  color: #323232;
+}
+
+.mask .area-group {
+  position: relative;
+  width: 100%;
+  height: 550rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #dcdcdc;
+}
+
+.mask .area-group .column-list {
+  width: 710rpx;
+  height: 480rpx;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.mask .area-group .area-item {
+  width: 100%;
+  height: 79rpx;
+  border-bottom: 1rpx solid #dcdcdc;
+  text-align: center;
+  line-height: 79rpx;
+  display: block;
+}
+
+.mask .area-group .sure-btn {
+  width: 700rpx;
+  height: 94rpx;
+  background-color: #298ef8;
+  font-size: 36rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 94rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left: 25rpx;
+}

@@ -115,3 +115,40 @@
 .recommend .recommend-item text:last-child {
   margin-right: 0;
 }
+
+.search-group {
+  position: absolute;
+  top: 42rpx;
+  left: 50rpx;
+  width: 650rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  background-color: rgba(145, 144, 144, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #323232;
+}
+
+.search-group .search-input-group {
+  display: flex;
+  align-items: center;
+}
+
+.search-group .search-icon {
+  font-size: 40rpx;
+  color: #666;
+}
+
+.search-group .search-input {
+  margin-left: 12rpx;
+}
+
+.search-group .location-icon {
+  font-size: 40rpx;
+  color: #666;
+}

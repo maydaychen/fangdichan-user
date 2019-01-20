@@ -70,3 +70,7 @@ input {
   color: var(--color-sub-title);
   font-size: var(--font-size-large);
 }
+
+.active {
+  color: var(--color-deep-blue) !important;
+}

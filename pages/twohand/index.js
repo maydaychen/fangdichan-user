@@ -13,8 +13,7 @@ Page({
     navigation: '',
     list: [1],
     hide: true,
-    pageName: '',
-    areaMenu: 'area'
+    pageName: ''
   },
   show: function (e) {
     this.setData({
@@ -22,14 +21,18 @@ Page({
       pageName: e.currentTarget.dataset.pagename
     })
   },
-  selectArea: function (e) {
+
+  selectedArea (e){
     this.setData({
-      areaMenu: e.currentTarget.dataset.areamenu
+      pageName: '',
+      navigation: ''
     })
   },
+
   sure: function (e) {
     this.setData({
-      pageName: ''
+      pageName: '',
+      navigation: ''
     })
   },
   change: function (e) {

@@ -5,7 +5,8 @@ const app = getApp()
 Page({
   data: {
    banner:["/image/banner.png","/image/banner.png","/image/banner.png"],
-   list: [1, 2]
+   list: [1, 2],
+   city: '无锡'
   },
   //事件处理函数
   bindViewTap: function() {
@@ -47,6 +48,18 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+
+  location () {
+    wx.navigateTo({
+      url: '/pages/index/locate'
+    })
+  },
+
+  changeCity (data){
+    this.setData({
+      city: data.name
     })
   }
 })

@@ -1,0 +1,9 @@
+<!-- components/rsb-list.wxml -->
+<view class="mask">
+  <view class="area-group">
+    <view class="column-list first-area">
+      <text wx:for="{{list}}" class="area-item">{{item}}</text>
+    </view>
+  <button class="sure-btn" bindtap='sure'>确定</button>
+  </view>
+</view>
