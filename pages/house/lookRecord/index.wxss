@@ -21,23 +21,46 @@
 }
 
 .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 20rpx;
-}
-
-.title view {
-  width: 33.33%;
-  text-align: center;
   color: var(--color-sub-title);
   font-size: var(--font-size-medium-x);
-  padding: 20rpx 0;
+  padding: 20rpx 35rpx;
   border-bottom: 1rpx solid var(--color-border-color);
 }
 
-.list-item view {
-  width: 33.33%;
-  text-align: center;
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: var(--color-certification-title);
   font-size: var(--font-size-large);
-  padding: 30rpx 0;
+  padding: 30rpx 25rpx;
   border-bottom: 1rpx solid var(--color-border-color);
+}
+
+.icon-group {
+  display: flex;
+}
+
+.phone-icon {
+  width: 60rpx;
+  height: 35rpx;
+  background-color: #eaf3fa;
+  border-radius: 5rpx;
+  color: #1296d8;
+  text-align: center;
+  line-height: 36rpx;
+}
+
+.message-icon {
+  width: 60rpx;
+  height: 35rpx;
+  background-color: #e7fbe7;
+  color: #13db1c;
+  margin-left: 40rpx;
+  text-align: center;
+  line-height: 36rpx;
 }

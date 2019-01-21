@@ -19,7 +19,10 @@
     <view class="list-item just-flex background-white">
       <view>2018.12.25</view>
       <view>张三</view>
-      <view>联系经纪人</view>
+      <view class="icon-group">
+        <view class="phone-icon iconfont icon-phone-copy"></view>
+        <view class="message-icon iconfont icon-message-copy"></view>
+      </view>
     </view>
   </block>
 </view>

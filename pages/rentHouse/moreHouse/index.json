@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "更多房源",
-  "usingComponents": {
-    "house-list": "/components/house-list/house-list"
-  }
-}

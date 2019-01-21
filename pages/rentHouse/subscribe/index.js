@@ -1,32 +1,13 @@
-// pages/rentHouse/moreHouse/index.js
+// pages/rentHouse/subscribe/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [1],
+
   },
-  change: function (e) {
-    if (e.detail.value) {
-      this.setData({
-        hide: false
-      })
-    } else {
-      this.setData({
-        hide: true
-      })
-    }
-    this.setData({
-      key: e.detail.value
-    })
-  },
-  cancel: function () {
-    this.setData({
-      key: "",
-      hide: true
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    list: [1],
     rentTypeFilterList: [
       '不限',
       '整租',
@@ -83,6 +84,18 @@ Page({
   moreConditionSelected (e){
     this.setData({
       pageName: ''
+    })
+  },
+
+  location () {
+    wx.navigateTo({
+      url: '/pages/index/locate'
+    })
+  },
+
+  detail () {
+    wx.navigateTo({
+      url: '/pages/rentHouse/detail/index'
     })
   },
 

@@ -5,31 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    items: [{
-        name: 'USA',
-        value: '美国'
+    items: [
+      {
+        name: '1',
+        value: '语言辱骂，不文明用语'
       },
       {
-        name: 'CHN',
-        value: '中国',
+        name: '2',
+        value: '存在广告色情等违规行为',
         checked: 'true'
       },
       {
-        name: 'BRA',
-        value: '巴西'
+        name: '3',
+        value: '语言辱骂，不文明用语'
       },
       {
-        name: 'JPN',
-        value: '日本'
-      },
-      {
-        name: 'ENG',
-        value: '英国'
-      },
-      {
-        name: 'TUR',
-        value: '法国'
-      },
+        name: '4',
+        value: '存在广告色情等违规行为'
+      }
     ]
   },
   imgsOnChange(e) {

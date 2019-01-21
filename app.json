@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/rentHouse/subscribe/index",
+    "pages/rentHouse/index",
+    "pages/house/lookRecord/index",
     "pages/index/index",
     "pages/twohand/index",
-    "pages/rentHouse/index",
     "pages/index/locate",
     "pages/index/manager/index",
     "pages/index/manager/detail",
@@ -15,11 +17,9 @@
     "pages/twohand/search/index",
     "pages/twohand/compare/index",
     "pages/house/report",
-    "pages/house/lookRecord/index",
     "pages/house/dealRecord/index",
     "pages/rentHouse/detail/index",
     "pages/rentHouse/sameTown/index",
-    "pages/rentHouse/moreHouse/index",
     "pages/message/index",
     "pages/me/index",
     "pages/me/info/index",

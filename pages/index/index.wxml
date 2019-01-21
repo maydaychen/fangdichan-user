@@ -25,7 +25,7 @@
       <image src="/image/main-new.png" class="choice-image" />
       <view>新房</view>
     </navigator>
-    <navigator class="choice-item vertical-center" url='/pages/twohand/index?id=3'>
+    <navigator class="choice-item vertical-center" url='/pages/rentHouse/index'>
       <image src="/image/main-rent.png" class="choice-image" />
       <view>租房</view>
     </navigator>
