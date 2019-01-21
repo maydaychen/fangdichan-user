@@ -1,2 +1,49 @@
 <!--pages/rentHouse/subscribe/index.wxml-->
-<text>pages/rentHouse/subscribe/index.wxml</text>
+<view class="top">
+  <view class="menu selected-menu">
+    <image src="/image/subscribe-house-selected.png" />
+    <text>挑选房源</text>
+  </view>
+  <view class="line"></view>
+  <view class="menu">
+    <image src="/image/subscribe-time-icon.png" />
+    <text>预约时间</text>
+  </view>
+  <view class="line"></view>
+  <view class="menu">
+    <image src="/image/subscribe-submit-icon.png" />
+    <text>提交成功</text>
+  </view>
+</view>
+
+<view>
+  <view class="house-group">
+    <view class="place">
+      <text class="iconfont icon-icon_selected_no icon"></text>
+      <text>无锡-惠山</text>
+    </view>
+    <view class="house-list">
+      <text class="iconfont icon-icon_selected_no icon"></text>
+      <view class="content">
+        <image src='/image/house.png' class='left'></image>
+        <view>
+          <view class='title'>宁海里一区东向两居室朝南随时都可以看房</view>
+          <view class='subTitle'>3室2厅</view>
+          <view class='sale'>
+            <text>南北通透</text>
+            <text>低楼层</text>
+            <text>临地铁</text>
+          </view>
+          <view class='bottom'>
+            <text>153万</text>
+            <text>15000/m2</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="tip-group">
+    <text class="iconfont icon-notification tip-icon"></text>
+    <text>约看小技能：建议优先选择有钥匙的，随时可以看房哦！</text>
+  </view>
+</view>

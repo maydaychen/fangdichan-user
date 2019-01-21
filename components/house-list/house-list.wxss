@@ -12,11 +12,9 @@
   display: block;
 }
 
-
 .content {
   display: flex;
   padding-top: 20rpx;
-  /* padding: 20rpx 0; */
 }
 
 .content image {
