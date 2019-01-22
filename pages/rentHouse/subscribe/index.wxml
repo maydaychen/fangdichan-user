@@ -1,22 +1,25 @@
 <!--pages/rentHouse/subscribe/index.wxml-->
 <view class="top">
-  <view class="menu selected-menu">
-    <image src="/image/subscribe-house-selected.png" />
+  <view class="{{step===1?'selected-menu menu':'menu'}}">
+    <image wx:if="{{step===1}}" src="/image/subscribe-house-selected.png" />
+    <image wx:else src="/image/subscribe-house-icon.png" />
     <text>挑选房源</text>
   </view>
   <view class="line"></view>
-  <view class="menu">
-    <image src="/image/subscribe-time-icon.png" />
+  <view class="{{step===2?'selected-menu menu':'menu'}}">
+    <image wx:if="{{step===2}}" src="/image/subscribe-time-selected.png" />
+    <image wx:else src="/image/subscribe-time-icon.png" />
     <text>预约时间</text>
   </view>
   <view class="line"></view>
-  <view class="menu">
-    <image src="/image/subscribe-submit-icon.png" />
+  <view class="{{step===3?'selected-menu menu':'menu'}}">
+    <image wx:if="{{step===3}}" src="/image/subscribe-submit-selected.png" />
+    <image wx:else src="/image/subscribe-submit-icon.png" />
     <text>提交成功</text>
   </view>
 </view>
 
-<view>
+<view wx:if="{{step===1}}" class="select-house">
   <view class="house-group">
     <view class="place">
       <text class="iconfont icon-icon_selected_no icon"></text>
@@ -46,4 +49,37 @@
     <text class="iconfont icon-notification tip-icon"></text>
     <text>约看小技能：建议优先选择有钥匙的，随时可以看房哦！</text>
   </view>
+  <view class="subscribe-bottom">
+    <text>已选二手房0套</text>
+    <button>去预约</button>
+  </view>
+</view>
+
+<view wx:if="{{step===2}}">
+  <view class="info-form">
+    <view class="info-item">
+      <label>称呼</label>
+      <input placeholder="必填啦啦" />
+    </view>
+    <view class="info-item">
+      <label>手机号码</label>
+      <input placeholder="13160021281" />
+    </view>
+    <view class="info-item">
+      <label>期望看房时间</label>
+      <text class="select-time-btn">请选择时间</text>
+    </view>
+  </view>
+
+  <view class="info-form">
+    <view class="info-item">
+      <label>其他约看要求</label>
+      <input placeholder="选填" />
+    </view>
+    <view class="info-item">
+      <label>带看经纪人</label>
+      <text>咳咳</text>
+    </view>
+  </view>
+  <button class="subscribe-btn">确定预约</button>
 </view>
