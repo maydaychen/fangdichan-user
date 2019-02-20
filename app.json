@@ -1,13 +1,16 @@
 {
   "pages": [
+
+    "pages/index/index",
+    "pages/index/chat/chat",
     "pages/rentHouse/subscribe/index",
     "pages/rentHouse/index",
     "pages/house/lookRecord/index",
-    "pages/index/index",
-    "pages/twohand/index",
     "pages/index/locate",
     "pages/index/manager/index",
     "pages/index/manager/detail",
+    "pages/index/add/index",
+    "pages/index/chat/index",
     "pages/newHouse/detail/index",
     "pages/newHouse/info/index",
     "pages/newHouse/comment/index",
@@ -16,7 +19,10 @@
     "pages/twohand/detail/index",
     "pages/twohand/search/index",
     "pages/twohand/compare/index",
+    "pages/twohand/index",
     "pages/house/report",
+    "pages/rentHouse/new/index",
+    "pages/rentHouse/new/info",
     "pages/house/dealRecord/index",
     "pages/rentHouse/detail/index",
     "pages/rentHouse/sameTown/index",
@@ -53,7 +59,6 @@
         "iconPath": "image/home.png",
         "selectedIconPath": "image/home2.png"
       },
-
       {
         "pagePath": "pages/message/index",
         "text": "消息",

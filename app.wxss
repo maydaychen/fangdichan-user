@@ -46,3 +46,9 @@ page {
   height: 1rpx;
   width: 100%;
 }
+
+.single-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

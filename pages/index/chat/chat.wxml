@@ -1,0 +1,46 @@
+<!-- pages/index/chat/chat.wxml -->
+<!-- <view class="content">
+  <block wx:for="{{messageList}}">
+    <block wx:if="{{item.type==1}}">
+      <view class="my_right">
+        <view class="right">{{item.detail}}</view>
+        <image class="new_img" src="/image/info-icon.png" />
+      </view>
+    </block>
+    <block wx:else>
+      <view class="you_left">
+        <view class="left">{{item.detail.data}}</view>
+      </view>
+    </block>
+  </block>
+</view> -->
+<view class='news'>
+  <view class='xiahuaxian1 xiahuaxia'></view>
+  <view class='new_top_txt'>您正在与{{tabdata.nickname}}进行沟通</view>
+  <view class="historycon">
+    <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" class="history" wx:for="{{messageList}}" wx:key=''>
+      <block wx:if="{{item.type==1}}">
+        <view class='my_right '>
+          <view class='page_row just-flex'>
+            <view wx:if='{{!item.is_img}}' class='new_txt' style="margin-right:10rpx">
+              {{item.detail}}
+            </view>
+            <image class='new_img' src='/image/info-icon.png'></image>
+          </view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='you_left'>
+          <view class='page_row just-flex'>
+            <image class='new_img' src='/image/info-icon.png'></image>
+            <view class='new_txt' style="margin-left:10rpx">{{item.detail.data}}</view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
+<view class="bottom flex-between">
+  <input placeholder="您好！" bindinput="message" value="{{inputValue}}" />
+  <view class="bottom_right text_center" bind:tap="send">发送</view>
+</view>

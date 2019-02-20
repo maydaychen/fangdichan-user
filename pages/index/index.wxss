@@ -53,6 +53,7 @@
   padding-top: 30rpx;
   background: var(--color-white);
 }
+
 .top-nav {
   white-space: nowrap;
   display: flex;
@@ -107,12 +108,11 @@
   color: var(--color-sub-title);
 }
 
-.recommend .recommend-item text {
-  bottom: 0;
+.recommend .recommend-item view {
   margin-right: 66rpx;
 }
 
-.recommend .recommend-item text:last-child {
+.recommend .recommend-item view:last-child {
   margin-right: 0;
 }
 
@@ -151,4 +151,12 @@
 .search-group .location-icon {
   font-size: 40rpx;
   color: #666;
+}
+
+.fixed-image {
+  height: 67rpx;
+  width: 67rpx;
+  position: fixed;
+  right: 27rpx;
+  bottom: 140rpx;
 }

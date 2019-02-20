@@ -99,9 +99,10 @@ util.getInfo = function (option) {
   const that = this;
   wx.login({
     success: function (res) {
+      console.log(res);
       if (res.code) {
         wx.request({
-          url: 'https://apis.vitlf.com/user/getOpenId',
+          url: 'https://apis.vitlf.com/Minshe/getOpenId',
           data: {
             code: res.code
           },

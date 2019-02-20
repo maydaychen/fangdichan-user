@@ -1,0 +1,83 @@
+/* pages/index/chat/chat.wxss */
+.content {
+  background: #f5f5f5;
+  margin-bottom: 140rpx;
+}
+
+.bottom {
+  height: 140rpx;
+  background: var(--color-white);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.bottom_right {
+  background: #298ef8;
+  width: 134rpx;
+  height: 84rpx;
+  text-align: center;
+  line-height: 90rpx;
+  margin: auto 20rpx;
+  color: var(--color-white);
+  font-size: var(--font-size-large-y);
+  border-radius: 10rpx;
+}
+
+input {
+  width: 70%;
+  margin: auto 20rpx;
+  border-bottom: 1rpx solid #eeeeee;
+}
+
+/* 聊天内容 */
+
+.news {
+  margin-top: 30rpx;
+  text-align: center;
+  margin-bottom: 150rpx;
+}
+
+.img_null {
+  height: 60rpx;
+}
+
+.l {
+  height: 5rpx;
+  width: 20%;
+  margin-top: 30rpx;
+  color: #000;
+}
+
+/* 聊天 */
+
+.my_right {
+  float: right;
+  position: relative;
+  right: 20rpx;
+}
+
+.you_left {
+  float: left;
+  position: relative;
+  left: 20rpx;
+}
+
+.page_row {
+  margin-top: 10rpx;
+}
+
+.new_img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.new_txt {
+  width: 380rpx;
+  border-radius: 7px;
+  background-color: #95d4ff;
+  padding: 10rpx 30rpx;
+}
