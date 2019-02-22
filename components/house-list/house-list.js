@@ -15,7 +15,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    date: [1,2],
+    date: [],
   },
 
   /**
@@ -23,7 +23,8 @@ Component({
    */
   methods: {
     detail(e) {
-      this.triggerEvent('detail', e.currentTarget.id, {})
+      const myEventDetail = {"id":e.currentTarget.id} 
+      this.triggerEvent('detail',myEventDetail, {})
     },
   }
 })

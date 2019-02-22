@@ -8,26 +8,28 @@
     </block>
   </swiper>
   <view class='container'>
-    <view class="title">新龙城带电梯正规两居室落地窗，随时签约</view>
+    <view class="title">{{info.name}}</view>
     <view class="title-info just-flex">
       <view class="title-info-item first">
         <view class="iconfont .icon-qiandai"></view>
-        <view class="subtitle">132万</view>
+        <view class="subtitle">{{info.money}}</view>
       </view>
       <view class="title-info-item second">
         <view class="iconfont .icon-mianji"></view>
-        <view class="subtitle">128㎡</view>
+        <view class="subtitle">{{info.square}}㎡</view>
       </view>
       <view class="title-info-item third">
         <view class="iconfont .icon-fl-huxing"></view>
-        <view class="subtitle">3室2厅</view>
+        <view class="subtitle" style="font-size:36rpx">
+          {{info.apartment_huxingroom_id}}{{info.apartment_huxinghall_id}}{{info.apartment_huxingwei_id}}
+        </view>
       </view>
     </view>
     <image src="/image/xian.png" class="line" />
     <view class='sale'>
-      <text>宁海里</text>
-      <text>128㎡</text>
-      <text>3室2厅</text>
+      <block wx:for="{{info.tagname}}" wx:key="index">
+        <text wx:if="{{index<4}}">{{item}}</text>
+      </block>
     </view>
     <view class='message'>
       <text class='iconfont icon-jibenxinxi'></text>
@@ -36,80 +38,42 @@
     <view class="just-flex">
       <view class="just-flex half">
         <view class="info-title">方式:</view>
-        <view class="info-detail">整租</view>
+        <view class="info-detail">{{info.type}}</view>
       </view>
       <view class="just-flex half">
         <view class="info-title">装修:</view>
-        <view class="info-detail">精装</view>
+        <view class="info-detail">{{info.general_renovation_id}}</view>
       </view>
     </view>
     <view class="just-flex">
       <view class="just-flex half">
         <view class="info-title">朝向:</view>
-        <view class="info-detail">南</view>
+        <view class="info-detail">{{info.general_orientation_id}}</view>
       </view>
       <view class="just-flex half">
         <view class="info-title">楼层:</view>
-        <view class="info-detail">中楼层/20层</view>
-      </view>
-    </view>
-    <view class="just-flex">
-      <view class="just-flex half">
-        <view class="info-title">楼型:</view>
-        <view class="info-detail">板楼</view>
-      </view>
-      <view class="just-flex half">
-        <view class="info-title">电梯:</view>
-        <view class="info-detail">有</view>
+        <view class="info-detail">{{type_floor}} / {{info.floor}}层</view>
       </view>
     </view>
     <view class="just-flex">
       <view class="just-flex half">
         <view class="info-title">支付:</view>
-        <view class="info-detail">押一付三</view>
-      </view>
-      <view class="just-flex half">
-        <view class="info-title">地铁:</view>
-        <view class="info-detail">有</view>
-      </view>
-    </view>
-    <view class="just-flex">
-      <view class="just-flex half">
-        <view class="info-title">小区:</view>
-        <view class="info-detail">新龙城</view>
-      </view>
-      <view class="just-flex half">
-        <view class="info-title">权属:</view>
-        <view class="info-detail">商品房</view>
+        <view class="info-detail">{{info.general_paymentmethod_id}}</view>
       </view>
     </view>
     <view class='message a'>
       <text class='iconfont icon-sheshi'></text>
       房屋设施
     </view>
-    <view class="just-flex">
-      <view class="sheshi-item just-flex">
-        <view class="iconfont .icon-mianji"></view>
-        <view class="sheshi_text">洗衣机</view>
-      </view>
-      <view class="sheshi-item just-flex">
-        <view class="iconfont .icon-mianji"></view>
-        <view class="sheshi_text">洗衣机</view>
-      </view>
-      <view class="sheshi-item just-flex">
-        <view class="iconfont .icon-mianji"></view>
-        <view class="sheshi_text">洗衣机</view>
-      </view>
-      <view class="sheshi-item just-flex">
-        <view class="iconfont .icon-mianji"></view>
-        <view class="sheshi_text">洗衣机</view>
-      </view>
-      <view class="sheshi-item just-flex">
-        <view class="iconfont .icon-mianji"></view>
-        <view class="sheshi_text">洗衣机</view>
-      </view>
+    <view class="just-flex" style="margin-top:20rpx">
+      <block wx:for="{{info.facilities}}">
+        <view class="sheshi-item just-flex">
+          <image class="facilities_image" src="http://apis.vitlf.com/assets/ximg/{{item}}.png"></image>
+          <text>{{item}}</text>
+        </view>
+      </block>
     </view>
-    <view class="flex-between promise">
+    <view class="flex-between promise" style="margin: 40rpx 0 ;">
       <view class="just-flex promise-left">
         <view class="iconfont .icon-womenchengnuo"></view>
         <view style="margin-left:20rpx">我们承诺真实房源假一赔百元！</view>
@@ -119,6 +83,7 @@
         <view style="margin-right:20rpx">举报</view>
       </navigator>
     </view>
+    <map id="myMap" style="width: 100%; height: 350rpx;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-location></map>
     <view class='message b'>
       <text class='iconfont icon-zuixinfangyuan'></text>
       房源介绍

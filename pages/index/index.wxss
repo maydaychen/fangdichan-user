@@ -160,3 +160,7 @@
   right: 27rpx;
   bottom: 140rpx;
 }
+
+.active {
+  color: #298EF8 !important;
+}

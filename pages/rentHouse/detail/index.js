@@ -6,7 +6,6 @@ Page({
    */
   data: {
     viliage_deal: [1, 2],
-    banner: ["/image/banner.png", "/image/banner.png", "/image/banner.png"],
   },
   sameTown: function () {
     wx.navigateTo({
@@ -25,11 +24,38 @@ Page({
       url: '../subscribe/index'
     })
   },
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var info = JSON.parse(options.detail);
+    var markers = new Array();
+    var item = new Object;
+    item.id = 1;
+    item.latitude = parseFloat(info.villages.latitude);
+    item.longitude = parseFloat(info.villages.longitude);
+    item.name = info.villages.name;
+    markers.push(item);
+    console.log(info.floor);
+    var j = parseInt(info.floor);
+    console.log(j);
+    let type_floor = "";
+    if (j < 6) {
+      type_floor = "低楼层"
+    } else if (6 <= j < 10) {
+      type_floor = "中楼层"
+    } else {
+      type_floor = "高楼层"
+    }
+    this.setData({
+      type_floor: type_floor,
+      info: info, //解析得到对象
+      banner: info.smallimages.split(','),
+      latitude: parseFloat(info.villages.latitude),
+      longitude: parseFloat(info.villages.longitude),
+      markers: markers
+    })
   },
 
   /**

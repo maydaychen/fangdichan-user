@@ -6,7 +6,8 @@ Page({
   data: {
     banner: [],
     list: [],
-    city: '无锡'
+    city: '无锡',
+    type: 3
   },
   //事件处理函数
   bindViewTap: function () {
@@ -44,44 +45,34 @@ Page({
       success(res) {
         console.log(res)
         that.setData({
-          list:res.data
+          list: res.data
         })
       }
     })
-    // if (app.globalData.userInfo) {
-    //   this.setData({
-    //     userInfo: app.globalData.userInfo,
-    //     hasUserInfo: true
-    //   })
-    // } else if (this.data.canIUse) {
-    //   // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-    //   // 所以此处加入 callback 以防止这种情况
-    //   app.userInfoReadyCallback = res => {
-    //     this.setData({
-    //       userInfo: res.userInfo,
-    //       hasUserInfo: true
-    //     })
-    //   }
-    // } else {
-    //   // 在没有 open-type=getUserInfo 版本的兼容处理
-    //   wx.getUserInfo({
-    //     success: res => {
-    //       app.globalData.userInfo = res.userInfo
-    //       this.setData({
-    //         userInfo: res.userInfo,
-    //         hasUserInfo: true
-    //       })
-    //     }
-    //   })
-    // }
+
   },
-  getUserInfo: function (e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+  changeType: function (e) {
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+      type: e.currentTarget.id
     })
+  },
+  detail: function (e) { //详情
+    console.log(e)
+    if (this.data.type == 1) {
+      wx.navigateTo({
+        url: '/pages/twohand/detail/index',
+      })
+    }
+    if (this.data.type == 2) {
+      wx.navigateTo({
+        url: '/pages/newHouse/detail/index',
+      })
+    }
+    if (this.data.type == 3) {
+      wx.navigateTo({
+        url: '/pages/rentHouse/detail/index?detail=' + JSON.stringify(this.data.list[e.detail.id]),
+      })
+    }
   },
   newHouse() {
     wx.navigateTo({
@@ -93,7 +84,6 @@ Page({
       url: '/pages/index/locate'
     })
   },
-
   changeCity(data) {
     this.setData({
       city: data.name
