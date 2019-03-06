@@ -1,4 +1,7 @@
 // pages/index/chat/chat.js
+var app = getApp();
+let util = app.requirejs();
+
 Page({
 
   /**
@@ -15,7 +18,7 @@ Page({
   send: function () {
     if (this.data.inputValue) {
       wx.sendSocketMessage({
-        data: this.data.inputValue,
+        data: 'chat:<aaa>:this.data.inputValue',
       })
       let message = new Object();
       let list = this.data.messageList;
@@ -54,17 +57,23 @@ Page({
     })
     wx.onSocketOpen(function () {
       console.log("连接成功");
+      wx.sendSocketMessage({
+        data: 'login:app.globalData.openInfo.openid'
+      })
     })
     wx.onSocketMessage(function (data) {
+      console.log(data.data)
+      console.log(JSON.parse(data.data))
       let message = new Object();
       let list = that.data.messageList;
       message.type = "0";
-      message.detail = data;
+      message.detail = JSON.parse(data.data).msg[0];
       list.push(message);
       that.setData({
         messageList: list
       })
-      console.log(that.data.messageList);
+
+
     })
   },
 

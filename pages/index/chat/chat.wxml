@@ -33,7 +33,7 @@
         <view class='you_left'>
           <view class='page_row just-flex'>
             <image class='new_img' src='/image/info-icon.png'></image>
-            <view class='new_txt' style="margin-left:10rpx">{{item.detail.data}}</view>
+            <view class='new_txt' style="margin-left:10rpx">{{item.detail}}</view>
           </view>
         </view>
       </block>

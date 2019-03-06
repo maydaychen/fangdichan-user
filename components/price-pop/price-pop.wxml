@@ -8,7 +8,7 @@
     <input class="price-input min-price" />
     <text class="line"></text>
     <input class="price-input" />
-    <text class="unit">万</text>
+    <text class="unit">元</text>
     <button class="submit-btn" bindtap='sure'>确定</button>
   </view>
 </view>

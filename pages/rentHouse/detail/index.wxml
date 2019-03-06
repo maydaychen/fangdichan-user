@@ -191,5 +191,5 @@
     <view class="text_center bottom-subtitle">收藏</view>
   </view>
   <view class="bottom_third text_center" bindtap="toSubscribe">预约看房</view>
-  <view class="bottom_right text_center">咨询经纪人</view>
+  <navigator class="bottom_right text_center" url="/pages/index/chat/chat">咨询经纪人</navigator>
 </view>

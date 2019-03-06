@@ -16,6 +16,10 @@
     </block>
   </swiper>
   <view style="display:flex;height:245rpx;background:white">
+    <navigator class="choice-item vertical-center" url='/pages/rentHouse/index'>
+      <image src="/image/main-rent.png" class="choice-image" />
+      <view>租房</view>
+    </navigator>
     <navigator class="choice-item vertical-center" url='/pages/twohand/index?id=1'>
       <!-- <navigator class="choice-item vertical-center" url='locate'> -->
       <image src="/image/main-ershou.png" class="choice-image" />
@@ -24,10 +28,6 @@
     <navigator class="choice-item vertical-center" url='/pages/twohand/index?id=2'>
       <image src="/image/main-new.png" class="choice-image" />
       <view>新房</view>
-    </navigator>
-    <navigator class="choice-item vertical-center" url='/pages/rentHouse/index'>
-      <image src="/image/main-rent.png" class="choice-image" />
-      <view>租房</view>
     </navigator>
     <navigator class="choice-item vertical-center" url="manager/index">
       <image src="/image/main-manager.png" class="choice-image" />
@@ -52,7 +52,7 @@
         </block>
       </scroll-view>
     </view>
-    <view class="title event-title">无锡市场行情</view>
+    <view class="title event-title">{{city}}市场行情</view>
     <view class="sub-title">
       <text>全市均价</text>
       <text style="margin-left:246rpx;">昨日房挑房成交量</text>
@@ -67,8 +67,8 @@
       <view class="title">精选推荐</view>
       <view class="recommend-item just-flex">
         <view class="{{type==3?'active':''}}" id="3" bind:tap="changeType">租房</view>
-        <view class="{{type==1?'active':''}}" id="1" bind:tap="changeType">二手房</view>
-        <view class="{{type==2?'active':''}}" id="2" bind:tap="changeType">新房</view>
+        <!-- <view class="{{type==1?'active':''}}" id="1" bind:tap="changeType">二手房</view> -->
+        <!-- <view class="{{type==2?'active':''}}" id="2" bind:tap="changeType">新房</view> -->
       </view>
     </view>
     <view>
