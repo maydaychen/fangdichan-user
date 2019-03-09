@@ -1,11 +1,14 @@
 // pages/rentHouse/index.js
+var app = getApp();
+let util = app.requirejs();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [1],
+    list: [],
     rentTypeFilterList: [
       '不限',
       '整租',
@@ -47,14 +50,39 @@ Page({
       '月租',
       '年租'
     ],
-    pageName: ''
+    pageName: '',
+    currentPage: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.loadData()
+  },
 
+  loadData () {
+    let that = this
+    util.request({
+      url: '/House/getUserRentingList',
+      data: {
+        villagename: '',
+        type: '整租',
+        page: this.data.currentPage
+      },
+      success(res) {
+        if (res.data.data.length === 0) {
+          return
+        }
+        let list = res.data.data
+        for (let item of list) {
+          item.smallimages = item.smallimages.split(',')[0]
+        }
+        that.setData({
+          list: res.data.data
+        })
+      },
+    })
   },
 
   show (e) {

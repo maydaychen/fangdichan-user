@@ -3,6 +3,7 @@
 
 .list {
   padding: 0 20rpx;
+  box-sizing: border-box;
   background: var(--color-white);
 }
 
@@ -74,6 +75,12 @@
 .bottom text:last-child {
   color: var(--color-unactive-color);
   font-size: var(--font-size-medium);
+}
+
+.rent-money {
+  color: #e40c01;
+  margin-right: 64rpx;
+  font-size: var(--font-size-large-a);
 }
 
 .head:first-child {

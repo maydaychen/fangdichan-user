@@ -58,20 +58,20 @@
   <block wx:for="{{list}}" wx:key="*this">
     <view class='list' id="{{index}}" bindtap='detail'>
       <view class="content">
-        <image src='/image/house.png' class='left'></image>
+        <image src="{{item.smallimages}}" class='left'></image>
         <view>
           <view class='title'>{{item.name}}</view>
           <view class='subTitle'>
-            {{item.apartment_huxingroom_id}}{{item.apartment_huxinghall_id}}{{item.apartment_huxingwei_id}}
+            {{item.square}}㎡ · {{item.apartment_huxingroom_id}} · {{item.apartment_huxinghall_id}} · {{item.apartment_huxingwei_id}}
           </view>
           <view class='sale'>
             <block wx:for="{{item.tagname}}" wx:key="index">
               <text wx:if="{{index<3}}">{{item}}</text>
             </block>
           </view>
-          <view class='bottom'>
-            <text>{{item.money}}万</text>
-            <text>{{filters.toFix(item.money/item.square)}}/㎡</text>
+          <view>
+            <text class='rent-money'>{{item.money}}/月</text>
+            <!-- <text>{{filters.toFix(item.money/item.square) * 10000}}元/㎡</text> -->
           </view>
         </view>
       </view>

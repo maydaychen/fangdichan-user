@@ -28,6 +28,13 @@ Component({
   methods: {
     sure () {
       this.triggerEvent('selected', '', {})
+    },
+
+    selected (e) {
+      let type = e.target.dataset.type
+      let value = e.target.dataset.value
+      console.log('target')
+      console.log(type, value)
     }
   }
 })
