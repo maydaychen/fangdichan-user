@@ -67,8 +67,8 @@
       <view class="title">精选推荐</view>
       <view class="recommend-item just-flex">
         <view class="{{type==3?'active':''}}" id="3" bind:tap="changeType">租房</view>
-        <!-- <view class="{{type==1?'active':''}}" id="1" bind:tap="changeType">二手房</view> -->
-        <!-- <view class="{{type==2?'active':''}}" id="2" bind:tap="changeType">新房</view> -->
+        <view class="{{type==1?'active':''}}" id="1" bind:tap="changeType">二手房</view>
+        <view class="{{type==2?'active':''}}" id="2" bind:tap="changeType">新房</view>
       </view>
     </view>
     <view>

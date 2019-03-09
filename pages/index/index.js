@@ -70,7 +70,8 @@ Page({
     }
     if (this.data.type == 3) {
       wx.navigateTo({
-        url: '/pages/rentHouse/detail/index?detail=' + JSON.stringify(this.data.list[e.detail.id]),
+        // url: '/pages/rentHouse/detail/index?detail=' + JSON.stringify(this.data.list[e.detail.id]),
+        url: '/pages/rentHouse/detail/index?detail=' + this.data.list[e.detail.id].id,
       })
     }
   },
