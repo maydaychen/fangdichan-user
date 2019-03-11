@@ -51,3 +51,7 @@
   bottom: 20rpx;
   left: 25rpx;
 }
+
+.active {
+  color: var(--color-deep-blue) !important;
+}

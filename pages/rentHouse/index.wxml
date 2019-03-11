@@ -18,7 +18,7 @@
   </view>
   <view class="choice">
     <text class="{{pageName=='areaFilter'?'active':''}}" bindtap='show' data-pagename="areaFilter">区域 <text class='iconfont icon-xiasanjiao'></text> </text>
-    <text class="{{pageName=='rentTypeFilter'?'active':''}}" bindtap='show' data-pagename="rentTypeFilter">整租<text class='iconfont icon-xiasanjiao'></text> </text>
+    <text class="{{pageName=='rentTypeFilter'?'active':''}}" bindtap='show' data-pagename="rentTypeFilter">{{rentTypeSelected}}<text class='iconfont icon-xiasanjiao'></text> </text>
     <text class="{{pageName=='priceFilter'?'active':''}}" bindtap='show' data-pagename="priceFilter">租金<text class='iconfont icon-xiasanjiao'></text> </text>
     <text class="{{pageName=='moreFilter'?'active':''}}" bindtap='show' data-pagename="moreFilter">更多 <text class='iconfont icon-xiasanjiao'></text> </text>
   </view>
@@ -48,7 +48,7 @@
   <one-column-pop
     wx:if="{{pageName == 'rentTypeFilter'}}"
     list="{{rentTypeFilterList}}"
-    bind:selected="selected">
+    bind:selected="selectedRentType">
   </one-column-pop>
 
   <area-pop

@@ -15,16 +15,33 @@ Component({
    * 组件的初始数据
    */
   data: {
-    date: [1,2]
+    selectedData: {}
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    sure () {
+    select (e) {
       let that = this
-      this.triggerEvent('selected', '', {})
+      let listWrapper = that.properties.list
+      let selectedData = {}
+      for (let i in listWrapper) {
+        if (i == e.target.dataset.index) {
+          listWrapper[i].checked = !listWrapper[i].checked
+          selectedData = listWrapper[i]
+        } else {
+          listWrapper[i].checked = false
+        }
+      }
+      this.setData({
+        list: listWrapper,
+        selectedData: selectedData
+      })
+    },
+
+    sure () {
+      this.triggerEvent('selected', this.data.selectedData)
     }
   }
 })

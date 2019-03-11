@@ -2,7 +2,7 @@
 <view class="mask">
   <view class="area-group">
     <view class="column-list first-area">
-      <text wx:for="{{list}}" class="area-item">{{item}}</text>
+      <text wx:for="{{list}}" class="{{item.checked ? 'active area-item' : 'area-item'}}" bindtap="select" data-value="{{item}}" data-index="{{index}}">{{item.value}}</text>
     </view>
   <button class="sure-btn" bindtap='sure'>确定</button>
   </view>

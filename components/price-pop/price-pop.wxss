@@ -21,13 +21,13 @@
   border-top: 1rpx solid #dcdcdc;
 }
 
-.mask .list .item {
+.mask .list .list-item {
   padding: 22rpx 36rpx;
   box-sizing: border-box;
   border-bottom: 1rpx solid #dcdcdc;
 }
 
-.mask .list .item:last-child {
+.mask .list .list-item:last-child {
   border-bottom: none;
 }
 
@@ -70,4 +70,8 @@
   background-color: var(--color-button-background);
   font-size: 36rpx;
   color: #fff;
+}
+
+.active-item {
+  color: var(--color-deep-blue) !important;
 }
