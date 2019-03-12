@@ -4,51 +4,46 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    list: Array,
-    type: {
-      type: Number,
-      value: 0
-    }
+    priceRange: Object
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    minValue: '',
-    maxValue: '',
-    selectedData: {}
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    select (e) {
-      let that = this
-      let listWrapper = that.properties.list
-      let selectedData = {}
-      for (let i in listWrapper) {
-        if (i == e.target.dataset.index) {
-          listWrapper[i].checked = !listWrapper[i].checked
-          selectedData = listWrapper[i]
-        } else {
-          listWrapper[i].checked = false
-        }
+    minPriceInput (e) {
+      if (!e.detail.value) {
+        return
       }
+      let priceRangeWrapper = this.properties.priceRange
+      priceRangeWrapper.minValue = e.detail.value
+
       this.setData({
-        list: listWrapper,
-        selectedData: selectedData
+        priceRange: priceRangeWrapper
+      })
+    },
+
+    maxPriceInput (e) {
+      if (!e.detail.value) {
+        return
+      }
+
+      let priceRangeWrapper = this.properties.priceRange
+      priceRangeWrapper.maxValue = e.detail.value
+
+      this.setData({
+        priceRange: priceRangeWrapper
       })
     },
 
     sure () {
-      let selectedData = {
-        selectedItem: this.data.selectedData,
-        minInput: this.data.minValue,
-        maxInput: this.data.maxValue
-      }
-      this.triggerEvent('selected', selectedData)
+      this.triggerEvent('selected', this.properties.priceRange)
     }
   }
 })

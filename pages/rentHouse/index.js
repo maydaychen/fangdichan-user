@@ -27,39 +27,10 @@ Page({
       }
     ],
     rentTypeSelected: '整租',
-    priceFilterList: [
-      {
-        id: 0,
-        value: '不限',
-        checked: false
-      },
-      {
-        id: 1,
-        value: '500-1000',
-        checked: false
-      },
-      {
-        id: 2,
-        value: '1000-1500',
-        checked: false
-      },
-      {
-        id: 3,
-        value: '1500-2000',
-        checked: false
-      },
-      {
-        id: 4,
-        value: '2000-2500',
-        checked: false
-      },
-      {
-        id: 5,
-        value: '5000以上',
-        checked: false
-      }
-    ],
-    priceRangeSelected: '',
+    priceRange: {
+      minValue: '',
+      maxValue: ''
+    },
     featureList: [
       '精装修',
       '近地铁',
@@ -101,11 +72,12 @@ Page({
 
   loadData () {
     let that = this
+    let rentType = this.data.rentTypeSelected != '不限' ? this.data.rentTypeSelected : ''
     util.request({
       url: '/House/getUserRentingList',
       data: {
         villagename: '',
-        type: this.data.rentTypeSelected,
+        type: rentType,
         page: this.data.currentPage
       },
       success(res) {
@@ -136,37 +108,12 @@ Page({
   },
 
   selectedPrice (e){
-    let priceFilterWrapper = this.data.priceFilterList
-    for (let item of priceFilterWrapper) {
-      if (item.id === e.detail.id) {
-        item.checked = true
-      } else {
-        item.checked = false
-      }
-    }
-
-    // TODO: format price selected
-    let array = []
-    let minValue = 0
-    let maxValue = 0
-    if (e.detail.selectedItem) {
-      array = e.detail.selectedItem.value.split('-')
-    }
-
-    if (array.length > 0) {
-      minValue = array[0]
-      maxValue = array[1]
-      if (e.detail.minInput) {
-        minValue = array[0] < e.detail.minInput ? array[0] : e.detail.minInput
-      }
-      if (e.detail.maxInput) {
-        maxValue = array[1] > e.detail.maxInput ? array[1] : e.detail.maxInput
-      }
-    }
-
     this.setData({
       pageName: '',
-      priceFilterList: priceFilterWrapper
+      priceRange: {
+        minValue: e.detail.minValue || '',
+        maxValue: e.detail.maxValue || ''
+      }
     })
   },
 

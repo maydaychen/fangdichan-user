@@ -1,18 +1,10 @@
 <!-- components/price-pop.wxml -->
 <view class="mask">
-  <view class="list">
-    <text
-      class="{{item.checked ? 'active-item list-item': 'list-item'}}"
-      wx:for="{{list}}" 
-      bindtap="select"
-      data-value="{{item}}"
-      data-index="{{index}}">{{item.value}}</text>
-  </view>
   <view class="input-group">
     <text>价格</text>
-    <input class="price-input min-price" value="{{minValue}}"/>
+    <input class="price-input min-price" type="number" value="{{priceRange.minValue}}" bindblur="minPriceInput"/>
     <text class="line"></text>
-    <input class="price-input" value="{{maxValue}}" />
+    <input class="price-input" type="number" value="{{priceRange.maxValue}}" bindblur="maxPriceInput"/>
     <text class="unit">元</text>
     <button class="submit-btn" bindtap='sure'>确定</button>
   </view>

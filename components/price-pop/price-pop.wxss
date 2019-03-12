@@ -11,29 +11,9 @@
   color: #323232;
 }
 
-.mask .list {
-  width: 100%;
-  background-color: #fff;
-  padding: 0 20rpx;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  border-top: 1rpx solid #dcdcdc;
-}
-
-.mask .list .list-item {
-  padding: 22rpx 36rpx;
-  box-sizing: border-box;
-  border-bottom: 1rpx solid #dcdcdc;
-}
-
-.mask .list .list-item:last-child {
-  border-bottom: none;
-}
-
 .mask .input-group {
   width: 100%;
-  padding: 10rpx 16rpx 10rpx 58rpx;
+  padding: 25rpx 16rpx 25rpx 58rpx;
   box-sizing: border-box;
   background-color: #fff;
   display: flex;
@@ -66,7 +46,7 @@
 
 .mask .input-group .submit-btn {
   width: 215rpx;
-  height: 99rpx;
+  height: 85rpx;
   background-color: var(--color-button-background);
   font-size: 36rpx;
   color: #fff;

@@ -8,7 +8,7 @@
         <navigator
           class="input-placeholder"
           bindinput="change"
-          url="search/index?id={{type}}">
+          url="/pages/twohand/search/index?id=3">
           请输入小区或商圈名称
         </navigator>
       </view>
@@ -42,10 +42,12 @@
   <price-pop
     wx:if="{{pageName == 'priceFilter'}}"
     list="{{priceFilterList}}"
+    priceRange="{{priceRange}}"
     bind:selected="selectedPrice">
   </price-pop>
 
   <one-column-pop
+    catchtouchmove="{{true}}"
     wx:if="{{pageName == 'rentTypeFilter'}}"
     list="{{rentTypeFilterList}}"
     bind:selected="selectedRentType">
