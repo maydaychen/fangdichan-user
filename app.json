@@ -17,7 +17,7 @@
     "pages/newHouse/comment/newComment",
     "pages/newHouse/openTime/index",
     "pages/twohand/detail/index",
-    "pages/twohand/search/index",
+    "pages/search/index",
     "pages/twohand/compare/index",
     "pages/twohand/index",
     "pages/house/report",

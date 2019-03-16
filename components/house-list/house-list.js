@@ -23,8 +23,8 @@ Component({
    */
   methods: {
     detail(e) {
-      const myEventDetail = {"id":e.currentTarget.id} 
-      this.triggerEvent('detail',myEventDetail, {})
+      const myEventDetail = {"id": e.currentTarget.dataset.id} 
+      this.triggerEvent('detail', myEventDetail, {})
     },
   }
 })

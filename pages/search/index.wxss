@@ -1,4 +1,4 @@
-/* pages/twohand/search/index.wxss */
+/* pages/search/index.wxss */
 input {
   display: inline-block;
   width: 500rpx;

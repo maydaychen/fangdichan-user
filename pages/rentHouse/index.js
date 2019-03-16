@@ -149,10 +149,12 @@ Page({
     })
   },
 
-  detail () {
-    wx.navigateTo({
-      url: '/pages/rentHouse/detail/index'
-    })
+  detail (data) {
+    if (data.detail.id) {
+      wx.navigateTo({
+        url: '/pages/rentHouse/detail/index?id=' + data.detail.id
+      })
+    }
   },
 
   /**

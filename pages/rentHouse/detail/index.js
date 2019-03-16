@@ -36,7 +36,7 @@ Page({
     util.request({
       url: '/House/getUserRentingView',
       data: {
-        id: options.detail,
+        id: options.id,
       },
       success(res) {
         info = res.data.data;
@@ -47,9 +47,7 @@ Page({
         item.longitude = parseFloat(info.villages.longitude);
         item.name = info.villages.name;
         markers.push(item);
-        console.log(info.floor);
         var j = parseInt(info.floor);
-        console.log(j);
         let type_floor = "";
         if (j < 6) {
           type_floor = "低楼层"

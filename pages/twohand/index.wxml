@@ -8,7 +8,7 @@
         <navigator
           class="input-placeholder"
           bindinput="change"
-          url="search/index?id={{type}}">
+          url="/pages/search/index??id={{type}}">
           请输入小区或商圈名称
         </navigator>
       </view>

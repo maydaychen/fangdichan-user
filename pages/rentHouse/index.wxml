@@ -8,7 +8,7 @@
         <navigator
           class="input-placeholder"
           bindinput="change"
-          url="/pages/twohand/search/index?id=3">
+          url="/pages/search/index?id=3">
           请输入小区或商圈名称
         </navigator>
       </view>
