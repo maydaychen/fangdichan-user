@@ -9,6 +9,7 @@ Page({
    */
   data: {
     list: [],
+    searchKey: '',
     rentTypeFilterList: [
       {
         id: 0,
@@ -76,7 +77,7 @@ Page({
     util.request({
       url: '/House/getUserRentingList',
       data: {
-        villagename: '',
+        villagename: this.data.searchKey,
         type: rentType,
         page: this.data.currentPage
       },
@@ -168,7 +169,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.loadData()
   },
 
   /**

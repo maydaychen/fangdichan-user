@@ -68,11 +68,12 @@ Page({
 
   selectHouseItem (e) {
     // navigate to house list page to search
-    // let pages = getCurrentPage()
-    // let prevPage = pages[pages.length - 2]
-    // console.log('------')
-    // console.log(prevPage)
-    // e.currentTarget.dataset.name
+    let pages = getCurrentPages()
+    let prevPage = pages[pages.length - 2]
+    prevPage.data.searchKey = e.currentTarget.dataset.value
+    wx.navigateBack({
+      delta: 1
+    })
   },
 
   /**
