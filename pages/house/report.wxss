@@ -35,3 +35,14 @@ button {
   box-shadow: 0px 1px 1px 0px #1d87d9;
   margin: 40rpx auto 46rpx;
 }
+
+textarea{
+  height: 200rpx;
+  width: 96%;
+  border: 1rpx solid #222222;
+  padding: 10rpx;
+  border-radius: 4rpx;
+  margin: 10rpx auto;
+  margin-top: 30rpx;
+
+}

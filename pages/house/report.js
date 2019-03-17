@@ -1,12 +1,14 @@
 // pages/house/report.js
+var app = getApp();
+let util = app.requirejs();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    items: [
-      {
+    items: [{
         name: '1',
         value: '语言辱骂，不文明用语'
       },
@@ -23,12 +25,18 @@ Page({
         name: '4',
         value: '存在广告色情等违规行为'
       }
-    ]
+    ],
+    text: ""
   },
   imgsOnChange(e) {
     console.log(e.detail)
     this.setData({
       company_img_list: e.detail
+    })
+  },
+  textChange(e) {
+    this.setData({
+      text: e.detail.value
     })
   },
   add_pic: function (e) {
@@ -58,6 +66,30 @@ Page({
     wx.previewImage({
       urls: list
     })
+  },
+  submit: function (e) {
+    if (text) {
+      wx.showToast({
+        title: '请输入内容！',
+        icon: 'none'
+      })
+    } else {
+      util.request({
+        url: '/House/reports',
+        data: {
+          openId: app.globalData.openInfo.openid,
+        },
+        success(res) {
+          var list = new Array();
+          for (var i in res.data) {
+            list.push("https://apis.vitlf.com" + res.data[i].smallimage)
+          }
+          that.setData({
+            banner: list
+          })
+        }
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

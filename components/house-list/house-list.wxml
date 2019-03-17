@@ -2,7 +2,7 @@
 <wxs module="filters" src="addmul.wxs"></wxs>
 
 <block wx:if="{{type==0}}">
-  <block wx:for="{{date}}">
+  <block wx:for="{{date}}" wx:key="*this">
     <view class="head">
       <view class="iconfont icon-shijian" style="margin:auto 0"></view>
       <view class="head-time">2018-12-10</view>

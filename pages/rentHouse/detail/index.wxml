@@ -88,7 +88,7 @@
       <text class='iconfont icon-zuixinfangyuan'></text>
       房源介绍
     </view>
-    <view class="description">房屋情况:两室两厅户型方正，采光好南北通透。周边菜场超市商场医院等设施齐全，公交地铁也都齐全，出现特别方便。</view>
+    <view class="description">{{info.describe}}</view>
     <image src="/image/xian.png" class="line" />
     <view class="flex-between">
       <view class="manager-item">
@@ -188,7 +188,7 @@
   </view>
   <view style="width:105rpx" bindtap="collect">
     <view class="iconfont icon-shoucang text_center"></view>
-    <view class="text_center bottom-subtitle">收藏</view>
+    <view class="text_center bottom-subtitle" bind:tap="collect">收藏</view>
   </view>
   <view class="bottom_third text_center" bindtap="toSubscribe">预约看房</view>
   <navigator class="bottom_right text_center" url="/pages/index/chat/chat">咨询经纪人</navigator>

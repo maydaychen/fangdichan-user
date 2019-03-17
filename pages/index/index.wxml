@@ -1,7 +1,7 @@
 <!-- index.wxml -->
 <view class="container">
   <swiper indicator-dots="true" indicator-color='#1B82D1' indicator-active-color='#f00' circular='true' duration='500' class="haibao">
-    <block wx:for="{{banner}}">
+    <block wx:for="{{banner}}" wx:key="index">
       <swiper-item>
         <view class="search-group">
           <text>{{city}}</text>
@@ -11,7 +11,7 @@
           </view>
           <text class="iconfont icon-dingwei1 location-icon" bindtap="location"></text>
         </view>
-        <image class='imageBener' src="{{item}}" bindtap='detail'></image>
+        <image class='imageBener' src="{{item}}" mode="aspectFill" bindtap='detail'></image>
       </swiper-item>
     </block>
   </swiper>
@@ -47,7 +47,7 @@
     <!-- 横向滚动 -->
     <view class="menu">
       <scroll-view scroll-x="true" class="top-nav">
-        <block wx:for="{{banner}}" wx:for-index="x">
+        <block wx:for="{{banner}}" wx:for-index="x" wx:key="index">
           <image bindtap='changeType' src="{{item}}" class="activity-img"></image>
         </block>
       </scroll-view>

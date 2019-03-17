@@ -23,7 +23,6 @@ Page({
       success(res) {
         var list = new Array();
         for (var i in res.data) {
-          console.log(i);
           list.push("https://apis.vitlf.com" + res.data[i].smallimage)
         }
         that.setData({
@@ -43,7 +42,10 @@ Page({
     util.request({
       url: '/House/userIndexData',
       success(res) {
-        console.log(res)
+        var info = res.data;
+        for (let item of info) {
+          item.smallimages = item.smallimages.split(',')[0]
+        }
         that.setData({
           list: res.data
         })
@@ -70,8 +72,7 @@ Page({
     }
     if (this.data.type == 3) {
       wx.navigateTo({
-        // url: '/pages/rentHouse/detail/index?detail=' + JSON.stringify(this.data.list[e.detail.id]),
-        url: '/pages/rentHouse/detail/index?detail=' + this.data.list[e.detail.id].id,
+        url: '/pages/rentHouse/detail/index?id=' + e.detail.id
       })
     }
   },

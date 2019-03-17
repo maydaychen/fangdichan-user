@@ -26,6 +26,25 @@ Page({
       url: '../subscribe/index'
     })
   },
+  collect: function () {
+    util.request({
+      url: '/House/collection',
+      data: {
+        houseid: this.data.id,
+        openId: app.globalData.openInfo.openid,
+        type: "renting",
+      },
+      success(res) {
+        console.log(res.data)
+        if(res.data.code==1){
+          wx.showToast({
+            title: '收藏成功',
+            icon: 'none'
+          })
+        }
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -56,7 +75,9 @@ Page({
         } else {
           type_floor = "高楼层"
         }
+
         that.setData({
+          id: options.detail,
           type_floor: type_floor,
           info: info, //解析得到对象
           banner: info.smallimages.split(','),
