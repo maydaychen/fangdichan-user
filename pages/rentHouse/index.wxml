@@ -36,6 +36,8 @@
     areaSize="{{areaSize}}"
     floorType="{{floorType}}"
     rentTimeType="{{rentTimeType}}"
+    direction="{{direction}}"
+    levator="{{levator}}"
     bind:selected="moreConditionSelected">
   </more-pop>
 

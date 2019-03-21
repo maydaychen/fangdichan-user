@@ -33,32 +33,120 @@ Page({
       maxValue: ''
     },
     featureList: [
-      '精装修',
-      '近地铁',
-      '双卫',
-      '有车位',
-      '押一付一',
-      '随时看',
-      '近公园',
-      '环境好'
+      {
+        value: '精装修',
+        checked: false
+      },
+      {
+        value: '近地铁',
+        checked: false
+      },
+      {
+        value: '双卫',
+        checked: false
+      },
+      {
+        value: '有车位',
+        checked: false
+      },
+      {
+        value: '押一付一',
+        checked: false
+      },
+      {
+        value: '随时看',
+        checked: false
+      },
+      {
+        value: '近公园',
+        checked: false
+      },
+      {
+        value: '环境好',
+        checked: false
+      }
     ],
     areaSize: [
-      '50以下',
-      '50-70',
-      '70-90',
-      '90-120',
-      '120-150',
-      '150以上'
+      {
+        value: '50以下',
+        checked: false
+      },
+      {
+        value: '50-70',
+        checked: false
+      },
+      {
+        value: '70-90',
+        checked: false
+      },
+      {
+        value: '90-120',
+        checked: false
+      },
+      {
+        value: '120-150',
+        checked: false
+      },
+      {
+        value: '150以上',
+        checked: false
+      }
     ],
     floorType: [
-      '6层以下',
-      '6-12层',
-      '12-20层',
-      '20层以上'
+      {
+        value: '6层以下',
+        checked: false
+      },
+      {
+        value: '6-12层',
+        checked: false
+      },
+      {
+        value: '12-20层',
+        checked: false
+      },
+      {
+        value: '20层以上',
+        checked: false
+      }
     ],
     rentTimeType: [
-      '月租',
-      '年租'
+      {
+        value: '月租',
+        checked: false
+      },
+      {
+        value: '年租',
+        checked: false
+      }
+    ],
+    direction: [
+      {
+        value: '东',
+        checked: false
+      },
+      {
+        value: '西',
+        checked: false
+      },
+      {
+        value: '南',
+        checked: false
+      },
+      {
+        value: '北',
+        checked: false
+      }
+    ],
+    levator: [
+      {
+        value: '有电梯',
+        checked: false
+      },
+      {
+        value: '无电梯',
+        checked: false
+      }
     ],
     pageName: '',
     currentPage: 0
@@ -141,6 +229,53 @@ Page({
   moreConditionSelected (e){
     this.setData({
       pageName: ''
+    })
+
+    let areaSizeWrapper = this.data.areaSize
+    let areaSizeIndex= areaSizeWrapper.findIndex(item => item.value === e.detail.areaSize)
+    if (areaSizeIndex) {
+      areaSizeWrapper[areaSizeIndex].checked = true
+    }
+
+    let floorTypeWrapper = this.data.floorType
+    let floorTypeIndex = floorTypeWrapper.findIndex(item => item.value === e.detail.floor)
+    if (floorTypeIndex) {
+      floorTypeWrapper[floorTypeIndex].checked = true
+    }
+
+    let featureListWrapper = this.data.featureList
+    for (let i in e.detail.features) {
+      let featureIndex = featureListWrapper.findIndex(item => item.value === e.detail.features[i])
+      if (featureIndex) {
+        featureListWrapper[featureIndex].checked = true
+      }
+    }
+
+    let levatorWrapper = this.data.levator
+    let levatorIndex = levatorWrapper.findIndex(item => item.value === e.detail.levator)
+    if (levatorIndex) {
+      levatorWrapper[levatorIndex].checked = true
+    }
+
+    let rentTypeWrapper = this.data.rentTimeType
+    let rentTypeIndex = rentTypeWrapper.findIndex(item => item.value === e.detail.rentType)
+    if (rentTypeIndex) {
+      rentTypeWrapper[rentTypeIndex].checked = true
+    }
+
+    let directionWrapper = this.data.direction
+    let directionIndex = directionWrapper.findIndex(item => item.value === e.detail.direction)
+    if (directionIndex) {
+      directionWrapper[directionIndex].checked = true
+    }
+
+    this.setData({
+      areaSize: areaSizeWrapper,
+      floorType: floorTypeWrapper,
+      direction: directionWrapper,
+      featureList: featureListWrapper,
+      rentTimeType: rentTypeWrapper,
+      levator: levatorWrapper
     })
   },
 
