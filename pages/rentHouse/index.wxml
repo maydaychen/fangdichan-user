@@ -9,7 +9,7 @@
           class="input-placeholder"
           bindinput="change"
           url="/pages/search/index?id=3">
-          请输入小区或商圈名称
+          {{searchKey || '请输入小区或商圈名称'}}
         </navigator>
       </view>
       <view class="iconfont icon-quxiao vertical-center" hidden="{{hide}}" bind:tap="cancel" style="margin-right:20rpx;color:#A8A8A8"></view>
