@@ -1,0 +1,30 @@
+<view class="mask">
+  <view class="modal">
+    <view class="top">
+      <text bindtap="cancel">取消</text>
+      <text bindtap="sure">确定</text>
+    </view>
+    <picker-view mode="date" indicator-style="height: 50px;" value="{{value}}" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{years}}" wx:key="yearIndex">
+          {{item}}年
+        </view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" wx:key="monthIndex">
+          {{item}}月
+        </view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{days}}" wx:key="dayIndex">
+          {{item}}日
+        </view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{times}}" wx:key="dayIndex">
+          {{item}}
+        </view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>

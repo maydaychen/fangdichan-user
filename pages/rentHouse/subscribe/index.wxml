@@ -65,18 +65,20 @@
     </view>
     <view class="info-item">
       <label>期望看房时间</label>
-      <text class="select-time-btn">请选择时间</text>
+      <text class="select-time-btn" bindtap="showDateModal">请选择时间</text>
     </view>
   </view>
   <view class="info-form">
     <view class="info-item">
       <label>其他约看要求</label>
-      <input placeholder="选填" />
+      <input placeholder="选填" value="{{remark}}" />
     </view>
     <view class="info-item">
       <label>带看经纪人</label>
       <text>咳咳</text>
     </view>
   </view>
-  <button class="subscribe-btn">确定预约</button>
+  <button class="subscribe-btn" bind:tap="sumbit">确定预约</button>
 </view>
+
+<select-date-modal wx:if="{{showDateModal}}" bind:selectedDate="selectDate" bind:cancel="hideDateModal"></select-date-modal>

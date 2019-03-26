@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "待看清单"
+  "navigationBarTitleText": "待看清单",
+  "usingComponents": {
+    "select-date-modal": "/components/select-date-modal/select-date-modal"
+  }
 }
