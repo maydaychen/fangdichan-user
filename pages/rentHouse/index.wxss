@@ -8,6 +8,7 @@ page {
 
 .top {
   padding: 20rpx;
+  box-sizing: border-box;
   display: flex;
 }
 

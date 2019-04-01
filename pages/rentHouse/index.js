@@ -28,10 +28,7 @@ Page({
       }
     ],
     rentTypeSelected: '整租',
-    priceRange: {
-      minValue: '',
-      maxValue: ''
-    },
+    priceRange: '',
     featureList: [
       {
         value: '精装修',
@@ -94,18 +91,22 @@ Page({
     ],
     floorType: [
       {
+        name: '6层以下',
         value: '6层以下',
         checked: false
       },
       {
-        value: '6-12层',
+        name: '6-12层',
+        value: '6-12',
         checked: false
       },
       {
-        value: '12-20层',
+        name: '12-20层',
+        value: '12-20',
         checked: false
       },
       {
+        name: '20层以上',
         value: '20层以上',
         checked: false
       }
@@ -152,12 +153,13 @@ Page({
     currentPage: 0,
     filterRegion: '',
     filterMetro: '',
-    filterNearBy: {},
+    filterLocation: '',
     filterArea: '',
     filterFloor: '',
     filterorientation: '',
     filterElevator: '',
-    filterFeatures: ''
+    filterFeatures: '',
+    filterNear: ''
   },
 
   /**
@@ -170,10 +172,6 @@ Page({
   loadData () {
     let that = this
     let rentType = this.data.rentTypeSelected != '不限' ? this.data.rentTypeSelected : ''
-    let price = ''
-    if (this.data.priceRange.minValue && this.data.priceRange.maxValue) {
-      price = his.data.priceRange.minValue + ',' + this.data.priceRange.maxValue
-    }
     util.request({
       url: '/House/getUserRentingList',
       data: {
@@ -182,8 +180,8 @@ Page({
         page: this.data.currentPage,
         region: this.data.filterRegion,
         metro: this.data.filterMetro,
-        nearby: this.data.filterNearBy,
-        rent: price,
+        nearby: this.data.filterLocation,
+        rent: this.data.priceRange,
         features: this.data.filterFeatures,
         area: this.data.filterArea,
         floor: this.data.filterFloor,
@@ -206,9 +204,15 @@ Page({
   },
 
   show (e) {
-    this.setData({
-      pageName: e.currentTarget.dataset.pagename
-    })
+    if (this.data.pageName === e.currentTarget.dataset.pagename) {
+      this.setData({
+        pageName: ''
+      })
+    } else {
+      this.setData({
+        pageName: e.currentTarget.dataset.pagename
+      })
+    }
   },
 
   selectedArea (e){
@@ -217,19 +221,34 @@ Page({
       currentPage: 0,
       filterMetro: e.detail.metro,
       filterRegion: e.detail.region,
-      filterNearBy: e.detail.nearby
+      filterNear: e.detail.nearby,
+      canScroll: true
     })
-    this.loadData()
+    if (e.detail.nearby) {
+      wx.getLocation({
+        type: 'wgs84',
+        success: (res)=> {
+          let location = res.longitude + ',' + res.latitude
+          this.setData({
+            filterLocation: location
+          })
+          this.loadData()
+        }
+      })
+    } else {
+      this.loadData()
+    }
   },
 
   selectedPrice (e){
+    let priceRange = ''
+    if (e.detail.minValue && e.detail.maxValue) {
+      priceRange = e.detail.minValue + ',' + e.detail.maxValue
+    }
     this.setData({
       pageName: '',
       currentPage: 0,
-      priceRange: {
-        minValue: e.detail.minValue || '',
-        maxValue: e.detail.maxValue || ''
-      }
+      priceRange: priceRange
     })
 
     this.loadData()

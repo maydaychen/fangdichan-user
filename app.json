@@ -1,10 +1,10 @@
 {
   "pages": [
 
+    "pages/rentHouse/index",
+    "pages/rentHouse/subscribe/index",
     "pages/index/index",
     "pages/index/chat/chat",
-    "pages/rentHouse/subscribe/index",
-    "pages/rentHouse/index",
     "pages/house/lookRecord/index",
     "pages/index/locate",
     "pages/index/manager/index",

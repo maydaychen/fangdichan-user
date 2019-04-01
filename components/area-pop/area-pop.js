@@ -162,23 +162,15 @@ Component({
 
     sure () {
       let selected = {
-        nearby: {
-          x: '',
-          y: ''
-        },
+        location: '',
+        nearby: '',
         region: '',
         metro: ''
       }
       let that = this
       let near = this.data.near.find(item => item.checked === true)
       if (near) {
-        wx.getLocation({
-          type: 'wgs84',
-          success: (res)=> {
-            selected.nearby.x = res.longitude //经度
-            selected.nearby.y = res.latitude  //纬度
-          }
-        })
+        selected.nearby = near.value
       }
 
       let area = this.data.areaTag.find(item => item.checked === true)
